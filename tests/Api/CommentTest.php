@@ -22,7 +22,7 @@ it('can create a comment for a specific entity', function () {
 
     httpClient()->assertSent(function (Request $request) {
         return $request->body() === json_encode([
-                                                    'message' => 'this is my message'
+                                                    'message' => 'this is my message',
                                                 ]) &&
             str_ends_with($request->url(), 'tasks/task-id/comments');
     });

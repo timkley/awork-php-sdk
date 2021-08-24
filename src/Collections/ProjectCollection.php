@@ -12,6 +12,6 @@ class ProjectCollection extends Collection
 
     public function __construct(array $items)
     {
-        $this->items = array_map(fn($item) => new Project($item), $items);
+        $this->items = array_map(fn ($item) => new Project($item), $items);
     }
 }

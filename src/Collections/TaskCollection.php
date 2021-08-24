@@ -12,6 +12,6 @@ class TaskCollection extends Collection
 
     public function __construct(array $items)
     {
-        $this->items = array_map(fn($item) => new Task($item), $items);
+        $this->items = array_map(fn ($item) => new Task($item), $items);
     }
 }

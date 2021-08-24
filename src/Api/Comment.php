@@ -25,7 +25,7 @@ class Comment
     {
         return new CommentModel(
             $this->api->post(sprintf(self::ENDPOINT, $entityType, $entityId), [
-                'message' => $message
+                'message' => $message,
             ])->json()
         );
     }

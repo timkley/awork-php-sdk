@@ -12,6 +12,6 @@ class ProjectTemplateCollection extends Collection
 
     public function __construct(array $items)
     {
-        $this->items = array_map(fn($item) => new ProjectTemplate($item), $items);
+        $this->items = array_map(fn ($item) => new ProjectTemplate($item), $items);
     }
 }

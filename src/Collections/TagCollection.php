@@ -12,6 +12,6 @@ class TagCollection extends Collection
 
     public function __construct(array $items)
     {
-        $this->items = array_map(fn($item) => new Tag($item), $items);
+        $this->items = array_map(fn ($item) => new Tag($item), $items);
     }
 }

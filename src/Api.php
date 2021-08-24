@@ -61,7 +61,7 @@ class Api
             throw new AuthenticationException($this->latestResponse->json('message.description'));
         }
 
-        if (!$this->latestResponse->successful()) {
+        if (! $this->latestResponse->successful()) {
             throw new Exception($this->latestResponse->json('message.description'));
         }
 

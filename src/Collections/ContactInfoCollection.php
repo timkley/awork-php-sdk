@@ -12,6 +12,6 @@ class ContactInfoCollection extends Collection
 
     public function __construct(array $items)
     {
-        $this->items = array_map(fn($item) => new ContactInfo($item), $items);
+        $this->items = array_map(fn ($item) => new ContactInfo($item), $items);
     }
 }

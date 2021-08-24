@@ -32,7 +32,7 @@ it('can update a task', function () {
 it('changes a task status', function () {
     $requestBody = [
         'taskId' => 'task-id',
-        'statusId' => 'status-id'
+        'statusId' => 'status-id',
     ];
     fakeResponse($requestBody);
 

@@ -12,6 +12,6 @@ class TeamCollection extends Collection
 
     public function __construct(array $items)
     {
-        $this->items = array_map(fn($item) => new Team($item), $items);
+        $this->items = array_map(fn ($item) => new Team($item), $items);
     }
 }

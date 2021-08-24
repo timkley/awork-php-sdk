@@ -39,7 +39,7 @@ class Task
     {
         return $this->api->post(self::ENDPOINT, [
             'taskId' => $taskId,
-            'statusId' => $statusId
+            'statusId' => $statusId,
         ]);
     }
 }
