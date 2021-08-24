@@ -18,7 +18,7 @@ jobs:
         include:
           - testbench: ^6.6
 
-    name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
+    name: ${{ matrix.stability }} - ${{ matrix.os }}
 
     steps:
       - name: Checkout code
