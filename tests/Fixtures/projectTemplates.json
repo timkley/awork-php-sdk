@@ -1,0 +1,160 @@
+[
+  {
+    "id": "836e6603-3d56-eb11-a607-00155d31310d",
+    "createdOn": "2021-01-14T07:49:25.5185389Z",
+    "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "updatedOn": "2021-07-21T12:49:00.6335559Z",
+    "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "name": "Pro bono",
+    "isBillableByDefault": true,
+    "projectStatuses": [
+      {
+        "id": "d412cdea-7664-eb11-a607-00155d314496",
+        "name": "In Planung",
+        "type": "not-started",
+        "order": 0,
+        "createdOn": "2021-02-01T10:19:16.681875Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-02-14T21:54:40.9497254Z",
+        "projectTemplateId": "836e6603-3d56-eb11-a607-00155d31310d",
+        "updatedBy": "01010001-0000-0000-0000-111111111111"
+      },
+      {
+        "id": "876e6603-3d56-eb11-a607-00155d31310d",
+        "name": "Läuft",
+        "type": "progress",
+        "order": 1,
+        "createdOn": "2021-01-14T07:49:25.6055438Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-01-14T07:49:25.605546Z",
+        "projectTemplateId": "836e6603-3d56-eb11-a607-00155d31310d",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+      },
+      {
+        "id": "896e6603-3d56-eb11-a607-00155d31310d",
+        "name": "Abgeschlossen",
+        "type": "closed",
+        "order": 2,
+        "createdOn": "2021-01-14T07:49:25.605598Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-01-14T07:49:25.6055996Z",
+        "projectTemplateId": "836e6603-3d56-eb11-a607-00155d31310d",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+      }
+    ],
+    "hasImage": false
+  },
+  {
+    "id": "e7adce2e-a455-eb11-a607-00155d31310d",
+    "description": "Externe Projekte, die an Kunden berechnet werden können",
+    "createdOn": "2021-01-13T13:35:25.3270738Z",
+    "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "updatedOn": "2021-07-21T12:49:08.5079112Z",
+    "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "name": "Kundenprojekt",
+    "isBillableByDefault": true,
+    "projectStatuses": [
+      {
+        "id": "e8adce2e-a455-eb11-a607-00155d31310d",
+        "name": "In Planung",
+        "type": "not-started",
+        "order": 0,
+        "createdOn": "2021-01-13T13:35:25.3810358Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-02-14T21:54:40.9496901Z",
+        "projectTemplateId": "e7adce2e-a455-eb11-a607-00155d31310d",
+        "updatedBy": "01010001-0000-0000-0000-111111111111"
+      },
+      {
+        "id": "e9adce2e-a455-eb11-a607-00155d31310d",
+        "name": "Läuft",
+        "type": "progress",
+        "order": 1,
+        "createdOn": "2021-01-13T13:35:25.4532278Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-01-13T13:35:25.4532326Z",
+        "projectTemplateId": "e7adce2e-a455-eb11-a607-00155d31310d",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+      },
+      {
+        "id": "eaadce2e-a455-eb11-a607-00155d31310d",
+        "name": "Abgeschlossen",
+        "type": "closed",
+        "order": 2,
+        "createdOn": "2021-01-13T13:35:25.5364967Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-01-13T13:35:25.5365018Z",
+        "projectTemplateId": "e7adce2e-a455-eb11-a607-00155d31310d",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+      },
+      {
+        "id": "ebadce2e-a455-eb11-a607-00155d31310d",
+        "name": "Abgebrochen",
+        "type": "stuck",
+        "order": 3,
+        "createdOn": "2021-01-13T13:35:25.6430252Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-01-13T13:35:25.6430311Z",
+        "projectTemplateId": "e7adce2e-a455-eb11-a607-00155d31310d",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+      }
+    ],
+    "hasImage": false
+  },
+  {
+    "id": "d4adce2e-a455-eb11-a607-00155d31310d",
+    "description": "Vorlage für interne Projekte, wie z.B. Marketing- oder Vertriebsprojekte",
+    "createdOn": "2021-01-13T13:35:23.7695628Z",
+    "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "updatedOn": "2021-01-13T13:35:23.7695667Z",
+    "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "name": "Intern",
+    "projectStatuses": [
+      {
+        "id": "d6adce2e-a455-eb11-a607-00155d31310d",
+        "name": "In Planung",
+        "type": "not-started",
+        "order": 0,
+        "createdOn": "2021-01-13T13:35:23.8610278Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-02-14T21:54:40.9496415Z",
+        "projectTemplateId": "d4adce2e-a455-eb11-a607-00155d31310d",
+        "updatedBy": "01010001-0000-0000-0000-111111111111"
+      },
+      {
+        "id": "d8adce2e-a455-eb11-a607-00155d31310d",
+        "name": "Läuft",
+        "type": "progress",
+        "order": 1,
+        "createdOn": "2021-01-13T13:35:23.9591827Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-01-13T13:35:23.9591887Z",
+        "projectTemplateId": "d4adce2e-a455-eb11-a607-00155d31310d",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+      },
+      {
+        "id": "dcadce2e-a455-eb11-a607-00155d31310d",
+        "name": "Geschlossen",
+        "type": "closed",
+        "order": 2,
+        "createdOn": "2021-01-13T13:35:24.0939979Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-01-13T13:35:24.094003Z",
+        "projectTemplateId": "d4adce2e-a455-eb11-a607-00155d31310d",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+      },
+      {
+        "id": "dfadce2e-a455-eb11-a607-00155d31310d",
+        "name": "Abgebrochen",
+        "type": "stuck",
+        "order": 3,
+        "createdOn": "2021-01-13T13:35:24.2229691Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-01-13T13:35:24.2229742Z",
+        "projectTemplateId": "d4adce2e-a455-eb11-a607-00155d31310d",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+      }
+    ],
+    "hasImage": false
+  }
+]

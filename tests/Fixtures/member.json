@@ -1,0 +1,12 @@
+{
+  "id": "7139d5c4-2691-eb11-a607-00155d314496",
+  "userId": "83477d16-a455-eb11-a607-00155d31310d",
+  "firstName": "John",
+  "lastName": "Doe",
+  "hasImage": true,
+  "projectRoleId": "c7adce2e-a455-eb11-a607-00155d31310d",
+  "projectRoleName": "Projektmitglied",
+  "isResponsible": true,
+  "isDeactivated": false,
+  "projectId": "6339d5c4-2691-eb11-a607-00155d314496"
+}

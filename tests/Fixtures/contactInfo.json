@@ -1,0 +1,19 @@
+{
+  "id": "1fa11067-4329-40a3-a8e6-97f5aa2d777e",
+  "isDeleted": false,
+  "createdOn": "2021-08-13T12:54:36.7304569Z",
+  "createdBy": "01010001-0000-0000-0000-111111111111",
+  "updatedOn": "2021-08-18T12:54:36.7304579Z",
+  "updatedBy": "01010001-0000-0000-0000-111111111111",
+  "label": null,
+  "value": null,
+  "type": "address",
+  "subType": "work",
+  "addressLine1": "300 E. Street SW",
+  "addressLine2": " Suite 5R30",
+  "zipCode": "20546",
+  "city": "Washington",
+  "state": "District of Columbia",
+  "country": "US",
+  "isAddress": true
+}

@@ -1,0 +1,187 @@
+[
+  {
+    "id": "1ffe3eac-83e0-eb11-a7ad-00155d312181",
+    "key": "TFR-4",
+    "numberCount": 4,
+    "baseType": "projecttask",
+    "taskStatusId": "6839d5c4-2691-eb11-a607-00155d314496",
+    "taskStatus": {
+      "id": "6839d5c4-2691-eb11-a607-00155d314496",
+      "name": "To Do",
+      "type": "todo",
+      "order": 1,
+      "isPrivate": false,
+      "icon": "radio_button_unchecked",
+      "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+      "createdOn": "2021-03-30T07:08:50.104Z",
+      "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+      "updatedOn": "2021-03-30T07:08:50.104Z",
+      "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+    },
+    "typeOfWorkId": "e2095787-bd5a-4a11-dec3-08d8b74cd6d8",
+    "typeOfWork": {
+      "isArchived": false,
+      "icon": "settings",
+      "name": "Projektarbeit",
+      "id": "e2095787-bd5a-4a11-dec3-08d8b74cd6d8"
+    },
+    "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+    "project": {
+      "key": "TFR",
+      "projectStatus": {
+        "isArchived": false,
+        "type": "not-started",
+        "name": "In Planung",
+        "id": "c964ddb7-e6e7-eb11-b563-00155d3167af"
+      },
+      "company": {
+        "hasImage": false,
+        "tags": [],
+        "name": "Acme Inc",
+        "id": "c8c39444-a455-eb11-a607-00155d312942"
+      },
+      "projectType": {
+        "isArchived": false,
+        "icon": "work",
+        "name": "Intern",
+        "id": "d4adce2e-a455-eb11-a607-00155d31310d"
+      },
+      "tags": [],
+      "teams": [],
+      "hasImage": false,
+      "name": "First Project",
+      "id": "6339d5c4-2691-eb11-a607-00155d314496"
+    },
+    "hasAttachment": false,
+    "lists": [
+      {
+        "orderOfTask": -3,
+        "id": "de53d2ca-2691-eb11-a607-00155d314496",
+        "isArchived": false,
+        "createdOn": "2021-03-30T07:09:05.074Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-07-06T11:05:35.289Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "order": 0,
+        "name": "Sample list"
+      }
+    ],
+    "entityId": "6339d5c4-2691-eb11-a607-00155d314496",
+    "tags": [
+      {
+        "id": "c9123cb2-83e0-eb11-a7ad-00155d312181",
+        "name": "example-tag",
+        "color": "yellow",
+        "entityId": "1ffe3eac-83e0-eb11-a7ad-00155d312181",
+        "createdOn": "2021-07-09T07:03:09.578Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-07-09T07:03:09.578Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+      }
+    ],
+    "createdOn": "2021-07-09T07:02:53.927Z",
+    "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "updatedOn": "2021-07-27T05:43:41.644Z",
+    "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "order": 3,
+    "isRecurring": false,
+    "resourceVersion": 637652040710442048,
+    "subtasksDoneCount": 0,
+    "subtasksCount": 0,
+    "name": "Task that needs client approval yo",
+    "description": "<p>Bitte geben Sie alles frei.</p><p>Zum Beispiel diese Seiten:</p><ul><li>Startseite</li><li>Unterseite</li><li>Noch ne Seite</li></ul><p>Und ge, net vergessen,<i> dass alles nach Freigabe extra koschtet!</i></p>",
+    "isPrio": false
+  },
+  {
+    "id": "2405ff0d-4ade-eb11-a7ad-00155d312181",
+    "key": "TFR-3",
+    "numberCount": 3,
+    "baseType": "projecttask",
+    "taskStatusId": "6839d5c4-2691-eb11-a607-00155d314496",
+    "taskStatus": {
+      "id": "6839d5c4-2691-eb11-a607-00155d314496",
+      "name": "To Do",
+      "type": "todo",
+      "order": 1,
+      "isPrivate": false,
+      "icon": "radio_button_unchecked",
+      "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+      "createdOn": "2021-03-30T07:08:50.104Z",
+      "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+      "updatedOn": "2021-03-30T07:08:50.104Z",
+      "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+    },
+    "typeOfWorkId": "e2095787-bd5a-4a11-dec3-08d8b74cd6d8",
+    "typeOfWork": {
+      "isArchived": false,
+      "icon": "settings",
+      "name": "Projektarbeit",
+      "id": "e2095787-bd5a-4a11-dec3-08d8b74cd6d8"
+    },
+    "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+    "project": {
+      "key": "TFR",
+      "projectStatus": {
+        "isArchived": false,
+        "type": "not-started",
+        "name": "In Planung",
+        "id": "c964ddb7-e6e7-eb11-b563-00155d3167af"
+      },
+      "company": {
+        "hasImage": false,
+        "tags": [],
+        "name": "caesar gustav UG",
+        "id": "c8c39444-a455-eb11-a607-00155d312942"
+      },
+      "projectType": {
+        "isArchived": false,
+        "icon": "work",
+        "name": "Intern",
+        "id": "d4adce2e-a455-eb11-a607-00155d31310d"
+      },
+      "tags": [],
+      "teams": [],
+      "hasImage": false,
+      "name": "[CGW123456] Testprojekt für R2D2 (intern)",
+      "id": "6339d5c4-2691-eb11-a607-00155d314496"
+    },
+    "hasAttachment": false,
+    "lists": [
+      {
+        "orderOfTask": -2,
+        "id": "de53d2ca-2691-eb11-a607-00155d314496",
+        "isArchived": false,
+        "createdOn": "2021-03-30T07:09:05.074Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-07-06T11:05:35.289Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "order": 0,
+        "name": "Sample list"
+      }
+    ],
+    "entityId": "6339d5c4-2691-eb11-a607-00155d314496",
+    "tags": [
+      {
+        "id": "2d90fb19-4ade-eb11-a7ad-00155d312181",
+        "name": "info",
+        "color": "yellow",
+        "entityId": "2405ff0d-4ade-eb11-a7ad-00155d312181",
+        "createdOn": "2021-07-06T11:05:47.407Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-07-06T11:05:47.407Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+      }
+    ],
+    "createdOn": "2021-07-06T11:05:29.375Z",
+    "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "updatedOn": "2021-07-06T11:05:29.477Z",
+    "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "order": 2,
+    "isRecurring": false,
+    "resourceVersion": 637652040614410629,
+    "subtasksDoneCount": 0,
+    "subtasksCount": 0,
+    "name": "Task with not hidden tag",
+    "isPrio": false
+  }
+]

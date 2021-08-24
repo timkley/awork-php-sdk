@@ -1,0 +1,38 @@
+{
+  "id": "b7fe5e4a-a555-eb11-a607-00155d31310d",
+  "tags": [],
+  "teams": [
+    {
+      "id": "235d966e-a455-eb11-a607-00155d31310d",
+      "name": "Dev",
+      "icon": "shopping_cart",
+      "color": "coral"
+    }
+  ],
+  "userContactInfos": [
+    {
+      "id": "56b52dbc-62f3-eb11-a7ad-dc984021c7cf",
+      "isDeleted": false,
+      "createdOn": "2021-08-02T07:25:02.093Z",
+      "createdBy": "b7fe5e4a-a555-eb11-a607-00155d31310d",
+      "updatedOn": "2021-08-02T07:25:02.093Z",
+      "updatedBy": "b7fe5e4a-a555-eb11-a607-00155d31310d",
+      "value": "ce@wacg.de",
+      "type": "email",
+      "subType": "work",
+      "isAddress": false
+    }
+  ],
+  "firstName": "John",
+  "lastName": "Doe",
+  "hasImage": true,
+  "key": "JD",
+  "resourceVersion": 637647193813611728,
+  "tags": [],
+  "birthDate": "1978-06-30T00:00:00Z",
+  "gender": "male",
+  "title": "",
+  "position": "CEO",
+  "language": "de-DE",
+  "capacityPerWeek": 115200
+}

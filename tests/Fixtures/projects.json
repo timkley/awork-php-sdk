@@ -1,0 +1,138 @@
+[
+  {
+    "workspaceId": "65477d16-a455-eb11-a607-00155d31310d",
+    "id": "0f06ec20-9601-ec11-b563-dc984023d47e",
+    "hasImage": false,
+    "key": "AC1",
+    "createdOn": "2021-08-20T09:08:14.395Z",
+    "createdBy": "c60bd0d9-b85c-eb11-a607-00155d31310d",
+    "updatedOn": "2021-08-20T09:22:27.08Z",
+    "updatedBy": "5d005f4a-a555-eb11-a607-00155d31310d",
+    "projectType": {
+      "isArchived": false,
+      "icon": "favorite",
+      "name": "Kundenprojekt",
+      "id": "e7adce2e-a455-eb11-a607-00155d31310d"
+    },
+    "projectStatus": {
+      "typeOrder": 2,
+      "isArchived": false,
+      "type": "not-started",
+      "name": "Noch nicht gestartet",
+      "id": "0506ec20-9601-ec11-b563-dc984023d47e"
+    },
+    "company": {
+      "hasImage": false,
+      "tags": [],
+      "name": "Acme Inc",
+      "id": "fed0b8da-616c-eb11-a607-00155d3163c0"
+    },
+    "tags": [],
+    "plannedDuration": 0,
+    "tasksCount": 0,
+    "tasksDoneCount": 0,
+    "members": [
+      {
+        "id": "6c270422-9801-ec11-b563-dc984023d47e",
+        "userId": "83005f4a-a555-eb11-a607-00155d31310d",
+        "firstName": "John",
+        "lastName": "Doe",
+        "hasImage": true,
+        "projectRoleId": "c7adce2e-a455-eb11-a607-00155d31310d",
+        "projectRoleName": "Projektmitglied",
+        "isResponsible": false,
+        "isDeactivated": false,
+        "projectId": "0f06ec20-9601-ec11-b563-dc984023d47e"
+      },
+      {
+        "id": "72270422-9801-ec11-b563-dc984023d47e",
+        "userId": "5d005f4a-a555-eb11-a607-00155d31310d",
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "hasImage": true,
+        "projectRoleId": "c7adce2e-a455-eb11-a607-00155d31310d",
+        "projectRoleName": "Projektmitglied",
+        "isResponsible": false,
+        "isDeactivated": false,
+        "projectId": "0f06ec20-9601-ec11-b563-dc984023d47e"
+      }
+    ],
+    "trackedDuration": 3353,
+    "resourceVersion": 637650492334513016,
+    "teams": [],
+    "projectStatusId": "0506ec20-9601-ec11-b563-dc984023d47e",
+    "name": "First Project",
+    "companyId": "fed0b8da-616c-eb11-a607-00155d3163c0",
+    "timeBudget": 280800,
+    "isBillableByDefault": true,
+    "projectTypeId": "e7adce2e-a455-eb11-a607-00155d31310d"
+  },
+  {
+    "workspaceId": "65477d16-a455-eb11-a607-00155d31310d",
+    "id": "3a474f39-c400-ec11-b563-dc984023d47e",
+    "hasImage": false,
+    "key": "APOS",
+    "createdOn": "2021-08-19T08:05:40.267Z",
+    "createdBy": "c60bd0d9-b85c-eb11-a607-00155d31310d",
+    "updatedOn": "2021-08-20T06:47:48.259Z",
+    "updatedBy": "c9ff5e4a-a555-eb11-a607-00155d31310d",
+    "projectType": {
+      "isArchived": false,
+      "icon": "favorite",
+      "name": "Kundenprojekt",
+      "id": "e7adce2e-a455-eb11-a607-00155d31310d"
+    },
+    "projectStatus": {
+      "typeOrder": 3,
+      "isArchived": false,
+      "type": "progress",
+      "name": "Läuft",
+      "id": "37474f39-c400-ec11-b563-dc984023d47e"
+    },
+    "company": {
+      "hasImage": true,
+      "tags": [],
+      "name": "Acme Inc",
+      "id": "dbd1de7f-8201-ec11-b563-dc984023d47e"
+    },
+    "tags": [],
+    "plannedDuration": 14400,
+    "tasksCount": 3,
+    "tasksDoneCount": 0,
+    "members": [
+      {
+        "id": "fcb72f3d-8201-ec11-b563-dc984023d47e",
+        "userId": "c9ff5e4a-a555-eb11-a607-00155d31310d",
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "hasImage": true,
+        "projectRoleId": "c7adce2e-a455-eb11-a607-00155d31310d",
+        "projectRoleName": "Projektmitglied",
+        "isResponsible": false,
+        "isDeactivated": false,
+        "projectId": "3a474f39-c400-ec11-b563-dc984023d47e"
+      },
+      {
+        "id": "ffb72f3d-8201-ec11-b563-dc984023d47e",
+        "userId": "27ff5e4a-a555-eb11-a607-00155d31310d",
+        "firstName": "John",
+        "lastName": "Doe",
+        "hasImage": true,
+        "projectRoleId": "c7adce2e-a455-eb11-a607-00155d31310d",
+        "projectRoleName": "Projektmitglied",
+        "isResponsible": true,
+        "isDeactivated": false,
+        "projectId": "3a474f39-c400-ec11-b563-dc984023d47e"
+      }
+    ],
+    "trackedDuration": 904,
+    "resourceVersion": 637650389055994241,
+    "teams": [],
+    "projectStatusId": "37474f39-c400-ec11-b563-dc984023d47e",
+    "name": "Second Project",
+    "companyId": "dbd1de7f-8201-ec11-b563-dc984023d47e",
+    "timeBudget": 0,
+    "isBillableByDefault": true,
+    "projectTypeId": "e7adce2e-a455-eb11-a607-00155d31310d"
+  }
+]

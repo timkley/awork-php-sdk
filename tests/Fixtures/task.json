@@ -1,0 +1,152 @@
+{
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "id": "00b77844-8324-4b40-969b-931cbf52c359",
+    "key": "HS-01",
+    "numberCount": 1,
+    "baseType": "private",
+    "taskStatusId": "9cd316b0-4e9f-4692-9c09-7222a1c8b3b2",
+    "taskStatus": {
+        "id": "9cd316b0-4e9f-4692-9c09-7222a1c8b3b2",
+        "name": "Preparation",
+        "type": "todo",
+        "order": 0,
+        "icon": null,
+        "projectId": null,
+        "projectTypeId": null,
+        "createdOn": "0001-01-01T00:00:00",
+        "createdBy": "00000000-0000-0000-0000-000000000000",
+        "updatedOn": "0001-01-01T00:00:00",
+        "updatedBy": "00000000-0000-0000-0000-000000000000"
+    },
+    "typeOfWorkId": "2bf8eac9-eb5a-4295-9b0c-24dc475d1de0",
+    "typeOfWork": {
+        "isArchived": false,
+        "icon": null,
+        "name": "Engineering",
+        "id": "2bf8eac9-eb5a-4295-9b0c-24dc475d1de0"
+    },
+    "assigneeId": "8da7e59d-b8ba-4e8c-9b72-2fb966ee3269",
+    "assignee": {
+        "tags": [
+            {
+                "id": "00000000-0000-0000-0000-000000000000",
+                "name": "Asteroids",
+                "color": "blue",
+                "entityId": "00000000-0000-0000-0000-000000000000"
+            },
+            {
+                "id": "00000000-0000-0000-0000-000000000000",
+                "name": "Stones",
+                "color": "gray",
+                "entityId": "00000000-0000-0000-0000-000000000000"
+            }
+        ],
+        "teams": [
+            {
+                "id": "753cd9c9-c510-41da-bc57-e505801055e4"
+            }
+        ],
+        "firstName": "Neil",
+        "lastName": "Armstrong",
+        "hasImage": true,
+        "key": "NA-#",
+        "id": "8da7e59d-b8ba-4e8c-9b72-2fb966ee3269"
+    },
+    "projectId": "9cd316b0-4e9f-4692-9c09-7222a1c8b3b2",
+    "project": {
+        "key": "TFR1",
+        "projectStatus": {
+            "isArchived": false,
+            "type": "progress",
+            "name": "Läuft",
+            "id": "0f31522e-05ee-eb11-a7ad-dc984021c7cf"
+        },
+        "company": {
+            "hasImage": false,
+            "tags": [],
+            "name": "Acme Inc",
+            "id": "c8c39444-a455-eb11-a607-00155d312942"
+        },
+        "projectType": {
+            "isArchived": false,
+            "icon": "work",
+            "name": "Intern",
+            "id": "d4adce2e-a455-eb11-a607-00155d31310d"
+        },
+        "tags": [],
+        "teams": [],
+        "hasImage": false,
+        "name": "Test project",
+        "id": "1331522e-05ee-eb11-a7ad-dc984021c7cf"
+    },
+    "hasAttachment": false,
+    "lists": [
+        {
+            "orderOfTask": 1,
+            "id": "8d1d4420-d9e5-40b9-a526-1c755337a1cc",
+            "isArchived": false,
+            "createdOn": "2021-07-24T11:23:10.423143Z",
+            "createdBy": "67f9e204-b3bf-4eb3-8ca4-99caf9765293",
+            "updatedOn": "2021-07-24T11:23:10.4231442Z",
+            "updatedBy": "7c8a255d-b0ff-4053-a1f5-b550230c3e27",
+            "order": 0,
+            "name": "Holidays"
+        },
+        {
+            "orderOfTask": 1,
+            "id": "a95d766a-aa39-49f6-9668-3cd46c4b216a",
+            "isArchived": false,
+            "createdOn": "2021-07-24T11:23:10.4231475Z",
+            "createdBy": "eaa37ce2-bc9b-424d-bb2e-2cea7154770a",
+            "updatedOn": "2021-07-24T11:23:10.4231487Z",
+            "updatedBy": "1ddf6f65-f6f0-439c-b99d-11b410a2d2ec",
+            "order": 1,
+            "name": "Bucket List"
+        }
+    ],
+    "entityId": "6990a17a-b8c2-41c3-b58d-ea4d526ff01d",
+    "tags": [
+        {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "name": "Asteroids",
+            "color": "green",
+            "entityId": "00000000-0000-0000-0000-000000000000",
+            "createdOn": "0001-01-01T00:00:00",
+            "createdBy": "00000000-0000-0000-0000-000000000000",
+            "updatedOn": "0001-01-01T00:00:00",
+            "updatedBy": "00000000-0000-0000-0000-000000000000"
+        },
+        {
+            "id": "00000000-0000-0000-0000-000000000000",
+            "name": "Stones",
+            "color": "gray",
+            "entityId": "00000000-0000-0000-0000-000000000000",
+            "createdOn": "0001-01-01T00:00:00",
+            "createdBy": "00000000-0000-0000-0000-000000000000",
+            "updatedOn": "0001-01-01T00:00:00",
+            "updatedBy": "00000000-0000-0000-0000-000000000000"
+        }
+    ],
+    "createdOn": "2021-07-24T11:23:10.42315Z",
+    "createdBy": "85b69429-2e62-441c-aad8-35792b6b7e7b",
+    "updatedOn": "2021-07-24T11:23:10.4231512Z",
+    "updatedBy": "08e7ce94-6de6-4d76-852f-4d5bcd0be7bb",
+    "closedOn": "2021-07-24T11:23:10.4231513Z",
+    "closedBy": "8da7e59d-b8ba-4e8c-9b72-2fb966ee3269",
+    "order": 0,
+    "createdFromTaskId": null,
+    "isRecurring": false,
+    "trackedDuration": 2330,
+    "entityInformation": null,
+    "resourceVersion": 0,
+    "subtasksDoneCount": 0,
+    "subtasksCount": 0,
+    "plannedDuration": 3600,
+    "remainingDuration": 1800,
+    "name": "Fly me to the Moon",
+    "description": "I want to be up there.",
+    "isPrio": false,
+    "startOn": null,
+    "dueOn": "2021-08-23T11:23:10.4231381Z",
+    "laneOrder": 1
+}

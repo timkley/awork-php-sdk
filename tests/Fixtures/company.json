@@ -1,0 +1,27 @@
+{
+  "hasImage": false,
+  "tags": [
+    {
+      "id": "c9123cb2-83e0-eb11-a7ad-00155d312181",
+      "name": "example-tag",
+      "color": "yellow",
+      "entityId": "1ffe3eac-83e0-eb11-a7ad-00155d312181",
+      "createdOn": "2021-07-09T07:03:09.578Z",
+      "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+      "updatedOn": "2021-07-09T07:03:09.578Z",
+      "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+    },
+    {
+      "id": "c9123cb2-83e0-eb11-a7ad-00155d312181",
+      "name": "example-tag-2",
+      "color": "green",
+      "entityId": "1ffe3eac-83e0-eb11-a7ad-00155d312181",
+      "createdOn": "2021-07-09T07:03:09.578Z",
+      "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+      "updatedOn": "2021-07-09T07:03:09.578Z",
+      "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+    }
+  ],
+  "name": "Acme Inc",
+  "id": "c8c39444-a455-eb11-a607-00155d312942"
+}

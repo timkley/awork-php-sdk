@@ -1,0 +1,34 @@
+{
+  "id": "2e6248f1-fdf6-4dae-9ee7-5579d806b457",
+  "entityId": "00000000-0000-0000-0000-000000000000",
+  "entityType": null,
+  "createdOn": "2021-08-23T12:54:36.6540126Z",
+  "createdBy": "8ea7c6ca-0c98-4def-bcc9-964baac7fbbb",
+  "user": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "hasImage": true,
+    "key": "JD",
+    "id": "5d005f4a-a555-eb11-a607-00155d31310d"
+  },
+  "project": null,
+  "entity": null,
+  "updatedOn": "2021-08-23T12:54:36.6540134Z",
+  "updatedBy": "9185d090-2bf2-4212-978f-4338dfc4b130",
+  "mentions": null,
+  "reactions": [
+    {
+      "userIds": [
+        "e540e445-4cec-4f7b-ac96-929bc4f93784"
+      ],
+      "emoji": "😀"
+    }
+  ],
+  "formattedMessage": "<b>NASA</b>",
+  "plainFormattedMessage": "NASA",
+  "resourceVersion": 0,
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "message": "NASA",
+  "userId": null,
+  "previews": null
+}

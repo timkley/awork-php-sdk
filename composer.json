@@ -1,0 +1,36 @@
+{
+    "name": "timkley/awork-php-sdk",
+    "description": "A PHP HTTP Client for the awork API",
+    "keywords": [
+        "php",
+        "client",
+        "awork",
+        "api"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tim Kleyersburg",
+            "email": "timkley@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/http": "^8.55"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.93",
+        "pestphp/pest": "^1.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Awork\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

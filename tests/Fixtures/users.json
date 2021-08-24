@@ -1,0 +1,95 @@
+[
+    {
+        "teams": [
+            {
+                "id": "f3168754-a455-eb11-a607-00155d31310d",
+                "name": "Dev",
+                "icon": "cloud",
+                "color": "green"
+            }
+        ],
+        "id": "1d34a1ce-d1c2-eb11-a7ad-00155d31294d",
+        "key": "TO",
+        "status": {
+            "invitationAccepted": true,
+            "isDeactivated": false
+        },
+        "createdOn": "2021-06-01T12:06:35.27Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-06-07T07:50:24.162Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "isArchived": false,
+        "isDeactivated": false,
+        "hasImage": true,
+        "userContactInfos": [
+            {
+                "id": "2b34a1ce-d1c2-eb11-a7ad-00155d31294d",
+                "isDeleted": false,
+                "createdOn": "2021-06-01T12:06:35.99Z",
+                "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+                "updatedOn": "2021-06-01T12:06:35.99Z",
+                "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+                "value": "to@wacg.de",
+                "type": "email",
+                "subType": "work",
+                "isAddress": false
+            }
+        ],
+        "resourceVersion": 637647193815079405,
+        "tags": [],
+        "firstName": "John",
+        "lastName": "Doe",
+        "gender": "male",
+        "title": "",
+        "position": "",
+        "language": "de-DE",
+        "capacityPerWeek": 100800
+    },
+    {
+        "teams": [
+            {
+                "id": "f3168754-a455-eb11-a607-00155d31310d",
+                "name": "Dev",
+                "icon": "cloud",
+                "color": "green"
+            }
+        ],
+        "id": "a6ff5e4a-a555-eb11-a607-00155d31310d",
+        "key": "IS",
+        "status": {
+            "invitationAccepted": true,
+            "isDeactivated": false
+        },
+        "createdOn": "2021-01-13T13:43:23.275Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-05-11T05:51:11.586Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "isArchived": false,
+        "isDeactivated": false,
+        "hasImage": true,
+        "userContactInfos": [
+            {
+                "id": "11005f4a-a555-eb11-a607-00155d31310d",
+                "isDeleted": false,
+                "createdOn": "2021-01-13T13:43:24.03Z",
+                "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+                "updatedOn": "2021-01-15T08:26:07.038Z",
+                "updatedBy": "a6ff5e4a-a555-eb11-a607-00155d31310d",
+                "value": "jane@example.com",
+                "type": "email",
+                "subType": "work",
+                "isAddress": false
+            }
+        ],
+        "resourceVersion": 637647193817505103,
+        "tags": [],
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "birthDate": "1991-03-03T00:00:00Z",
+        "gender": "female",
+        "title": "",
+        "position": "Frontend developer",
+        "language": "de-DE",
+        "capacityPerWeek": 100800
+    }
+]

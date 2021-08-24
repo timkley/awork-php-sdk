@@ -1,0 +1,14 @@
+name: Run PHPStan
+
+on: [ push ]
+
+jobs:
+  phpstan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: PHPStan (php-actions)
+        uses: php-actions/phpstan@v3
+        with:
+          configuration: ../../phpstan.neon
+          path: src

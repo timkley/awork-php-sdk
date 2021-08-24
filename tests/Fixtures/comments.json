@@ -1,0 +1,67 @@
+[
+  {
+    "id": "083e0eaf-82cc-4902-8c9b-eb9a910b896a",
+    "entityId": "00000000-0000-0000-0000-000000000000",
+    "entityType": null,
+    "createdOn": "2021-08-23T12:54:36.6540047Z",
+    "createdBy": "ccbcff4e-515e-427c-966b-e0008eb4c3af",
+    "user": null,
+    "project": null,
+    "entity": null,
+    "updatedOn": "2021-08-23T12:54:36.6540056Z",
+    "updatedBy": "a730173b-536a-44be-a254-955d9d253caf",
+    "mentions": null,
+    "reactions": [
+      {
+        "userIds": [
+          "3c0a313f-1784-4d1c-8be6-018b3ea8d88f",
+          "76ab2752-bae6-4e15-a881-02313d5e6367"
+        ],
+        "emoji": "😉"
+      },
+      {
+        "userIds": [
+          "428d33f2-138e-46f0-aae4-266c43d4cf5c"
+        ],
+        "emoji": "😍"
+      }
+    ],
+    "formattedMessage": "Hey <b>@Neil Armstrong</b>, why not a mission to Mars? One should start soon: https://www.nasa.gov/topics/moon-to-mars/overview.",
+    "plainFormattedMessage": "Hey @Neil Armstrong, why not a mission to Mars? One should start soon: https://www.nasa.gov/topics/moon-to-mars/overview.",
+    "resourceVersion": 0,
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "message": "Hey ~[userId:411b53f0-7bbd-419b-b17f-b9e346c3efb0], why not a mission to Mars? One should start soon: https://www.nasa.gov/topics/moon-to-mars/overview.",
+    "userId": null,
+    "previews": [
+      "https://www.nasa.gov/topics/moon-to-mars/overview"
+    ]
+  },
+  {
+    "id": "2e6248f1-fdf6-4dae-9ee7-5579d806b457",
+    "entityId": "00000000-0000-0000-0000-000000000000",
+    "entityType": null,
+    "createdOn": "2021-08-23T12:54:36.6540126Z",
+    "createdBy": "8ea7c6ca-0c98-4def-bcc9-964baac7fbbb",
+    "user": null,
+    "project": null,
+    "entity": null,
+    "updatedOn": "2021-08-23T12:54:36.6540134Z",
+    "updatedBy": "9185d090-2bf2-4212-978f-4338dfc4b130",
+    "mentions": null,
+    "reactions": [
+      {
+        "userIds": [
+          "e540e445-4cec-4f7b-ac96-929bc4f93784"
+        ],
+        "emoji": "😀"
+      }
+    ],
+    "formattedMessage": "NASA",
+    "plainFormattedMessage": "NASA",
+    "resourceVersion": 0,
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "message": "NASA",
+    "userId": null,
+    "previews": null
+  }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "id": "6839d5c4-2691-eb11-a607-00155d314496",
+        "name": "To Do",
+        "type": "todo",
+        "order": 1,
+        "isPrivate": false,
+        "icon": "radio_button_unchecked",
+        "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+        "createdOn": "2021-03-30T07:08:50.1040099Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-03-30T07:08:50.104014Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+    },
+    {
+        "id": "6939d5c4-2691-eb11-a607-00155d314496",
+        "name": "In Bearbeitung",
+        "type": "progress",
+        "order": 2,
+        "isPrivate": false,
+        "icon": "arrow_forward",
+        "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+        "createdOn": "2021-03-30T07:08:50.1828663Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-03-30T07:08:50.1828693Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+    },
+    {
+        "id": "6a39d5c4-2691-eb11-a607-00155d314496",
+        "name": "Warten / Blockiert",
+        "type": "stuck",
+        "order": 3,
+        "isPrivate": false,
+        "icon": "remove_circle_outline",
+        "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+        "createdOn": "2021-03-30T07:08:50.2004017Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-03-30T07:08:50.2004047Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+    },
+    {
+        "id": "6b39d5c4-2691-eb11-a607-00155d314496",
+        "name": "Überprüfung / Freigabe",
+        "type": "review",
+        "order": 4,
+        "isPrivate": false,
+        "icon": "remove_red_eye",
+        "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+        "createdOn": "2021-03-30T07:08:50.2203085Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-03-30T07:08:50.2203118Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+    },
+    {
+        "id": "6c39d5c4-2691-eb11-a607-00155d314496",
+        "name": "Fertig",
+        "type": "done",
+        "order": 5,
+        "isPrivate": false,
+        "icon": "done",
+        "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+        "createdOn": "2021-03-30T07:08:50.2378817Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-03-30T07:08:50.2378847Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+    },
+    {
+        "id": "a8e33e96-a9eb-eb11-a7ad-dc984021c7cf",
+        "name": "Fertiger",
+        "type": "done",
+        "order": 6,
+        "isPrivate": false,
+        "icon": "whatshot",
+        "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+        "createdOn": "2021-07-23T11:32:02.4706055Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2021-07-23T11:32:02.5049167Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+    }
+]
