@@ -10,5 +10,5 @@ jobs:
       - name: PHPStan (php-actions)
         uses: php-actions/phpstan@v3
         with:
-          configuration: ../../phpstan.neon
+          configuration: phpstan.neon
           path: src
