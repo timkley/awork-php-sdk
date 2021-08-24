@@ -12,6 +12,9 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
+      - name: Install composer
+        uses: php-actions/composer@v5
+
       - name: PHPStan (php-actions)
         uses: php-actions/phpstan@v3
         with:
