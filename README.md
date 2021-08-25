@@ -47,6 +47,13 @@ $awork->comments()->create('tasks', 'your-task-uuid', 'Your message');
 
 - [ ] Implement missing endpoints
 
+## Credits
+
+I took a lot of inspiration from existing packages like [mailgun/mailgun-php](https://github.com/mailgun/mailgun-php)
+or [lepikhinb/fathom-api](https://github.com/lepikhinb/fathom-api).
+
+Thanks for contributing to open source!
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
