@@ -1,7 +1,7 @@
 # awork.io PHP SDK
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/timkley/awork-php-sdk.svg?style=flat-square)](https://packagist.org/packages/timkley/awork-php-sdk)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/timkley/awork-php-sdk/run-tests?label=tests)](https://github.com/timkley/awork-php-sdk/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/timkley/awork-php-sdk/Run%20Tests?label=tests)](https://github.com/timkley/awork-php-sdk/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/timkley/awork-php-sdk.svg?style=flat-square)](https://packagist.org/packages/timkley/awork-php-sdk)
 
 This is a wrapper around the [awork API](https://openapi.awork.io/). It is still a WIP and not all endpoints are implemented.
