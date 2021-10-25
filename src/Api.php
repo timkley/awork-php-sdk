@@ -66,7 +66,7 @@ class Api
             throw new NotFoundException(sprintf('The requested ressource %s could not be found.', $this->latestResponse->effectiveUri()));
         }
 
-        if (!$this->latestResponse->successful()) {
+        if (! $this->latestResponse->successful()) {
             throw new Exception($this->latestResponse->json('message.description'));
         }
 
