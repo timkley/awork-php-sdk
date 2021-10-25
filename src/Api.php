@@ -3,6 +3,7 @@
 namespace Awork;
 
 use Awork\Exceptions\AuthenticationException;
+use Awork\Exceptions\NotFoundException;
 use Exception;
 use Illuminate\Http\Client\Factory as HttpClient;
 use Illuminate\Http\Client\PendingRequest;
@@ -61,7 +62,11 @@ class Api
             throw new AuthenticationException($this->latestResponse->json('message.description'));
         }
 
-        if (! $this->latestResponse->successful()) {
+        if ($this->latestResponse->status() === 404) {
+            throw new NotFoundException(sprintf('The requested ressource %s could not be found.', $this->latestResponse->effectiveUri()));
+        }
+
+        if (!$this->latestResponse->successful()) {
             throw new Exception($this->latestResponse->json('message.description'));
         }
 
