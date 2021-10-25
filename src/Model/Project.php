@@ -10,6 +10,7 @@ class Project
     private string $id;
     private string $key;
     private string $name;
+    private string $description;
     private int $timeBudget;
     private int $trackedDuration;
     private bool $billableByDefault;
@@ -24,6 +25,7 @@ class Project
         $this->id = $data['id'] ?? '';
         $this->key = $data['key'] ?? '';
         $this->name = $data['name'] ?? '';
+        $this->description = $data['description'] ?? '';
         $this->timeBudget = $data['timeBudget'] ?? 0;
         $this->trackedDuration = $data['trackedDuration'] ?? 0;
         $this->billableByDefault = $data['billableByDefault'] ?? false;
@@ -47,6 +49,11 @@ class Project
     public function getName(): string
     {
         return $this->name;
+    }
+
+    public function getDescription(): string
+    {
+        return $this->description;
     }
 
     public function getTimeBudget(): int
