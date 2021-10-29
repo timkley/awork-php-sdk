@@ -51,7 +51,7 @@ class Awork
         return $this->projectTemplate ??= new ProjectTemplate($this->api);
     }
 
-    public function projectStatuses()
+    public function projectStatuses(): ProjectStatus
     {
         return $this->projectStatuses ??= new ProjectStatus($this->api);
     }
