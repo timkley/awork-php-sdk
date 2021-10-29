@@ -4,6 +4,7 @@ namespace Awork;
 
 use Awork\Api\Comment;
 use Awork\Api\Project;
+use Awork\Api\ProjectStatus;
 use Awork\Api\ProjectTemplate;
 use Awork\Api\ProjectType;
 use Awork\Api\Task;
@@ -48,6 +49,11 @@ class Awork
     public function projectTemplates(): ProjectTemplate
     {
         return $this->projectTemplate ??= new ProjectTemplate($this->api);
+    }
+
+    public function projectStatuses()
+    {
+        return $this->projectStatuses ??= new ProjectStatus($this->api);
     }
 
     public function users(): User

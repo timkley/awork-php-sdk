@@ -1,0 +1,57 @@
+[
+  {
+    "id": "f0861172-0028-ec11-ae72-501ac527a4b8",
+    "name": "Abgeschlossen",
+    "type": "closed",
+    "order": 2,
+    "createdOn": "2021-10-08T06:24:59.9514757Z",
+    "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "updatedOn": "2021-10-08T06:24:59.9929917Z",
+    "projectId": "f1861172-0028-ec11-ae72-501ac527a4b8",
+    "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+  },
+  {
+    "id": "ef861172-0028-ec11-ae72-501ac527a4b8",
+    "name": "Läuft",
+    "type": "progress",
+    "order": 1,
+    "createdOn": "2021-10-08T06:24:59.9514605Z",
+    "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "updatedOn": "2021-10-08T06:24:59.9929763Z",
+    "projectId": "f1861172-0028-ec11-ae72-501ac527a4b8",
+    "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+  },
+  {
+    "id": "ee861172-0028-ec11-ae72-501ac527a4b8",
+    "name": "In Planung",
+    "type": "not-started",
+    "order": 0,
+    "createdOn": "2021-10-08T06:24:59.9514211Z",
+    "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "updatedOn": "2021-10-08T06:24:59.9929485Z",
+    "projectId": "f1861172-0028-ec11-ae72-501ac527a4b8",
+    "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+  },
+  {
+    "id": "6add7286-fe27-ec11-ae72-501ac527a4b8",
+    "name": "Abgeschlossen",
+    "type": "closed",
+    "order": 2,
+    "createdOn": "2021-10-08T06:11:10.7980077Z",
+    "createdBy": "c9ff5e4a-a555-eb11-a607-00155d31310d",
+    "updatedOn": "2021-10-08T06:11:10.8547682Z",
+    "projectId": "6bdd7286-fe27-ec11-ae72-501ac527a4b8",
+    "updatedBy": "c9ff5e4a-a555-eb11-a607-00155d31310d"
+  },
+  {
+    "id": "69dd7286-fe27-ec11-ae72-501ac527a4b8",
+    "name": "Läuft",
+    "type": "progress",
+    "order": 1,
+    "createdOn": "2021-10-08T06:11:10.7979907Z",
+    "createdBy": "c9ff5e4a-a555-eb11-a607-00155d31310d",
+    "updatedOn": "2021-10-08T06:11:10.8547518Z",
+    "projectId": "6bdd7286-fe27-ec11-ae72-501ac527a4b8",
+    "updatedBy": "c9ff5e4a-a555-eb11-a607-00155d31310d"
+  }
+]
