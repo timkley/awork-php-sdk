@@ -2,6 +2,8 @@
 
 namespace Awork\Model;
 
+use Awork\Collections\TagCollection;
+
 class Task
 {
     private string $id;
@@ -16,6 +18,7 @@ class Task
     private ?User $assignee;
     private ?TaskStatus $taskStatus;
     private ?TypeOfWork $typeOfWork;
+    private ?TagCollection $tags;
 
     public function __construct(array $data)
     {
@@ -31,6 +34,7 @@ class Task
         $this->assignee = isset($data['assignee']) ? new User($data['assignee']) : null;
         $this->taskStatus = isset($data['taskStatus']) ? new TaskStatus($data['taskStatus']) : null;
         $this->typeOfWork = isset($data['typeOfWork']) ? new TypeOfWork($data['typeOfWork']) : null;
+        $this->tags = isset($data['tags']) ? new TagCollection($data['tags']) : null;
     }
 
     public function getId(): string
@@ -91,5 +95,10 @@ class Task
     public function getTypeOfWork(): ?TypeOfWork
     {
         return $this->typeOfWork;
+    }
+
+    public function getTags(): ?TagCollection
+    {
+        return $this->tags;
     }
 }

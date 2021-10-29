@@ -4,6 +4,12 @@ namespace Awork\Model;
 
 class TaskStatus
 {
+    public const TYPE_DONE = 'done';
+    public const TYPE_TODO = 'todo';
+    public const TYPE_STUCK = 'stuck';
+    public const TYPE_REVIEW = 'review';
+    public const TYPE_IN_PROGRESS = 'progress';
+
     private string $id;
     private string $name;
     private string $type;
