@@ -25,6 +25,8 @@ You need an [API token](https://developers.awork.io/authentication) to use the a
 ```php
 <?php
 
+use Awork\Awork;
+
 $awork = new Awork('your-token');
 
 // Get all users
