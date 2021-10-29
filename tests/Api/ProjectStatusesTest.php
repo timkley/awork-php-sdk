@@ -2,11 +2,7 @@
 
 namespace Tests\Api;
 
-use Awork\Collections\ProjectCollection;
 use Awork\Collections\ProjectStatusCollection;
-use Awork\Collections\TaskCollection;
-use Awork\Collections\TaskStatusCollection;
-use Awork\Model\Project;
 use Awork\Model\ProjectStatus;
 
 it('can get all project statuses', function () {
