@@ -16,7 +16,7 @@ class User
 
     public function get(): UserCollection
     {
-        return new UserCollection(
+        return UserCollection::fromArray(
             $this->api->get(self::ENDPOINT)->json()
         );
     }

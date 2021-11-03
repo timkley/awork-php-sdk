@@ -18,7 +18,7 @@ class Project
 
     public function get(): ProjectCollection
     {
-        return new ProjectCollection(
+        return ProjectCollection::fromArray(
             $this->api->get(self::ENDPOINT)->json()
         );
     }
@@ -39,14 +39,14 @@ class Project
 
     public function getProjectTasks(string $projectId): TaskCollection
     {
-        return new TaskCollection(
+        return TaskCollection::fromArray(
             $this->api->get(sprintf('%s/%s/projecttasks', self::ENDPOINT, $projectId))->json()
         );
     }
 
     public function getTaskStatuses(string $projectId): TaskStatusCollection
     {
-        return new TaskStatusCollection(
+        return TaskStatusCollection::fromArray(
             $this->api->get(sprintf('%s/%s/taskstatuses', self::ENDPOINT, $projectId))->json()
         );
     }

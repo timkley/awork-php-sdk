@@ -18,7 +18,7 @@ class ProjectTemplate
         $this->name = $data['name'] ?? '';
         $this->description = $data['description'] ?? '';
         $this->billableByDefault = $data['isBillableByDefault'] ?? false;
-        $this->projectStatuses = isset($data['projectStatuses']) ? new ProjectStatusCollection($data['projectStatuses']) : null;
+        $this->projectStatuses = isset($data['projectStatuses']) ? ProjectStatusCollection::fromArray($data['projectStatuses']) : null;
     }
 
     public function getId(): string

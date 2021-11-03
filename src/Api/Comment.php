@@ -16,7 +16,7 @@ class Comment
 
     public function get(string $entityType, string $entityId): CommentCollection
     {
-        return new CommentCollection(
+        return CommentCollection::fromArray(
             $this->api->get(sprintf(self::ENDPOINT, $entityType, $entityId))->json()
         );
     }

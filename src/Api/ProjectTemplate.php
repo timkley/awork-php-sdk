@@ -16,7 +16,7 @@ class ProjectTemplate
 
     public function get(): ProjectTemplateCollection
     {
-        return new ProjectTemplateCollection(
+        return ProjectTemplateCollection::fromArray(
             $this->api->get(self::ENDPOINT)->json()
         );
     }

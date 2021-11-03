@@ -14,7 +14,7 @@ class Company
     {
         $this->id = $data['id'] ?? '';
         $this->name = $data['name'] ?? '';
-        $this->tags = isset($data['tags']) ? new TagCollection($data['tags']) : null;
+        $this->tags = isset($data['tags']) ? TagCollection::fromArray($data['tags']) : null;
     }
 
     public function getId(): string

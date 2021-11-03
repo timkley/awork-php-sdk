@@ -10,8 +10,8 @@ class ProjectTemplateCollection extends Collection
     /** @var ProjectTemplate[] */
     protected $items = [];
 
-    public function __construct(array $items)
+    public static function fromArray(array $items): self
     {
-        $this->items = array_map(fn ($item) => new ProjectTemplate($item), $items);
+        return new self(array_map(fn($item) => new ProjectTemplate($item), $items));
     }
 }

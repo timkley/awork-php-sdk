@@ -10,8 +10,8 @@ class ContactInfoCollection extends Collection
     /** @var ContactInfo[] */
     protected $items = [];
 
-    public function __construct(array $items)
+    public static function fromArray(array $items): self
     {
-        $this->items = array_map(fn ($item) => new ContactInfo($item), $items);
+        return new self(array_map(fn($item) => new ContactInfo($item), $items));
     }
 }

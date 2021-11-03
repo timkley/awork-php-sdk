@@ -32,8 +32,8 @@ class Project
         $this->projectType = isset($data['projectType']) ? new ProjectType($data['projectType']) : null;
         $this->projectStatus = isset($data['projectStatus']) ? new ProjectStatus($data['projectStatus']) : null;
         $this->company = isset($data['company']) ? new Company($data['company']) : null;
-        $this->tags = isset($data['tags']) ? new TagCollection($data['tags']) : null;
-        $this->members = isset($data['members']) ? new UserCollection($data['members']) : null;
+        $this->tags = isset($data['tags']) ? TagCollection::fromArray($data['tags']) : null;
+        $this->members = isset($data['members']) ? UserCollection::fromArray($data['members']) : null;
     }
 
     public function getId(): string

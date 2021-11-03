@@ -16,7 +16,7 @@ class ProjectType
 
     public function get(): ProjectTypeCollection
     {
-        return new ProjectTypeCollection(
+        return ProjectTypeCollection::fromArray(
             $this->api->get(self::ENDPOINT)->json()
         );
     }

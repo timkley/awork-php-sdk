@@ -10,8 +10,8 @@ class UserCollection extends Collection
     /** @var User[] */
     protected $items = [];
 
-    public function __construct(array $items)
+    public static function fromArray(array $items): self
     {
-        $this->items = array_map(fn ($item) => new User($item), $items);
+        return new self(array_map(fn($item) => new User($item), $items));
     }
 }

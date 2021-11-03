@@ -10,8 +10,8 @@ class TaskStatusCollection extends Collection
     /** @var TaskStatus[] */
     protected $items = [];
 
-    public function __construct(array $items)
+    public static function fromArray(array $items): self
     {
-        $this->items = array_map(fn ($item) => new TaskStatus($item), $items);
+        return new self(array_map(fn($item) => new TaskStatus($item), $items));
     }
 }

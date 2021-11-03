@@ -27,8 +27,8 @@ class User
         $this->gender = $data['gender'] ?? null;
         $this->position = $data['position'] ?? null;
         $this->capacityPerWeek = $data['capacityPerWeek'] ?? null;
-        $this->teams = isset($data['teams']) ? new TeamCollection($data['teams']) : null;
-        $this->contactInfo = isset($data['userContactInfos']) ? new ContactInfoCollection($data['userContactInfos']) : null;
+        $this->teams = isset($data['teams']) ? TeamCollection::fromArray($data['teams']) : null;
+        $this->contactInfo = isset($data['userContactInfos']) ? ContactInfoCollection::fromArray($data['userContactInfos']) : null;
         $this->projectRoleId = $data['projectRoleId'] ?? null;
         $this->projectRoleName = $data['projectRoleName'] ?? null;
         $this->isResponsible = $data['isResponsible'] ?? null;

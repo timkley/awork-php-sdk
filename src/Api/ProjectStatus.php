@@ -16,7 +16,7 @@ class ProjectStatus
 
     public function get(): ProjectStatusCollection
     {
-        return new ProjectStatusCollection(
+        return ProjectStatusCollection::fromArray(
             $this->api->get(self::ENDPOINT)->json()
         );
     }
