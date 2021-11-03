@@ -12,6 +12,6 @@ class TagCollection extends Collection
 
     public static function fromArray(array $items)
     {
-        return new self(array_map(fn($item) => new Tag($item), $items));
+        return new self(array_map(fn ($item) => new Tag($item), $items));
     }
 }

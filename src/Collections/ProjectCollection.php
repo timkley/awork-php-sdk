@@ -12,6 +12,6 @@ class ProjectCollection extends Collection
 
     public static function fromArray(array $items): self
     {
-        return new self(array_map(fn($item) => new Project($item), $items));
+        return new self(array_map(fn ($item) => new Project($item), $items));
     }
 }

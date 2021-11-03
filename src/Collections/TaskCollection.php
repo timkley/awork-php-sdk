@@ -12,6 +12,6 @@ class TaskCollection extends Collection
 
     public static function fromArray(array $items): self
     {
-        return new self(array_map(fn($item) => new Task($item), $items));
+        return new self(array_map(fn ($item) => new Task($item), $items));
     }
 }

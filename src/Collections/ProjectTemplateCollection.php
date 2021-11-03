@@ -12,6 +12,6 @@ class ProjectTemplateCollection extends Collection
 
     public static function fromArray(array $items): self
     {
-        return new self(array_map(fn($item) => new ProjectTemplate($item), $items));
+        return new self(array_map(fn ($item) => new ProjectTemplate($item), $items));
     }
 }
