@@ -4,6 +4,7 @@ namespace Awork;
 
 use Awork\Api\Comment;
 use Awork\Api\Image;
+use Awork\Api\Me;
 use Awork\Api\Project;
 use Awork\Api\ProjectStatus;
 use Awork\Api\ProjectTemplate;
@@ -15,6 +16,7 @@ class Awork
 {
     public Api $api;
 
+    private Me $me;
     private Task $tasks;
     private Project $projects;
     private ProjectType $projectType;
@@ -30,6 +32,11 @@ class Awork
     public static function create(string $apiToken): Awork
     {
         return new self($apiToken);
+    }
+
+    public function me(): Me
+    {
+        return $this->me ??= new Me($this->api);
     }
 
     public function tasks(): Task

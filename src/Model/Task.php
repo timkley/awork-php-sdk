@@ -85,6 +85,11 @@ class Task extends Model
         return $this->plannedDuration;
     }
 
+    public function setPlannedDuration(int $plannedDuration): void
+    {
+        $this->plannedDuration = $plannedDuration;
+    }
+
     public function getTrackedDuration(): int
     {
         return $this->trackedDuration;

@@ -4,12 +4,17 @@ namespace Tests;
 
 use Awork\Api\Comment;
 use Awork\Api\Image;
+use Awork\Api\Me;
 use Awork\Api\Project;
 use Awork\Api\ProjectStatus;
 use Awork\Api\ProjectTemplate;
 use Awork\Api\ProjectType;
 use Awork\Api\Task;
 use Awork\Api\User;
+
+it('returns the me api', function () {
+    expect(awork()->me())->toBeInstanceOf(Me::class);
+});
 
 it('returns the task api', function () {
     expect(awork()->tasks())->toBeInstanceOf(Task::class);
