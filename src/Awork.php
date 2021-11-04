@@ -3,6 +3,7 @@
 namespace Awork;
 
 use Awork\Api\Comment;
+use Awork\Api\Image;
 use Awork\Api\Project;
 use Awork\Api\ProjectStatus;
 use Awork\Api\ProjectTemplate;
@@ -64,5 +65,10 @@ class Awork
     public function comments(): Comment
     {
         return $this->comments ??= new Comment($this->api);
+    }
+
+    public function images(): Image
+    {
+        return $this->images ??= new Image($this->api);
     }
 }

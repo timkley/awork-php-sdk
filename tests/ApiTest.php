@@ -3,6 +3,7 @@
 namespace Tests;
 
 use Awork\Api\Comment;
+use Awork\Api\Image;
 use Awork\Api\Project;
 use Awork\Api\ProjectStatus;
 use Awork\Api\ProjectTemplate;
@@ -36,6 +37,10 @@ it('returns the users api', function () {
 
 it('returns the comments api', function () {
     expect(awork()->comments())->toBeInstanceOf(Comment::class);
+});
+
+it('returns the images api', function () {
+    expect(awork()->images())->toBeInstanceOf(Image::class);
 });
 
 it('can be filtered', function () {
