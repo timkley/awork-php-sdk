@@ -21,7 +21,7 @@ class User extends Model
 
     public function __construct(array $data)
     {
-        $this->id = $data['id'] ?? '';
+        $this->id = $data['userId'] ?? $data['id'] ?? '';
         $this->firstName = $data['firstName'] ?? '';
         $this->lastName = $data['lastName'] ?? '';
         $this->gender = $data['gender'] ?? null;
