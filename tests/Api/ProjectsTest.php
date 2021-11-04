@@ -2,10 +2,12 @@
 
 namespace Tests\Api;
 
+use Awork\Collections\MilestoneCollection;
 use Awork\Collections\ProjectCollection;
 use Awork\Collections\TaskCollection;
 use Awork\Collections\TaskStatusCollection;
 use Awork\Model\Project;
+use Carbon\Carbon;
 
 it('can get all projects', function () {
     fakeJsonResponse('projects.json');
@@ -50,4 +52,15 @@ it('can get project task statuses', function () {
     expect($taskStatuses)->toBeInstanceOf(TaskStatusCollection::class);
     expect($taskStatuses->count())->toBe(6);
     expect($taskStatuses->first()->getProjectId())->toBe('6339d5c4-2691-eb11-a607-00155d314496');
+});
+
+it('can get project milestones', function () {
+    fakeJsonResponse('milestones.json');
+
+    $milestones = awork()->projects()->getMilestones('project-id');
+
+    expect($milestones)->toBeInstanceOf(MilestoneCollection::class);
+    expect($milestones->count())->toBe(2);
+    expect($milestones->first()->getColor())->toBe('purple');
+    expect($milestones->first()->getDueDate())->toBeInstanceOf(Carbon::class);
 });

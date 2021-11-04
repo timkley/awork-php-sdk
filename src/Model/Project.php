@@ -2,6 +2,7 @@
 
 namespace Awork\Model;
 
+use Awork\Collections\MilestoneCollection;
 use Awork\Collections\TagCollection;
 use Awork\Collections\UserCollection;
 
@@ -19,6 +20,7 @@ class Project
     private ?Company $company;
     private ?TagCollection $tags;
     private ?UserCollection $members;
+    private ?MilestoneCollection $milestones;
 
     public function __construct(array $data)
     {
@@ -34,6 +36,7 @@ class Project
         $this->company = isset($data['company']) ? new Company($data['company']) : null;
         $this->tags = isset($data['tags']) ? TagCollection::fromArray($data['tags']) : null;
         $this->members = isset($data['members']) ? UserCollection::fromArray($data['members']) : null;
+        $this->milestones = isset($data['milestones']) ? MilestoneCollection::fromArray($data['milestones']) : null;
     }
 
     public function getId(): string
@@ -94,5 +97,15 @@ class Project
     public function getMembers(): ?UserCollection
     {
         return $this->members;
+    }
+
+    public function getMilestones(): ?MilestoneCollection
+    {
+        return $this->milestones;
+    }
+
+    public function setMilestones(?MilestoneCollection $milestones): void
+    {
+        $this->milestones = $milestones;
     }
 }

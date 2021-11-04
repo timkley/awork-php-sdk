@@ -3,6 +3,7 @@
 namespace Awork\Api;
 
 use Awork\Api;
+use Awork\Collections\MilestoneCollection;
 use Awork\Collections\ProjectCollection;
 use Awork\Collections\TaskCollection;
 use Awork\Collections\TaskStatusCollection;
@@ -48,6 +49,13 @@ class Project
     {
         return TaskStatusCollection::fromArray(
             $this->api->get(sprintf('%s/%s/taskstatuses', self::ENDPOINT, $projectId))->json()
+        );
+    }
+
+    public function getMilestones(string $projectId): MilestoneCollection
+    {
+        return MilestoneCollection::fromArray(
+            $this->api->get(sprintf('%s/%s/milestones', self::ENDPOINT, $projectId))->json()
         );
     }
 }
