@@ -41,7 +41,7 @@ class Task
             [
                 'taskId' => $taskId,
                 'statusId' => $statusId,
-            ]
+            ],
         ]);
     }
 }
