@@ -8,6 +8,7 @@ use Awork\Model\Task;
 use Awork\Model\TaskStatus;
 use Awork\Model\TypeOfWork;
 use Awork\Model\User;
+use Carbon\Carbon;
 
 it('creates a model from data', function () {
     $fixture = getJsonFixture('task.json');
@@ -18,7 +19,9 @@ it('creates a model from data', function () {
     expect($task->getKey())->toBe('HS-01');
     expect($task->getName())->toBe('Fly me to the Moon');
     expect($task->getDescription())->toBe('I want to be up there.');
-    expect($task->isPrio())->toBe(false);
+    expect($task->getIsPrio())->toBe(false);
+    expect($task->getStartOn())->toBeInstanceOf(Carbon::class);
+    expect($task->getStartOn())->toBeInstanceOf(Carbon::class);
     expect($task->getPlannedDuration())->toBe(3600);
     expect($task->getTrackedDuration())->toBe(2330);
     expect($task->getRemainingDuration())->toBe(1800);
