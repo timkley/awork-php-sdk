@@ -7,6 +7,7 @@ use Awork\Collections\TagCollection;
 use Awork\Collections\TaskCollection;
 use Awork\Collections\TaskListCollection;
 use Awork\Collections\UserCollection;
+use Carbon\Carbon;
 
 class Project
 {
@@ -16,6 +17,7 @@ class Project
     private string $description;
     private int $timeBudget;
     private int $trackedDuration;
+    private ?Carbon $dueDate;
     private bool $billableByDefault;
     private ?ProjectType $projectType;
     private ?ProjectStatus $projectStatus;
@@ -34,6 +36,7 @@ class Project
         $this->description = $data['description'] ?? '';
         $this->timeBudget = $data['timeBudget'] ?? 0;
         $this->trackedDuration = $data['trackedDuration'] ?? 0;
+        $this->dueDate = isset($data['dueDate']) ? Carbon::parse($data['dueDate']) : null;
         $this->billableByDefault = $data['billableByDefault'] ?? false;
         $this->projectType = isset($data['projectType']) ? new ProjectType($data['projectType']) : null;
         $this->projectStatus = isset($data['projectStatus']) ? new ProjectStatus($data['projectStatus']) : null;
@@ -73,6 +76,11 @@ class Project
     public function getTrackedDuration(): int
     {
         return $this->trackedDuration;
+    }
+
+    public function getDueDate(): ?Carbon
+    {
+        return $this->dueDate;
     }
 
     public function getBillableByDefault(): bool
