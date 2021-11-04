@@ -9,4 +9,11 @@ class Endpoint
     public function __construct(protected Api $api)
     {
     }
+
+    public function addFilter(string $filter): self
+    {
+        $this->api->setFilter($filter);
+
+        return $this;
+    }
 }

@@ -37,3 +37,18 @@ it('returns the users api', function () {
 it('returns the comments api', function () {
     expect(awork()->comments())->toBeInstanceOf(Comment::class);
 });
+
+it('can be filtered', function () {
+    fakeResponse();
+    $filter = "Name eq 'Test'";
+
+    awork()->projects()->addFilter($filter)->get();
+    $response = awork()->api->latestResponse;
+    parse_str($response->effectiveUri()->getQuery(), $queries);
+
+    expect($queries)->toBe(
+        [
+            'filterby' => $filter
+        ]
+    );
+});

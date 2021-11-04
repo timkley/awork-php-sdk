@@ -17,6 +17,8 @@ class Api
     public const BASE_URL = 'https://api.awork.io/api';
     public const VERSION = 'v1';
 
+    protected ?string $filter = null;
+
     public function __construct(private string $apiToken)
     {
         $this->httpClient = new HttpClient();
@@ -28,7 +30,7 @@ class Api
      */
     public function get(string $endpoint): Response
     {
-        $this->latestResponse = $this->request()->get($endpoint);
+        $this->latestResponse = $this->request()->get($endpoint, $this->getQueryParamaters());
 
         return $this->response();
     }
@@ -76,10 +78,28 @@ class Api
             throw new NotFoundException(sprintf('The requested ressource %s could not be found.', $this->latestResponse->effectiveUri()));
         }
 
-        if (! $this->latestResponse->successful()) {
+        if (!$this->latestResponse->successful()) {
             throw new Exception($this->latestResponse->json('description'));
         }
 
         return $this->latestResponse;
+    }
+
+    public function setFilter(string $filter): self
+    {
+        $this->filter = $filter;
+
+        return $this;
+    }
+
+    protected function getQueryParamaters(): array
+    {
+        if (is_null($this->filter)) {
+            return [];
+        }
+
+        return [
+            'filterby' => $this->filter,
+        ];
     }
 }

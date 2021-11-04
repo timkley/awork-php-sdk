@@ -27,7 +27,7 @@ function getJsonFixture($filename)
     return json_decode(file_get_contents(__DIR__ . sprintf('/Fixtures/%s', $filename)), true);
 }
 
-function fakeResponse($body)
+function fakeResponse($body = [])
 {
     httpClient()->fake([
                            sprintf('%s/%s/*', Api::BASE_URL, Api::VERSION) => httpClient()->response($body),
