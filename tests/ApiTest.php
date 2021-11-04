@@ -2,8 +2,13 @@
 
 namespace Tests;
 
+use Awork\Api\Comment;
 use Awork\Api\Project;
+use Awork\Api\ProjectStatus;
+use Awork\Api\ProjectTemplate;
+use Awork\Api\ProjectType;
 use Awork\Api\Task;
+use Awork\Api\User;
 
 it('returns the task api', function () {
     expect(awork()->tasks())->toBeInstanceOf(Task::class);
@@ -11,4 +16,24 @@ it('returns the task api', function () {
 
 it('returns the project api', function () {
     expect(awork()->projects())->toBeInstanceOf(Project::class);
+});
+
+it('returns the project types api', function () {
+    expect(awork()->projectTypes())->toBeInstanceOf(ProjectType::class);
+});
+
+it('returns the project templates api', function () {
+    expect(awork()->projectTemplates())->toBeInstanceOf(ProjectTemplate::class);
+});
+
+it('returns the project statuses api', function () {
+    expect(awork()->projectStatuses())->toBeInstanceOf(ProjectStatus::class);
+});
+
+it('returns the users api', function () {
+    expect(awork()->users())->toBeInstanceOf(User::class);
+});
+
+it('returns the comments api', function () {
+    expect(awork()->comments())->toBeInstanceOf(Comment::class);
 });

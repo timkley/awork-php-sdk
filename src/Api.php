@@ -24,6 +24,7 @@ class Api
 
     /**
      * @throws AuthenticationException
+     * @throws NotFoundException
      */
     public function get(string $endpoint): Response
     {
@@ -32,6 +33,10 @@ class Api
         return $this->response();
     }
 
+    /**
+     * @throws AuthenticationException
+     * @throws NotFoundException
+     */
     public function post(string $endpoint, array $data = []): Response
     {
         $this->latestResponse = $this->request()->post($endpoint, $data);
@@ -39,6 +44,10 @@ class Api
         return $this->response();
     }
 
+    /**
+     * @throws AuthenticationException
+     * @throws NotFoundException
+     */
     public function put(string $endpoint, array $data = []): Response
     {
         $this->latestResponse = $this->request()->put($endpoint, $data);
@@ -54,6 +63,7 @@ class Api
 
     /**
      * @throws AuthenticationException
+     * @throws NotFoundException
      * @throws Exception
      */
     protected function response(): Response
