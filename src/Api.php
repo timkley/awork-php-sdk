@@ -67,7 +67,7 @@ class Api
         }
 
         if (! $this->latestResponse->successful()) {
-            throw new Exception($this->latestResponse->json('message.description'));
+            throw new Exception($this->latestResponse->json('description'));
         }
 
         return $this->latestResponse;
