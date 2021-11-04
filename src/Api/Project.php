@@ -6,6 +6,7 @@ use Awork\Api;
 use Awork\Collections\MilestoneCollection;
 use Awork\Collections\ProjectCollection;
 use Awork\Collections\TaskCollection;
+use Awork\Collections\TaskListCollection;
 use Awork\Collections\TaskStatusCollection;
 use Awork\Model\Project as ProjectModel;
 
@@ -56,6 +57,13 @@ class Project
     {
         return MilestoneCollection::fromArray(
             $this->api->get(sprintf('%s/%s/milestones', self::ENDPOINT, $projectId))->json()
+        );
+    }
+
+    public function getTaskLists(string $projectId): TaskListCollection
+    {
+        return TaskListCollection::fromArray(
+            $this->api->get(sprintf('%s/%s/tasklists', self::ENDPOINT, $projectId))->json()
         );
     }
 }

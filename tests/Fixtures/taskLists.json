@@ -1,0 +1,22 @@
+[
+  {
+    "id": "3405704a-563d-ec11-981f-501ac527b592",
+    "isArchived": false,
+    "createdOn": "2021-11-04T10:02:26.6699433Z",
+    "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "updatedOn": "2021-11-04T10:02:26.6699467Z",
+    "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "order": 1,
+    "name": "Second sample list"
+  },
+  {
+    "id": "de53d2ca-2691-eb11-a607-00155d314496",
+    "isArchived": false,
+    "createdOn": "2021-03-30T07:09:05.0745334Z",
+    "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "updatedOn": "2021-07-06T11:05:35.2899606Z",
+    "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "order": 0,
+    "name": "Sample list"
+  }
+]

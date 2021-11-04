@@ -5,6 +5,7 @@ namespace Tests\Api;
 use Awork\Collections\MilestoneCollection;
 use Awork\Collections\ProjectCollection;
 use Awork\Collections\TaskCollection;
+use Awork\Collections\TaskListCollection;
 use Awork\Collections\TaskStatusCollection;
 use Awork\Model\Project;
 use Carbon\Carbon;
@@ -63,4 +64,14 @@ it('can get project milestones', function () {
     expect($milestones->count())->toBe(2);
     expect($milestones->first()->getColor())->toBe('purple');
     expect($milestones->first()->getDueDate())->toBeInstanceOf(Carbon::class);
+});
+
+it('can get project task lists', function () {
+    fakeJsonResponse('taskLists.json');
+
+    $taskLists = awork()->projects()->getTaskLists('project-id');
+
+    expect($taskLists)->toBeInstanceOf(TaskListCollection::class);
+    expect($taskLists->count())->toBe(2);
+    expect($taskLists->first()->getName())->toBe('Second sample list');
 });
