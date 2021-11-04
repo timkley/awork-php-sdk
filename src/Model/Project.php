@@ -4,6 +4,7 @@ namespace Awork\Model;
 
 use Awork\Collections\MilestoneCollection;
 use Awork\Collections\TagCollection;
+use Awork\Collections\TaskCollection;
 use Awork\Collections\TaskListCollection;
 use Awork\Collections\UserCollection;
 
@@ -23,6 +24,7 @@ class Project
     private ?UserCollection $members;
     private ?MilestoneCollection $milestones;
     private ?TaskListCollection $taskLists;
+    private ?TaskCollection $projectTasks;
 
     public function __construct(array $data)
     {
@@ -40,6 +42,7 @@ class Project
         $this->members = isset($data['members']) ? UserCollection::fromArray($data['members']) : null;
         $this->milestones = isset($data['milestones']) ? MilestoneCollection::fromArray($data['milestones']) : null;
         $this->taskLists = isset($data['taskLists']) ? TaskListCollection::fromArray($data['taskLists']) : null;
+        $this->projectTasks = isset($data['tasks']) ? TaskCollection::fromArray($data['tasks']) : null;
     }
 
     public function getId(): string
@@ -120,5 +123,15 @@ class Project
     public function setTaskLists(?TaskListCollection $taskLists): void
     {
         $this->taskLists = $taskLists;
+    }
+
+    public function getProjectTasks(): ?TaskCollection
+    {
+        return $this->projectTasks;
+    }
+
+    public function setProjectTasks(?TaskCollection $projectTasks): void
+    {
+        $this->projectTasks = $projectTasks;
     }
 }
