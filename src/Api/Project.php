@@ -2,7 +2,6 @@
 
 namespace Awork\Api;
 
-use Awork\Api;
 use Awork\Collections\MilestoneCollection;
 use Awork\Collections\ProjectCollection;
 use Awork\Collections\TaskCollection;

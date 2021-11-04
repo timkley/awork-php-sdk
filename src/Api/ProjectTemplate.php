@@ -2,7 +2,6 @@
 
 namespace Awork\Api;
 
-use Awork\Api;
 use Awork\Collections\ProjectTemplateCollection;
 use Awork\Model\ProjectTemplate as ProjectTemplateModel;
 

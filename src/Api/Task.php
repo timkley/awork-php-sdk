@@ -2,7 +2,6 @@
 
 namespace Awork\Api;
 
-use Awork\Api;
 use Awork\Model\Task as TaskModel;
 use Illuminate\Http\Client\Response;
 

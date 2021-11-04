@@ -2,7 +2,6 @@
 
 namespace Awork\Api;
 
-use Awork\Api;
 use Awork\Collections\CommentCollection;
 use Awork\Model\Comment as CommentModel;
 

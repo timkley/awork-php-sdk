@@ -16,6 +16,7 @@ class Model implements Arrayable
             $property->setAccessible(true);
             $array[$property->getName()] = $property->getValue($this);
         }
+
         return $array;
     }
 }

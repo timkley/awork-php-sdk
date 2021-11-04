@@ -48,7 +48,7 @@ it('can be filtered', function () {
 
     expect($queries)->toBe(
         [
-            'filterby' => $filter
+            'filterby' => $filter,
         ]
     );
 });

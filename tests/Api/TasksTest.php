@@ -34,7 +34,7 @@ it('changes a task status', function () {
         [
             'taskId' => 'task-id',
             'statusId' => 'status-id',
-        ]
+        ],
     ];
     fakeResponse($requestBody);
 

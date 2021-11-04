@@ -2,7 +2,6 @@
 
 namespace Awork\Api;
 
-use Awork\Api;
 use Awork\Collections\ProjectTypeCollection;
 use Awork\Model\ProjectType as ProjectTypeModel;
 
