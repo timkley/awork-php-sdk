@@ -6,13 +6,9 @@ use Awork\Api;
 use Awork\Model\Task as TaskModel;
 use Illuminate\Http\Client\Response;
 
-class Task
+class Task extends Endpoint
 {
     public const ENDPOINT = 'tasks';
-
-    public function __construct(protected Api $api)
-    {
-    }
 
     public function getTask(string $taskId): TaskModel
     {

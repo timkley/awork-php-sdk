@@ -6,13 +6,9 @@ use Awork\Api;
 use Awork\Collections\ProjectTemplateCollection;
 use Awork\Model\ProjectTemplate as ProjectTemplateModel;
 
-class ProjectTemplate
+class ProjectTemplate extends Endpoint
 {
     public const ENDPOINT = 'projecttemplates';
-
-    public function __construct(protected Api $api)
-    {
-    }
 
     public function get(): ProjectTemplateCollection
     {

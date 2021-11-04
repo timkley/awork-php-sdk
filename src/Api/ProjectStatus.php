@@ -2,17 +2,12 @@
 
 namespace Awork\Api;
 
-use Awork\Api;
 use Awork\Collections\ProjectStatusCollection;
 use Awork\Model\ProjectStatus as ProjectStatusModel;
 
-class ProjectStatus
+class ProjectStatus extends Endpoint
 {
     public const ENDPOINT = 'projectStatuses';
-
-    public function __construct(protected Api $api)
-    {
-    }
 
     public function get(): ProjectStatusCollection
     {

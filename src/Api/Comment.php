@@ -6,13 +6,9 @@ use Awork\Api;
 use Awork\Collections\CommentCollection;
 use Awork\Model\Comment as CommentModel;
 
-class Comment
+class Comment extends Endpoint
 {
     public const ENDPOINT = '%s/%s/comments';
-
-    public function __construct(protected Api $api)
-    {
-    }
 
     public function get(string $entityType, string $entityId): CommentCollection
     {

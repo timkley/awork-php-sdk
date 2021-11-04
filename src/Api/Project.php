@@ -10,13 +10,9 @@ use Awork\Collections\TaskListCollection;
 use Awork\Collections\TaskStatusCollection;
 use Awork\Model\Project as ProjectModel;
 
-class Project
+class Project extends Endpoint
 {
     public const ENDPOINT = 'projects';
-
-    public function __construct(protected Api $api)
-    {
-    }
 
     public function get(): ProjectCollection
     {

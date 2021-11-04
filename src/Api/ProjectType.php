@@ -6,13 +6,9 @@ use Awork\Api;
 use Awork\Collections\ProjectTypeCollection;
 use Awork\Model\ProjectType as ProjectTypeModel;
 
-class ProjectType
+class ProjectType extends Endpoint
 {
     public const ENDPOINT = 'projecttypes';
-
-    public function __construct(protected Api $api)
-    {
-    }
 
     public function get(): ProjectTypeCollection
     {
