@@ -10,7 +10,7 @@ class TagCollection extends Collection
     /** @var Tag[] */
     protected $items = [];
 
-    public static function fromArray(array $items)
+    public static function fromArray(array $items): self
     {
         return new self(array_map(fn ($item) => new Tag($item), $items));
     }
