@@ -37,9 +37,11 @@ class Task
 
     public function changeStatus(string $taskId, string $statusId): Response
     {
-        return $this->api->post(self::ENDPOINT, [
-            'taskId' => $taskId,
-            'statusId' => $statusId,
+        return $this->api->post(self::ENDPOINT . '/changestatuses', [
+            [
+                'taskId' => $taskId,
+                'statusId' => $statusId,
+            ]
         ]);
     }
 }
