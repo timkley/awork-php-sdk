@@ -41,7 +41,7 @@ class Milestone
         return $this->color;
     }
 
-    public function getDueDate(): Carbon
+    public function getDueDate(): ?Carbon
     {
         return $this->dueDate;
     }
