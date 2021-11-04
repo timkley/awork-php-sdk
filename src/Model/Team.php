@@ -2,7 +2,7 @@
 
 namespace Awork\Model;
 
-class Team
+class Team extends Model
 {
     private string $id;
     private string $name;

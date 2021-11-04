@@ -4,7 +4,7 @@ namespace Awork\Model;
 
 use Awork\Collections\TagCollection;
 
-class Task
+class Task extends Model
 {
     private string $id;
     private string $key;

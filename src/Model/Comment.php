@@ -2,7 +2,7 @@
 
 namespace Awork\Model;
 
-class Comment
+class Comment extends Model
 {
     private string $id;
     private string $entityType;

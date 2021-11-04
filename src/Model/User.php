@@ -5,7 +5,7 @@ namespace Awork\Model;
 use Awork\Collections\ContactInfoCollection;
 use Awork\Collections\TeamCollection;
 
-class User
+class User extends Model
 {
     private string $id;
     private string $firstName;

@@ -2,7 +2,7 @@
 
 namespace Awork\Model;
 
-class ProjectType
+class ProjectType extends Model
 {
     private string $id;
     private string $name;

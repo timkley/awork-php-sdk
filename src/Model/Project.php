@@ -9,7 +9,7 @@ use Awork\Collections\TaskListCollection;
 use Awork\Collections\UserCollection;
 use Carbon\Carbon;
 
-class Project
+class Project extends Model
 {
     private string $id;
     private string $key;

@@ -2,7 +2,7 @@
 
 namespace Awork\Model;
 
-class TypeOfWork
+class TypeOfWork extends Model
 {
     private string $id;
     private string $name;

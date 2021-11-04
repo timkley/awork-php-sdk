@@ -2,7 +2,7 @@
 
 namespace Awork\Model;
 
-class TaskStatus
+class TaskStatus extends Model
 {
     public const TYPE_DONE = 'done';
     public const TYPE_TODO = 'todo';

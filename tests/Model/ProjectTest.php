@@ -26,3 +26,12 @@ it('creates a model from data', function () {
     expect($project->getTags())->toBeInstanceOf(TagCollection::class);
     expect($project->getMembers())->toBeInstanceOf(UserCollection::class);
 });
+
+it('is array accessable', function () {
+    $fixture = getJsonFixture('project.json');
+
+    $project = new Project($fixture);
+
+    expect($project->toArray())->toBeArray();
+    expect($project->toArray()['name'])->toBe($fixture['name']);
+});

@@ -2,7 +2,7 @@
 
 namespace Awork\Model;
 
-class TaskList
+class TaskList extends Model
 {
     private string $id;
     private string $name;

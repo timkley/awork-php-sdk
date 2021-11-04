@@ -2,7 +2,7 @@
 
 namespace Awork\Model;
 
-class ContactInfo
+class ContactInfo extends Model
 {
     private string $id;
     private string $type;

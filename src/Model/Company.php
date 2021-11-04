@@ -4,7 +4,7 @@ namespace Awork\Model;
 
 use Awork\Collections\TagCollection;
 
-class Company
+class Company extends Model
 {
     private string $id;
     private string $name;

@@ -4,7 +4,7 @@ namespace Awork\Model;
 
 use Awork\Collections\ProjectStatusCollection;
 
-class ProjectStatus
+class ProjectStatus extends Model
 {
     private string $id;
     private string $name;

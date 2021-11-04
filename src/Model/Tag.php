@@ -2,7 +2,7 @@
 
 namespace Awork\Model;
 
-class Tag
+class Tag extends Model
 {
     private string $id;
     private string $name;

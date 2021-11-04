@@ -4,7 +4,7 @@ namespace Awork\Model;
 
 use Carbon\Carbon;
 
-class Milestone
+class Milestone extends Model
 {
     private string $id;
     private string $name;
