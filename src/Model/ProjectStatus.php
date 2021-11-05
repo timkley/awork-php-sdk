@@ -6,6 +6,11 @@ use Awork\Collections\ProjectStatusCollection;
 
 class ProjectStatus extends Model
 {
+    public const TYPE_NOT_STARTED = 'not-started';
+    public const TYPE_IN_PROGRESS = 'progress';
+    public const TYPE_STUCK = 'stuck';
+    public const TYPE_CLOSED = 'closed';
+
     private string $id;
     private string $name;
     private string $type;
