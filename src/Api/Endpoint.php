@@ -10,7 +10,7 @@ class Endpoint
     {
     }
 
-    public function addFilter(string $filter): self
+    public function addFilter(string $filter): static
     {
         $this->api->setFilter($filter);
 
