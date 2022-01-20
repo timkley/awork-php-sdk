@@ -21,8 +21,10 @@ class Awork
     private Project $projects;
     private ProjectType $projectType;
     private ProjectTemplate $projectTemplate;
+    private ProjectStatus $projectStatus;
     private User $users;
     private Comment $comments;
+    private Image $image;
 
     public function __construct(string $apiToken)
     {
@@ -61,7 +63,7 @@ class Awork
 
     public function projectStatuses(): ProjectStatus
     {
-        return $this->projectStatuses ??= new ProjectStatus($this->api);
+        return $this->projectStatus ??= new ProjectStatus($this->api);
     }
 
     public function users(): User
@@ -76,6 +78,6 @@ class Awork
 
     public function images(): Image
     {
-        return $this->images ??= new Image($this->api);
+        return $this->image ??= new Image($this->api);
     }
 }
