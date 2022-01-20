@@ -142,7 +142,6 @@
     "subtasksDoneCount": 0,
     "subtasksCount": 0,
     "plannedDuration": 3600,
-    "remainingDuration": 1800,
     "name": "Fly me to the Moon",
     "description": "I want to be up there.",
     "isPrio": false,

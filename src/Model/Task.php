@@ -17,7 +17,6 @@ class Task extends Model
     private ?Carbon $dueOn;
     private int $plannedDuration;
     private int $trackedDuration;
-    private int $remainingDuration;
     private ?Project $project;
     private ?User $assignee;
     private ?TaskStatus $taskStatus;
@@ -36,7 +35,6 @@ class Task extends Model
         $this->dueOn = isset($data['dueOn']) ? Carbon::parse($data['dueOn']) : null;
         $this->plannedDuration = $data['plannedDuration'] ?? 0;
         $this->trackedDuration = $data['trackedDuration'] ?? 0;
-        $this->remainingDuration = $data['remainingDuration'] ?? 0;
         $this->project = isset($data['project']) ? new Project($data['project']) : null;
         $this->assignee = isset($data['assignee']) ? new User($data['assignee']) : null;
         $this->taskStatus = isset($data['taskStatus']) ? new TaskStatus($data['taskStatus']) : null;
@@ -93,11 +91,6 @@ class Task extends Model
     public function getTrackedDuration(): int
     {
         return $this->trackedDuration;
-    }
-
-    public function getRemainingDuration(): int
-    {
-        return $this->remainingDuration;
     }
 
     public function getProject(): ?Project

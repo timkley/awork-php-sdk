@@ -24,7 +24,6 @@ it('creates a model from data', function () {
     expect($task->getStartOn())->toBeInstanceOf(Carbon::class);
     expect($task->getPlannedDuration())->toBe(3600);
     expect($task->getTrackedDuration())->toBe(2330);
-    expect($task->getRemainingDuration())->toBe(1800);
     expect($task->getProject())->toBeInstanceOf(Project::class);
     expect($task->getTaskStatus())->toBeInstanceOf(TaskStatus::class);
     expect($task->getAssignee())->toBeInstanceOf(User::class);
