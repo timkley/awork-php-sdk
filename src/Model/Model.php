@@ -14,7 +14,8 @@ class Model implements Arrayable
         $array = [];
         foreach ($properties as $property) {
             $property->setAccessible(true);
-            $array[$property->getName()] = $property->getValue($this);
+            $value = $property->getValue($this);
+            $array[$property->getName()] = ($value instanceof Arrayable) ? $property->getValue($this)->toArray() : $value;
         }
 
         return $array;
