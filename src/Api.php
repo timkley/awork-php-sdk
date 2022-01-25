@@ -104,11 +104,11 @@ class Api
     {
         $queryParameters = [];
 
-        if (!is_null($this->filter)) {
+        if (! is_null($this->filter)) {
             $queryParameters['filterby'] = $this->filter;
         }
 
-        if (!is_null($this->order)) {
+        if (! is_null($this->order)) {
             $queryParameters['orderby'] = $this->order;
         }
 
