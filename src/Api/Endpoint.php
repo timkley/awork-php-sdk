@@ -16,4 +16,11 @@ class Endpoint
 
         return $this;
     }
+
+    public function addOrder(string $order): static
+    {
+        $this->api->setOrder($order);
+
+        return $this;
+    }
 }

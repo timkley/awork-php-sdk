@@ -18,6 +18,7 @@ class Api
     public const VERSION = 'v1';
 
     protected ?string $filter = null;
+    protected ?string $order = null;
 
     public function __construct(private string $apiToken)
     {
@@ -92,14 +93,25 @@ class Api
         return $this;
     }
 
+    public function setOrder(string $order): self
+    {
+        $this->order = $order;
+
+        return $this;
+    }
+
     protected function getQueryParamaters(): array
     {
-        if (is_null($this->filter)) {
-            return [];
+        $queryParameters = [];
+
+        if (!is_null($this->filter)) {
+            $queryParameters['filterby'] = $this->filter;
         }
 
-        return [
-            'filterby' => $this->filter,
-        ];
+        if (!is_null($this->order)) {
+            $queryParameters['orderby'] = $this->order;
+        }
+
+        return $queryParameters;
     }
 }

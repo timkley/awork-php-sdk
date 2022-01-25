@@ -62,3 +62,18 @@ it('can be filtered', function () {
         ]
     );
 });
+
+it('can be ordered', function () {
+    fakeResponse();
+    $order = "dueOn";
+
+    awork()->projects()->addOrder($order)->get();
+    $response = awork()->api->latestResponse;
+    parse_str($response->effectiveUri()->getQuery(), $queries);
+
+    expect($queries)->toBe(
+        [
+            'orderby' => $order,
+        ]
+    );
+});
