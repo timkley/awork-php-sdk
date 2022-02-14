@@ -16,6 +16,7 @@ class Project extends Model
     private string $name;
     private string $description;
     private int $timeBudget;
+    private int $plannedDuration;
     private int $trackedDuration;
     private ?Carbon $dueDate;
     private bool $billableByDefault;
@@ -35,6 +36,7 @@ class Project extends Model
         $this->name = $data['name'] ?? '';
         $this->description = $data['description'] ?? '';
         $this->timeBudget = $data['timeBudget'] ?? 0;
+        $this->plannedDuration = $data['plannedDuration'] ?? 0;
         $this->trackedDuration = $data['trackedDuration'] ?? 0;
         $this->dueDate = isset($data['dueDate']) ? Carbon::parse($data['dueDate']) : null;
         $this->billableByDefault = $data['billableByDefault'] ?? false;
@@ -71,6 +73,11 @@ class Project extends Model
     public function getTimeBudget(): int
     {
         return $this->timeBudget;
+    }
+
+    public function getPlannedDuration(): int
+    {
+        return $this->plannedDuration;
     }
 
     public function getTrackedDuration(): int

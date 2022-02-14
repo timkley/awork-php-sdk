@@ -18,6 +18,7 @@ it('creates a model from data', function () {
     expect($project->getKey())->toBe('AC1');
     expect($project->getName())->toBe('First Project');
     expect($project->getTimeBudget())->toBe(280800);
+    expect($project->getPlannedDuration())->toBe(0);
     expect($project->getTrackedDuration())->toBe(3353);
     expect($project->getBillableByDefault())->toBe(false);
     expect($project->getProjectType())->toBeInstanceOf(ProjectType::class);
