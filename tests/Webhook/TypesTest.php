@@ -43,7 +43,7 @@ it('knows all types a webhook can trigger', function () {
         'absence_updated',
         'tasklist_added',
         'tasklist_deleted',
-        'tasklist_updated'
+        'tasklist_updated',
     ];
 
     $types = new ReflectionClass(Types::class);
