@@ -29,7 +29,6 @@ class Webhook
         $this->triggeredBy = isset($data['triggeredBy']) ? new User($data['triggeredBy']) : null;
     }
 
-
     public function getTimestamp(): Carbon
     {
         return $this->timestamp;
@@ -74,7 +73,7 @@ class Webhook
     {
         $class = '\Awork\\Model\\' . ucfirst($entityType);
 
-        if (!class_exists($class)) {
+        if (! class_exists($class)) {
             return null;
         }
 
