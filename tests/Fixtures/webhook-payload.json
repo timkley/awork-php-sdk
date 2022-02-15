@@ -1,0 +1,94 @@
+{
+    "timestamp": "2022-02-11T14:32:04.3360137+00:00",
+    "eventType": "project_status_changed",
+    "entity": {
+        "id": "83343fb9-ca87-eb11-a607-00155d314496",
+        "hasImage": false,
+        "key": "WR",
+        "createdOn": "2021-03-18T09:17:22.893Z",
+        "createdBy": "c60bd0d9-b85c-eb11-a607-00155d31310d",
+        "updatedOn": "2022-02-11T14:32:04.316Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "createdByProjectTemplateId": "d4adce2e-a455-eb11-a607-00155d31310d",
+        "projectType": {
+            "isArchived": false,
+            "icon": "work",
+            "name": "Intern",
+            "id": "d4adce2e-a455-eb11-a607-00155d31310d"
+        },
+        "projectStatus": {
+            "typeOrder": 2,
+            "isArchived": false,
+            "type": "not-started",
+            "name": "In Planung",
+            "id": "2864ddb7-e6e7-eb11-b563-00155d3167af"
+        },
+        "company": {
+            "hasImage": false,
+            "tags": [],
+            "name": "Acme Inc",
+            "id": "c8c39444-a455-eb11-a607-00155d312942"
+        },
+        "tags": [],
+        "plannedDuration": 1454700,
+        "tasksCount": 63,
+        "tasksDoneCount": 57,
+        "members": [
+            {
+                "id": "49aba79a-2ba4-eb11-a607-00155d313cc9",
+                "userId": "a8ff5e4a-a555-eb11-a607-00155d31310d",
+                "firstName": "Jane",
+                "lastName": "Doe",
+                "hasImage": false,
+                "projectRoleId": "c7adce2e-a455-eb11-a607-00155d31310d",
+                "projectRoleName": "Member",
+                "isResponsible": false,
+                "isDeactivated": false,
+                "projectId": "83343fb9-ca87-eb11-a607-00155d314496",
+                "timeBudget": 0
+            },
+            {
+                "id": "9420abe9-ca87-eb11-a607-00155d314496",
+                "userId": "83477d16-a455-eb11-a607-00155d31310d",
+                "firstName": "John",
+                "lastName": "Doe",
+                "hasImage": true,
+                "projectRoleId": "c7adce2e-a455-eb11-a607-00155d31310d",
+                "projectRoleName": "Member",
+                "isResponsible": false,
+                "isDeactivated": false,
+                "projectId": "83343fb9-ca87-eb11-a607-00155d314496",
+                "timeBudget": 0
+            }
+        ],
+        "trackedDuration": 1215334,
+        "resourceVersion": 637801867244098600,
+        "teams": [],
+        "projectStatusId": "2864ddb7-e6e7-eb11-b563-00155d3167af",
+        "name": "Acme Inc Project",
+        "description": "Project description",
+        "companyId": "c8c39444-a455-eb11-a607-00155d312942",
+        "timeBudget": 0,
+        "isBillableByDefault": false,
+        "projectTypeId": "d4adce2e-a455-eb11-a607-00155d31310d"
+    },
+    "entityId": "83343fb9-ca87-eb11-a607-00155d314496",
+    "entityType": "project",
+    "entityLink": "https://awork.io/projects/83343fb9-ca87-eb11-a607-00155d314496",
+    "traceId": "214579f24bb266f0",
+    "triggeredBy": {
+        "status": {
+            "invitationAccepted": true
+        },
+        "id": "83477d16-a455-eb11-a607-00155d31310d",
+        "firstName": "John",
+        "lastName": "Doe",
+        "hasImage": true,
+        "key": "JD",
+        "language": "de-DE",
+        "tags": [],
+        "isDeactivated": false,
+        "birthDate": "1970-01-01T00:00:00Z",
+        "capacityPerWeek": 86400
+    }
+}
