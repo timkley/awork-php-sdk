@@ -3,9 +3,7 @@
 namespace Tests\Api;
 
 use Awork\Collections\AbsenceCollection;
-use Awork\Collections\UserCollection;
 use Awork\Model\Absence;
-use Awork\Model\User;
 
 it('can get all users', function () {
     fakeJsonResponse('absences.json');

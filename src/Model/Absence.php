@@ -2,8 +2,6 @@
 
 namespace Awork\Model;
 
-use Awork\Collections\ContactInfoCollection;
-use Awork\Collections\TeamCollection;
 use Carbon\Carbon;
 
 class Absence extends Model
