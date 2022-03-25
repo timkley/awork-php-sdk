@@ -15,7 +15,7 @@ class Webhook
     private string $entityType;
     private string $entityLink;
     private string $traceId;
-    private User $triggeredBy;
+    private ?User $triggeredBy;
 
     public function __construct(array $data)
     {
@@ -69,6 +69,7 @@ class Webhook
         return $this->triggeredBy;
     }
 
+    /** @phpstan-ignore-next-line  */
     protected function toEntity(array $data, string $entityType)
     {
         $class = '\Awork\\Model\\' . ucfirst($entityType);
