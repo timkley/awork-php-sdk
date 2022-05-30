@@ -2,10 +2,6 @@
 
 namespace Tests\Model;
 
-use Awork\Collections\ContactInfoCollection;
-use Awork\Collections\TeamCollection;
-use Awork\Model\Team;
-use Awork\Model\User;
 use Awork\Model\UserCapacity;
 
 it('creates a model from data', function () {
