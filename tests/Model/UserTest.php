@@ -17,7 +17,6 @@ it('creates a model from data', function () {
     expect($user->getLastName())->toBe('Doe');
     expect($user->getGender())->toBe('male');
     expect($user->getPosition())->toBe('CEO');
-    expect($user->getCapacityPerWeek())->toBe(115200);
     expect($user->getTeams())->toBeInstanceOf(TeamCollection::class);
     expect($user->getTeams()->first())->toBeInstanceOf(Team::class);
     expect($user->getContactInfo())->toBeInstanceOf(ContactInfoCollection::class);

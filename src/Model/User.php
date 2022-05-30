@@ -12,7 +12,6 @@ class User extends Model
     private string $lastName;
     private ?string $gender;
     private ?string $position;
-    private ?int $capacityPerWeek;
     private ?TeamCollection $teams;
     private ?ContactInfoCollection $contactInfo;
     private ?string $projectRoleId;
@@ -26,7 +25,6 @@ class User extends Model
         $this->lastName = $data['lastName'] ?? '';
         $this->gender = $data['gender'] ?? null;
         $this->position = $data['position'] ?? null;
-        $this->capacityPerWeek = $data['capacityPerWeek'] ?? null;
         $this->teams = isset($data['teams']) ? TeamCollection::fromArray($data['teams']) : null;
         $this->contactInfo = isset($data['userContactInfos']) ? ContactInfoCollection::fromArray($data['userContactInfos']) : null;
         $this->projectRoleId = $data['projectRoleId'] ?? null;
@@ -57,11 +55,6 @@ class User extends Model
     public function getPosition(): ?string
     {
         return $this->position;
-    }
-
-    public function getCapacityPerWeek(): ?int
-    {
-        return $this->capacityPerWeek;
     }
 
     public function getTeams(): ?TeamCollection
