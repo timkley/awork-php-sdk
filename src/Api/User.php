@@ -2,6 +2,7 @@
 
 namespace Awork\Api;
 
+use Awork\Collections\ContactInfoCollection;
 use Awork\Collections\UserCollection;
 use Awork\Model\User as UserModel;
 use Awork\Model\UserCapacity;
@@ -28,6 +29,13 @@ class User extends Endpoint
     {
         return new UserCapacity(
             $this->api->get(sprintf('%s/%s/capacity', self::ENDPOINT, $userId))->json()
+        );
+    }
+
+    public function getContactInfo(string $userId): ContactInfoCollection
+    {
+        return ContactInfoCollection::fromArray(
+            $this->api->get(sprintf('%s/%s/userinfo', self::ENDPOINT, $userId))->json()
         );
     }
 }

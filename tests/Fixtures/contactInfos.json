@@ -1,4 +1,4 @@
-{
+[{
   "id": "1fa11067-4329-40a3-a8e6-97f5aa2d777e",
   "isDeleted": false,
   "createdOn": "2021-08-13T12:54:36.7304569Z",
@@ -16,4 +16,4 @@
   "state": "District of Columbia",
   "country": "US",
   "isAddress": true
-}
+}]
