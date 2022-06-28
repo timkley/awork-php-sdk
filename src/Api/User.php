@@ -35,7 +35,7 @@ class User extends Endpoint
     public function getContactInfo(string $userId): ContactInfoCollection
     {
         return ContactInfoCollection::fromArray(
-            $this->api->get(sprintf('%s/%s/userinfo', self::ENDPOINT, $userId))->json()
+            $this->api->get(sprintf('%s/%s/contactinfo', self::ENDPOINT, $userId))->json()
         );
     }
 }
