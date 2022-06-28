@@ -3,7 +3,12 @@
 namespace Tests\Model;
 
 use Awork\Collections\ContactInfoCollection;
+use Awork\Collections\MilestoneCollection;
+use Awork\Collections\TaskCollection;
+use Awork\Collections\TaskListCollection;
 use Awork\Collections\TeamCollection;
+use Awork\Model\ContactInfo;
+use Awork\Model\Project;
 use Awork\Model\Team;
 use Awork\Model\User;
 
@@ -20,4 +25,13 @@ it('creates a model from data', function () {
     expect($user->getTeams())->toBeInstanceOf(TeamCollection::class);
     expect($user->getTeams()->first())->toBeInstanceOf(Team::class);
     expect($user->getContactInfo())->toBeInstanceOf(ContactInfoCollection::class);
+});
+
+it('can set model data explicitly', function () {
+    $fixture = getJsonFixture('user.json');
+
+    $user = new User($fixture);
+    $user->setContactInfo(ContactInfoCollection::fromArray([getJsonFixture('contactInfo.json')]));
+
+    expect(true)->toBe(true);
 });

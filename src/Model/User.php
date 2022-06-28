@@ -26,7 +26,9 @@ class User extends Model
         $this->gender = $data['gender'] ?? null;
         $this->position = $data['position'] ?? null;
         $this->teams = isset($data['teams']) ? TeamCollection::fromArray($data['teams']) : null;
-        $this->contactInfo = isset($data['userContactInfos']) ? ContactInfoCollection::fromArray($data['userContactInfos']) : null;
+        $this->contactInfo = isset($data['userContactInfos']) ? ContactInfoCollection::fromArray(
+            $data['userContactInfos']
+        ) : null;
         $this->projectRoleId = $data['projectRoleId'] ?? null;
         $this->projectRoleName = $data['projectRoleName'] ?? null;
         $this->isResponsible = $data['isResponsible'] ?? null;
@@ -65,6 +67,11 @@ class User extends Model
     public function getContactInfo(): ?ContactInfoCollection
     {
         return $this->contactInfo;
+    }
+
+    public function setContactInfo(?ContactInfoCollection $contactInfo): void
+    {
+        $this->contactInfo = $contactInfo;
     }
 
     public function getProjectRoleId(): ?string

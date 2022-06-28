@@ -1,0 +1,183 @@
+[
+    {
+        "id": "42b408d0-20dc-ec11-b656-38563d6e4a56",
+        "key": "TFR-11",
+        "numberCount": 11,
+        "baseType": "projecttask",
+        "taskStatusId": "6c39d5c4-2691-eb11-a607-00155d314496",
+        "taskStatus": {
+            "id": "6c39d5c4-2691-eb11-a607-00155d314496",
+            "name": "Fertig",
+            "type": "done",
+            "order": 5,
+            "icon": "done",
+            "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+            "createdOn": "2021-03-30T07:08:50.237Z",
+            "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+            "updatedOn": "2021-03-30T07:08:50.237Z",
+            "updatedBy": "83477d16-a455-eb11-a607-00155d31310d"
+        },
+        "typeOfWorkId": "e2095787-bd5a-4a11-dec3-08d8b74cd6d8",
+        "typeOfWork": {
+            "isArchived": false,
+            "icon": "settings",
+            "name": "Projektarbeit",
+            "id": "e2095787-bd5a-4a11-dec3-08d8b74cd6d8"
+        },
+        "assignees": [],
+        "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+        "project": {
+            "key": "TFR",
+            "projectStatus": {
+                "isArchived": false,
+                "type": "progress",
+                "name": "Läuft",
+                "id": "ca64ddb7-e6e7-eb11-b563-00155d3167af"
+            },
+            "company": {
+                "hasImage": false,
+                "tags": [],
+                "name": "Acme Inc",
+                "id": "c8c39444-a455-eb11-a607-00155d312942"
+            },
+            "projectType": {
+                "isArchived": false,
+                "icon": "work",
+                "name": "Intern",
+                "id": "d4adce2e-a455-eb11-a607-00155d31310d"
+            },
+            "tags": [],
+            "teams": [],
+            "hasImage": false,
+            "isPrivate": false,
+            "members": [
+                {
+                    "id": "7139d5c4-2691-eb11-a607-00155d314496",
+                    "userId": "83477d16-a455-eb11-a607-00155d31310d",
+                    "projectRoleId": "c7adce2e-a455-eb11-a607-00155d31310d",
+                    "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+                    "projectRoleName": "Projektmitglied",
+                    "isResponsible": true
+                }
+            ],
+            "name": "Test project",
+            "id": "6339d5c4-2691-eb11-a607-00155d314496"
+        },
+        "hasAttachment": false,
+        "lists": [
+            {
+                "orderOfTask": -4,
+                "id": "3405704a-563d-ec11-981f-501ac527b592",
+                "isArchived": false,
+                "createdOn": "2021-11-04T10:02:26.669Z",
+                "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+                "updatedOn": "2022-05-25T11:45:55.455Z",
+                "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+                "order": 1,
+                "name": "Second sample list"
+            }
+        ],
+        "entityId": "6339d5c4-2691-eb11-a607-00155d314496",
+        "tags": [],
+        "createdOn": "2022-05-25T11:50:06.275Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2022-05-25T11:50:10.617Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "closedOn": "2022-05-25T11:50:10.604Z",
+        "closedBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "order": 0,
+        "isRecurring": false,
+        "trackedDuration": 0,
+        "resourceVersion": 637890762108842518,
+        "subtasksDoneCount": 0,
+        "subtasksCount": 0,
+        "taskSchedulesCount": 0,
+        "isCompletelyScheduled": false,
+        "name": "Completed task",
+        "isPrio": false
+    },
+    {
+        "id": "5d3067d7-b593-ec11-a22a-38563d684e0e",
+        "key": "TFR-10",
+        "numberCount": 10,
+        "baseType": "projecttask",
+        "taskStatusId": "6839d5c4-2691-eb11-a607-00155d314496",
+        "taskStatus": {
+            "id": "6839d5c4-2691-eb11-a607-00155d314496",
+            "name": "To Do",
+            "type": "todo",
+            "order": 1,
+            "icon": "circle_without_color",
+            "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+            "createdOn": "2021-03-30T07:08:50.104Z",
+            "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+            "updatedOn": "2022-05-13T21:15:48.083Z",
+            "updatedBy": "01010001-0000-0000-0000-111111111111"
+        },
+        "typeOfWorkId": "e2095787-bd5a-4a11-dec3-08d8b74cd6d8",
+        "typeOfWork": {
+            "isArchived": false,
+            "icon": "settings",
+            "name": "Projektarbeit",
+            "id": "e2095787-bd5a-4a11-dec3-08d8b74cd6d8"
+        },
+        "assignees": [],
+        "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+        "project": {
+            "key": "TFR",
+            "projectStatus": {
+                "isArchived": false,
+                "type": "progress",
+                "name": "Läuft",
+                "id": "ca64ddb7-e6e7-eb11-b563-00155d3167af"
+            },
+            "company": {
+                "hasImage": false,
+                "tags": [],
+                "name": "Acme Inc",
+                "id": "c8c39444-a455-eb11-a607-00155d312942"
+            },
+            "projectType": {
+                "isArchived": false,
+                "icon": "work",
+                "name": "Intern",
+                "id": "d4adce2e-a455-eb11-a607-00155d31310d"
+            },
+            "tags": [],
+            "teams": [],
+            "hasImage": false,
+            "isPrivate": false,
+            "members": [
+                {
+                    "id": "7139d5c4-2691-eb11-a607-00155d314496",
+                    "userId": "83477d16-a455-eb11-a607-00155d31310d",
+                    "projectRoleId": "c7adce2e-a455-eb11-a607-00155d31310d",
+                    "projectId": "6339d5c4-2691-eb11-a607-00155d314496",
+                    "projectRoleName": "Projektmitglied",
+                    "isResponsible": true
+                }
+            ],
+            "name": "Test project",
+            "id": "6339d5c4-2691-eb11-a607-00155d314496"
+        },
+        "hasAttachment": false,
+        "lists": [],
+        "entityId": "6339d5c4-2691-eb11-a607-00155d314496",
+        "tags": [],
+        "createdOn": "2022-02-22T08:03:03.765Z",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2022-02-22T08:03:09.618Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "order": 9,
+        "isRecurring": false,
+        "trackedDuration": 0,
+        "resourceVersion": 637890744019736970,
+        "subtasksDoneCount": 0,
+        "subtasksCount": 0,
+        "taskSchedulesCount": 0,
+        "isCompletelyScheduled": false,
+        "plannedDuration": 0,
+        "name": "Task without a list",
+        "isPrio": false
+    }
+]

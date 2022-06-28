@@ -2,7 +2,10 @@
 
 namespace Tests\Model;
 
+use Awork\Collections\MilestoneCollection;
 use Awork\Collections\TagCollection;
+use Awork\Collections\TaskCollection;
+use Awork\Collections\TaskListCollection;
 use Awork\Collections\UserCollection;
 use Awork\Model\Company;
 use Awork\Model\Project;
@@ -26,6 +29,18 @@ it('creates a model from data', function () {
     expect($project->getCompany())->toBeInstanceOf(Company::class);
     expect($project->getTags())->toBeInstanceOf(TagCollection::class);
     expect($project->getMembers())->toBeInstanceOf(UserCollection::class);
+});
+
+it('can set model data explicitly', function () {
+    $fixture = getJsonFixture('project.json');
+
+    $project = new Project($fixture);
+
+    $project->setMilestones(MilestoneCollection::fromArray(getJsonFixture('milestones.json')));
+    $project->setProjectTasks(TaskCollection::fromArray(getJsonFixture('projectTasks.json')));
+    $project->setTaskLists(TaskListCollection::fromArray(getJsonFixture('taskLists.json')));
+
+    expect(true)->toBe(true);
 });
 
 it('is array accessable', function () {
