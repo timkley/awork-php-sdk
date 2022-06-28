@@ -3,12 +3,7 @@
 namespace Tests\Model;
 
 use Awork\Collections\ContactInfoCollection;
-use Awork\Collections\MilestoneCollection;
-use Awork\Collections\TaskCollection;
-use Awork\Collections\TaskListCollection;
 use Awork\Collections\TeamCollection;
-use Awork\Model\ContactInfo;
-use Awork\Model\Project;
 use Awork\Model\Team;
 use Awork\Model\User;
 
