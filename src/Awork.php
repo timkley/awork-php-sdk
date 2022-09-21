@@ -11,6 +11,7 @@ use Awork\Api\ProjectStatus;
 use Awork\Api\ProjectTemplate;
 use Awork\Api\ProjectType;
 use Awork\Api\Task;
+use Awork\Api\TimeEntry;
 use Awork\Api\User;
 
 class Awork
@@ -27,6 +28,7 @@ class Awork
     private Comment $comments;
     private Image $image;
     private Absence $absence;
+    private TimeEntry $timeEntry;
 
     public function __construct(string $apiToken)
     {
@@ -86,5 +88,10 @@ class Awork
     public function absences(): Absence
     {
         return $this->absence ??= new Absence($this->api);
+    }
+
+    public function timeEntries(): TimeEntry
+    {
+        return $this->timeEntry ??= new TimeEntry($this->api);
     }
 }

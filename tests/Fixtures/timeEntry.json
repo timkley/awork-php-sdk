@@ -1,0 +1,117 @@
+{
+    "id": "2a408383-ae39-ed11-ae83-38563d6848fe",
+    "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "createdOn": "2022-09-21T13:08:51.878Z",
+    "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+    "updatedOn": "2022-09-21T13:08:51.878Z",
+    "typeOfWork": {
+        "isArchived": false,
+        "icon": "settings",
+        "name": "Projektarbeit",
+        "id": "e2095787-bd5a-4a11-dec3-08d8b74cd6d8"
+    },
+    "user": {
+        "tags": [],
+        "teams": [
+            {
+                "id": "f31e8754-3455-e911-n607-0g155d31310d"
+            }
+        ],
+        "firstName": "John",
+        "lastName": "Doe",
+        "hasImage": true,
+        "key": "JD",
+        "id": "83477d16-a455-eb11-a607-00155d31310d"
+    },
+    "task": {
+        "key": "WR-135",
+        "baseType": "projecttask",
+        "taskStatus": {
+            "order": 2,
+            "icon": "arrow_forward",
+            "type": "progress",
+            "name": "In Bearbeitung",
+            "id": "86343fb9-ca87-eb11-a607-00155d314496"
+        },
+        "taskStatusId": "86343fb9-ca87-eb11-a607-00155d314496",
+        "typeOfWorkId": "e2095787-bd5a-4a11-dec3-08d8b74cd6d8",
+        "assignees": [
+            {
+                "firstName": "John",
+                "lastName": "Doe",
+                "hasImage": true,
+                "key": "JD",
+                "id": "83477d16-a455-eb11-a607-00155d31310d"
+            }
+        ],
+        "project": {
+            "tags": [],
+            "teams": [],
+            "isPrivate": false,
+            "key": "WR",
+            "projectStatus": {
+                "isArchived": false,
+                "type": "progress",
+                "name": "Läuft",
+                "id": "2964ddb7-e6e7-eb11-b563-00155d3167af"
+            },
+            "company": {
+                "hasImage": false,
+                "name": "Acme Inc",
+                "id": "c3d39444-e455-eb41-a647-00153d312142"
+            },
+            "projectType": {
+                "isArchived": false,
+                "icon": "work",
+                "name": "Intern",
+                "id": "d4adce2e-a455-eb11-a607-00155d31310d"
+            },
+            "name": "Test project",
+            "id": "83343fb9-ca87-eb11-a607-00155d314496"
+        },
+        "projectId": "83343fb9-ca87-eb11-a607-00155d314496",
+        "plannedDuration": 144000,
+        "tags": [],
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "name": "Test task",
+        "id": "b2c477d8-e137-ed11-ae83-38563d6848fe"
+    },
+    "project": {
+        "tags": [],
+        "teams": [],
+        "isPrivate": false,
+        "key": "WR",
+        "projectStatus": {
+            "isArchived": false,
+            "type": "progress",
+            "name": "Läuft",
+            "id": "2964ddb7-e6e7-eb11-b563-00155d3167af"
+        },
+        "company": {
+            "hasImage": false,
+            "name": "Acme Inc",
+            "id": "c3d39444-e455-eb41-a647-00153d312142"
+        },
+        "projectType": {
+            "isArchived": false,
+            "icon": "work",
+            "name": "Intern",
+            "id": "d4adce2e-a455-eb11-a607-00155d31310d"
+        },
+        "name": "Test project",
+        "id": "83343fb9-ca87-eb11-a607-00155d314496"
+    },
+    "resourceVersion": 637993625322118356,
+    "startDateUtc": "2022-09-21T00:00:00Z",
+    "startTimeUtc": "13:08:51.8220632",
+    "startDateLocal": "2022-09-21T00:00:00",
+    "startTimeLocal": "15:08:51.8220632",
+    "timezone": "Europe/Berlin",
+    "duration": 100,
+    "typeOfWorkId": "e2095787-bd5a-4a11-dec3-08d8b74cd6d8",
+    "userId": "83477d16-a455-eb11-a607-00155d31310d",
+    "isBillable": false,
+    "isBilled": false,
+    "taskId": "b2c477d8-e137-ed11-ae83-38563d6848fe",
+    "projectId": "83343fb9-ca87-eb11-a607-00155d314496"
+}

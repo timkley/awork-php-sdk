@@ -10,6 +10,7 @@ use Awork\Api\ProjectStatus;
 use Awork\Api\ProjectTemplate;
 use Awork\Api\ProjectType;
 use Awork\Api\Task;
+use Awork\Api\TimeEntry;
 use Awork\Api\User;
 
 it('returns the me api', function () {
@@ -46,6 +47,10 @@ it('returns the comments api', function () {
 
 it('returns the images api', function () {
     expect(awork()->images())->toBeInstanceOf(Image::class);
+});
+
+it('returns the time entries api', function () {
+    expect(awork()->timeEntries())->toBeInstanceOf(TimeEntry::class);
 });
 
 it('can be filtered', function () {
