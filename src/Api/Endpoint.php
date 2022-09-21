@@ -23,4 +23,18 @@ class Endpoint
 
         return $this;
     }
+
+    public function page(int $page): static
+    {
+        $this->api->setPage($page);
+
+        return $this;
+    }
+
+    public function pageSize(int $order): static
+    {
+        $this->api->setPageSize($order);
+
+        return $this;
+    }
 }

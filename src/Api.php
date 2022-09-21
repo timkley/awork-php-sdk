@@ -19,6 +19,8 @@ class Api
 
     protected ?string $filter = null;
     protected ?string $order = null;
+    protected ?int $page = null;
+    protected ?int $pageSize = null;
 
     public function __construct(private string $apiToken)
     {
@@ -100,6 +102,20 @@ class Api
         return $this;
     }
 
+    public function setPage(string $page): self
+    {
+        $this->page = $page;
+
+        return $this;
+    }
+
+    public function setPageSize(string $page): self
+    {
+        $this->pageSize = $page;
+
+        return $this;
+    }
+
     protected function getQueryParamaters(): array
     {
         $queryParameters = [];
@@ -110,6 +126,14 @@ class Api
 
         if (! is_null($this->order)) {
             $queryParameters['orderby'] = $this->order;
+        }
+
+        if (! is_null($this->page)) {
+            $queryParameters['page'] = $this->page;
+        }
+
+        if (! is_null($this->pageSize)) {
+            $queryParameters['pageSize'] = $this->pageSize;
         }
 
         return $queryParameters;

@@ -82,3 +82,31 @@ it('can be ordered', function () {
         ]
     );
 });
+
+it('can set the page', function () {
+    fakeResponse();
+
+    awork()->projects()->page(3)->get();
+    $response = awork()->api->latestResponse;
+    parse_str($response->effectiveUri()->getQuery(), $queries);
+
+    expect($queries)->toBe(
+        [
+            'page' => '3',
+        ]
+    );
+});
+
+it('can set the page size', function () {
+    fakeResponse();
+
+    awork()->projects()->pageSize(4)->get();
+    $response = awork()->api->latestResponse;
+    parse_str($response->effectiveUri()->getQuery(), $queries);
+
+    expect($queries)->toBe(
+        [
+            'pageSize' => '4',
+        ]
+    );
+});
