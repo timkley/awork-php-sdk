@@ -102,14 +102,14 @@ class Api
         return $this;
     }
 
-    public function setPage(string $page): self
+    public function setPage(int $page): self
     {
         $this->page = $page;
 
         return $this;
     }
 
-    public function setPageSize(string $page): self
+    public function setPageSize(int $page): self
     {
         $this->pageSize = $page;
 

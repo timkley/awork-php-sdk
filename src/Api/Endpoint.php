@@ -31,9 +31,9 @@ class Endpoint
         return $this;
     }
 
-    public function pageSize(int $order): static
+    public function pageSize(int $pageSize): static
     {
-        $this->api->setPageSize($order);
+        $this->api->setPageSize($pageSize);
 
         return $this;
     }
