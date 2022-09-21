@@ -28,4 +28,5 @@ it('creates a model from data', function () {
     expect($timeEntry->getIsBilled())->toBe(false);
     expect($timeEntry->getStartTime())->toBeInstanceOf(Carbon::class);
     expect($timeEntry->getEndTime())->toBeNull();
+    expect($timeEntry->getNote())->toBe('Note');
 });

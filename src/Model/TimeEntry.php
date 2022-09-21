@@ -20,6 +20,7 @@ class TimeEntry extends Model
     private bool $isBilled;
     private Carbon $startTime;
     private ?Carbon $endTime;
+    private string $note;
 
     public function __construct(array $data)
     {
@@ -37,6 +38,7 @@ class TimeEntry extends Model
         $this->isBilled = $data['isBilled'] ?? false;
         $this->startTime = Carbon::parse($data['startDateUtc'])->setTimeFromTimeString($data['startTimeUtc']);
         $this->endTime = isset($data['endDateUtc']) ? Carbon::parse($data['endDateUtc'])->setTimeFromTimeString($data['endTimeUtc']) : null;
+        $this->note = $data['note'] ?? '';
     }
 
     public function getId(): string
@@ -107,5 +109,10 @@ class TimeEntry extends Model
     public function getEndTime(): ?Carbon
     {
         return $this->endTime;
+    }
+
+    public function getNote(): string
+    {
+        return $this->note;
     }
 }
