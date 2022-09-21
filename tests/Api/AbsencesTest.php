@@ -5,7 +5,7 @@ namespace Tests\Api;
 use Awork\Collections\AbsenceCollection;
 use Awork\Model\Absence;
 
-it('can get all users', function () {
+it('can get all absences', function () {
     fakeJsonResponse('absences.json');
 
     $absences = awork()->absences()->get();
