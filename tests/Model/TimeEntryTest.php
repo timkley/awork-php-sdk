@@ -2,11 +2,8 @@
 
 namespace Tests\Model;
 
-use Awork\Collections\ContactInfoCollection;
-use Awork\Collections\TeamCollection;
 use Awork\Model\Project;
 use Awork\Model\Task;
-use Awork\Model\Team;
 use Awork\Model\TimeEntry;
 use Awork\Model\TypeOfWork;
 use Awork\Model\User;
