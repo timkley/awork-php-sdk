@@ -36,8 +36,8 @@ class TimeEntry extends Model
         $this->duration = $data['duration'] ?? 0;
         $this->isBillable = $data['isBillable'] ?? false;
         $this->isBilled = $data['isBilled'] ?? false;
-        $this->startTime = Carbon::parse($data['startDateUtc'])->setTimeFromTimeString($data['startTimeUtc']);
-        $this->endTime = isset($data['endDateUtc']) ? Carbon::parse($data['endDateUtc'])->setTimeFromTimeString($data['endTimeUtc']) : null;
+        $this->startTime = Carbon::parse($data['startDateUtc'])->setTimeFromTimeString($data['startTimeUtc'])->setTimezone($data['timezone']);
+        $this->endTime = isset($data['endDateUtc']) ? Carbon::parse($data['endDateUtc'])->setTimeFromTimeString($data['endTimeUtc'])->setTimezone($data['timezone']) : null;
         $this->note = $data['note'] ?? '';
     }
 
