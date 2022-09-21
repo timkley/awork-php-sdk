@@ -23,9 +23,9 @@ class TimeEntry extends Model
     {
         $this->id = $data['id'] ?? '';
         $this->createdBy = $data['createdBy'] ?? '';
-        $this->createdOn = isset($data['createdOn']) ? Carbon::parse($data['createdOn']) : null;
+        $this->createdOn = Carbon::parse($data['createdOn']);
         $this->updatedBy = $data['updatedBy'] ?? '';
-        $this->updatedOn = isset($data['updatedOn']) ? Carbon::parse($data['updatedOn']) : null;
+        $this->updatedOn = Carbon::parse($data['updatedOn']);
         $this->typeOfWork = new TypeOfWork($data['typeOfWork']);
         $this->user = new User($data['user']);
         $this->task = isset($data['task']) ? new Task($data['task']) : null;
