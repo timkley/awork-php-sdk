@@ -298,5 +298,86 @@
         "isBilled": false,
         "taskId": "1df433ec-6a32-ed11-ae83-38563d6848fe",
         "projectId": "50b08a40-5a7a-eb11-a607-00155d314496"
+    },
+    {
+        "id": "5457caff-823a-ed11-ae83-38563d6848fe",
+        "createdBy": "27ff5e4a-a555-eb11-a607-00155d31310d",
+        "createdOn": "2022-09-22T14:29:48.181Z",
+        "updatedBy": "27ff5e4a-a555-eb11-a607-00155d31310d",
+        "updatedOn": "2022-09-22T14:29:48.181Z",
+        "typeOfWork": {
+            "isArchived": false,
+            "icon": "settings",
+            "name": "Projektarbeit",
+            "id": "e2095787-bd5a-4a11-dec3-08d8b74cd6d8"
+        },
+        "user": {
+            "tags": [],
+            "teams": [
+                {
+                    "id": "235d966e-a455-eb11-a607-00155d31310d"
+                },
+                {
+                    "id": "a21eaf5a-a455-eb11-a607-00155d31310d"
+                }
+            ],
+            "firstName": "Jesus",
+            "lastName": "Christ",
+            "hasImage": true,
+            "key": "JC",
+            "id": "27ff5e4a-a555-eb11-a607-00155d31310d"
+        },
+        "project": {
+            "tags": [
+                {
+                    "id": "32fdeacc-3a75-ec11-94f6-dc984040d6c7",
+                    "name": "Tag",
+                    "entityId": "2eaa03ad-3975-ec11-94f6-dc984040d6c7"
+                }
+            ],
+            "teams": [
+                {
+                    "id": "235d966e-a455-eb11-a607-00155d31310d"
+                },
+                {
+                    "id": "a21eaf5a-a455-eb11-a607-00155d31310d"
+                },
+                {
+                    "id": "f3168754-a455-eb11-a607-00155d31310d"
+                }
+            ],
+            "isPrivate": false,
+            "key": "OS4",
+            "projectStatus": {
+                "isArchived": false,
+                "type": "progress",
+                "name": "In progress",
+                "id": "2baa03ad-3975-ec11-94f6-dc984040d6c7"
+            },
+            "company": {
+                "hasImage": false,
+                "name": "Acme Inc",
+                "id": "b32ca65d-7e64-eb11-a607-00155d3163c0"
+            },
+            "projectType": {
+                "isArchived": false,
+                "icon": "all_inclusive",
+                "name": "All incluse",
+                "id": "836e6603-3d56-eb11-a607-00155d31310d"
+            },
+            "name": "Project",
+            "id": "2eaa03ad-3975-ec11-94f6-dc984040d6c7"
+        },
+        "resourceVersion": 637994537883752928,
+        "startDateUtc": "2022-09-22T00:00:00Z",
+        "startDateLocal": "2022-09-22T00:00:00",
+        "timezone": "Europe/Berlin",
+        "duration": 4800,
+        "typeOfWorkId": "e2095787-bd5a-4a11-dec3-08d8b74cd6d8",
+        "userId": "27ff5e4a-a555-eb11-a607-00155d31310d",
+        "isBillable": true,
+        "isBilled": false,
+        "projectId": "2eaa03ad-3975-ec11-94f6-dc984040d6c7",
+        "note": "Some note"
     }
 ]
