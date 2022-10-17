@@ -12,7 +12,7 @@ class TimeEntry extends Model
     private string $updatedBy;
     private Carbon $updatedOn;
     private TypeOfWork $typeOfWork;
-    private User $user;
+    private ?User $user;
     private ?Task $task;
     private ?Project $project;
     private int $duration;
@@ -30,7 +30,7 @@ class TimeEntry extends Model
         $this->updatedBy = $data['updatedBy'] ?? '';
         $this->updatedOn = Carbon::parse($data['updatedOn']);
         $this->typeOfWork = new TypeOfWork($data['typeOfWork']);
-        $this->user = new User($data['user']);
+        $this->user = isset($data['user']) ? new User($data['user']) : null;
         $this->task = isset($data['task']) ? new Task($data['task']) : null;
         $this->project = isset($data['project']) ? new Project($data['project']) : null;
         $this->duration = $data['duration'] ?? 0;
@@ -71,7 +71,7 @@ class TimeEntry extends Model
         return $this->typeOfWork;
     }
 
-    public function getUser(): User
+    public function getUser(): ?User
     {
         return $this->user;
     }
