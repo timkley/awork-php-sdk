@@ -42,11 +42,12 @@ class Task extends Endpoint
 
     public function setTaskPriority(string $taskId, bool $isPrio): Response
     {
-        return $this->api->post(self::ENDPOINT . '/settaskpriority', [
+        return $this->api->post(
+            self::ENDPOINT . '/settaskpriority',
             [
                 'taskId' => $taskId,
                 'isPrio' => $isPrio,
             ],
-        ]);
+        );
     }
 }

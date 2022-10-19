@@ -45,10 +45,8 @@ it('changes a task status', function () {
 
 it('set a tasks priority', function () {
     $requestBody = [
-        [
-            'taskId' => 'task-id',
-            'isPrio' => true,
-        ],
+        'taskId' => 'task-id',
+        'isPrio' => true,
     ];
     fakeResponse($requestBody);
 
