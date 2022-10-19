@@ -42,3 +42,17 @@ it('changes a task status', function () {
 
     assertBodySent($requestBody);
 });
+
+it('set a tasks priority', function () {
+    $requestBody = [
+        [
+            'taskId' => 'task-id',
+            'isPrio' => true,
+        ],
+    ];
+    fakeResponse($requestBody);
+
+    awork()->tasks()->setTaskPriority('task-id', true);
+
+    assertBodySent($requestBody);
+});
