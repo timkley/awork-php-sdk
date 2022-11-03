@@ -7,6 +7,7 @@ use Carbon\Carbon;
 
 it('creates a model from data', function () {
     $fixture = getJsonFixture('absence.json');
+    $fixture['isHalfDayOnEnd'] = true;
 
     $absence = new Absence($fixture);
 
@@ -16,4 +17,6 @@ it('creates a model from data', function () {
     expect($absence->getEndOn())->toBeInstanceOf(Carbon::class);
     expect($absence->getStartOn()->toDateString())->toBe('2022-04-08');
     expect($absence->getEndOn()->toDateString())->toBe('2022-04-10');
+    expect($absence->isHalfDayOnStart())->toBeFalse();
+    expect($absence->isHalfDayOnEnd())->toBeTrue();
 });

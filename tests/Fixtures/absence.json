@@ -6,5 +6,8 @@
     "updatedBy": "b3fe5e4a-a555-eb11-a607-00155d31310d",
     "userId": "a6ff5e4a-a555-eb11-a607-00155d31310d",
     "startOn": "2022-04-08T00:00:00Z",
-    "endOn": "2022-04-10T23:59:59Z"
+    "endOn": "2022-04-10T23:59:59Z",
+    "isReadOnly": false,
+    "isHalfDayOnStart": false,
+    "isHalfDayOnEnd": false
 }

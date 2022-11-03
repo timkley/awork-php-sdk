@@ -7,7 +7,10 @@
         "updatedBy": "b3fe5e4a-a555-eb11-a607-00155d31310d",
         "userId": "a6ff5e4a-a555-eb11-a607-00155d31310d",
         "startOn": "2022-04-08T00:00:00Z",
-        "endOn": "2022-04-08T23:59:59Z"
+        "endOn": "2022-04-08T23:59:59Z",
+        "isReadOnly": false,
+        "isHalfDayOnStart": false,
+        "isHalfDayOnEnd": false
     },
     {
         "id": "c07ca495-ada9-ec11-a99b-38563d68624f",
@@ -17,7 +20,10 @@
         "updatedBy": "b3fe5e4a-a555-eb11-a607-00155d31310d",
         "userId": "b3fe5e4a-a555-eb11-a607-00155d31310d",
         "startOn": "2022-05-09T00:00:00Z",
-        "endOn": "2022-05-13T23:59:59Z"
+        "endOn": "2022-05-13T23:59:59Z",
+        "isReadOnly": false,
+        "isHalfDayOnStart": false,
+        "isHalfDayOnEnd": false
     },
     {
         "id": "5c25014e-daa5-ec11-a99b-38563d68624f",
@@ -27,7 +33,10 @@
         "updatedBy": "b3fe5e4a-a555-eb11-a607-00155d31310d",
         "userId": "1d34a1ce-d1c2-eb11-a7ad-00155d31294d",
         "startOn": "2022-03-15T00:00:00Z",
-        "endOn": "2022-03-18T23:59:59Z"
+        "endOn": "2022-03-18T23:59:59Z",
+        "isReadOnly": false,
+        "isHalfDayOnStart": false,
+        "isHalfDayOnEnd": false
     },
     {
         "id": "583bdfa8-b89e-ec11-a99b-38563d6e72d7",
@@ -37,7 +46,10 @@
         "updatedBy": "c9ff5e4a-a555-eb11-a607-00155d31310d",
         "userId": "a6ff5e4a-a555-eb11-a607-00155d31310d",
         "startOn": "2022-03-14T00:00:00Z",
-        "endOn": "2022-03-18T23:59:59Z"
+        "endOn": "2022-03-18T23:59:59Z",
+        "isReadOnly": false,
+        "isHalfDayOnStart": false,
+        "isHalfDayOnEnd": false
     },
     {
         "id": "095fb1c2-7398-ec11-a22a-38563d684e0e",
@@ -47,7 +59,10 @@
         "updatedBy": "b3fe5e4a-a555-eb11-a607-00155d31310d",
         "userId": "a6ff5e4a-a555-eb11-a607-00155d31310d",
         "startOn": "2022-02-28T00:00:00Z",
-        "endOn": "2022-03-11T23:59:59Z"
+        "endOn": "2022-03-11T23:59:59Z",
+        "isReadOnly": false,
+        "isHalfDayOnStart": false,
+        "isHalfDayOnEnd": false
     },
     {
         "id": "7bbd775d-5695-ec11-a22a-38563d684e0e",
@@ -57,7 +72,10 @@
         "updatedBy": "c9ff5e4a-a555-eb11-a607-00155d31310d",
         "userId": "a6ff5e4a-a555-eb11-a607-00155d31310d",
         "startOn": "2022-02-23T00:00:00Z",
-        "endOn": "2022-02-25T23:59:59Z"
+        "endOn": "2022-02-25T23:59:59Z",
+        "isReadOnly": false,
+        "isHalfDayOnStart": false,
+        "isHalfDayOnEnd": false
     },
     {
         "id": "3b851912-b694-ec11-a22a-38563d684e0e",
@@ -67,7 +85,10 @@
         "updatedBy": "5d005f4a-a555-eb11-a607-00155d31310d",
         "userId": "5d005f4a-a555-eb11-a607-00155d31310d",
         "startOn": "2022-05-30T00:00:00Z",
-        "endOn": "2022-05-30T23:59:59Z"
+        "endOn": "2022-05-30T23:59:59Z",
+        "isReadOnly": false,
+        "isHalfDayOnStart": false,
+        "isHalfDayOnEnd": false
     },
     {
         "id": "ed841912-b694-ec11-a22a-38563d684e0e",
@@ -77,7 +98,10 @@
         "updatedBy": "5d005f4a-a555-eb11-a607-00155d31310d",
         "userId": "5d005f4a-a555-eb11-a607-00155d31310d",
         "startOn": "2022-05-23T00:00:00Z",
-        "endOn": "2022-05-23T23:59:59Z"
+        "endOn": "2022-05-23T23:59:59Z",
+        "isReadOnly": false,
+        "isHalfDayOnStart": false,
+        "isHalfDayOnEnd": false
     },
     {
         "id": "d1a4040c-b694-ec11-a22a-38563d684e0e",
@@ -87,6 +111,9 @@
         "updatedBy": "5d005f4a-a555-eb11-a607-00155d31310d",
         "userId": "5d005f4a-a555-eb11-a607-00155d31310d",
         "startOn": "2022-05-16T00:00:00Z",
-        "endOn": "2022-05-16T23:59:59Z"
+        "endOn": "2022-05-16T23:59:59Z",
+        "isReadOnly": false,
+        "isHalfDayOnStart": false,
+        "isHalfDayOnEnd": false
     }
 ]
