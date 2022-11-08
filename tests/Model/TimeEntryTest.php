@@ -24,8 +24,8 @@ it('creates a model from data', function () {
     expect($timeEntry->getTask())->toBeInstanceOf(Task::class);
     expect($timeEntry->getProject())->toBeInstanceOf(Project::class);
     expect($timeEntry->getDuration())->toBe(100);
-    expect($timeEntry->getIsBillable())->toBe(false);
-    expect($timeEntry->getIsBilled())->toBe(false);
+    expect($timeEntry->isBillable())->toBe(false);
+    expect($timeEntry->isBilled())->toBe(false);
     expect($timeEntry->getStartTime())->toBeInstanceOf(Carbon::class);
     expect($timeEntry->getEndTime())->toBeNull();
     expect($timeEntry->getNote())->toBe('Note');

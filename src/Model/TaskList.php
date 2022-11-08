@@ -32,7 +32,7 @@ class TaskList extends Model
         return $this->order;
     }
 
-    public function getIsArchived(): bool
+    public function isArchived(): bool
     {
         return $this->isArchived;
     }

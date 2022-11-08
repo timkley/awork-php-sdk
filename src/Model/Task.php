@@ -63,7 +63,7 @@ class Task extends Model
         return $this->description;
     }
 
-    public function getIsPrio(): bool
+    public function isPrio(): bool
     {
         return $this->isPrio;
     }

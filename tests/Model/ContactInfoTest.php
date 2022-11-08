@@ -11,7 +11,7 @@ it('creates a model from data', function () {
 
     expect($contactInfo->getId())->toBe('1fa11067-4329-40a3-a8e6-97f5aa2d777e');
     expect($contactInfo->getType())->toBe('address');
-    expect($contactInfo->getIsAddress())->toBe(true);
+    expect($contactInfo->isAddress())->toBe(true);
     expect($contactInfo->getSubType())->toBe('work');
     expect($contactInfo->getLabel())->toBe(null);
     expect($contactInfo->getValue())->toBe(null);

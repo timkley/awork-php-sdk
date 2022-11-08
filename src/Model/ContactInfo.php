@@ -43,7 +43,7 @@ class ContactInfo extends Model
         return $this->type;
     }
 
-    public function getIsAddress(): bool
+    public function isAddress(): bool
     {
         return $this->isAddress;
     }

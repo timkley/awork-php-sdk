@@ -91,12 +91,12 @@ class TimeEntry extends Model
         return $this->duration;
     }
 
-    public function getIsBillable(): bool
+    public function isBillable(): bool
     {
         return $this->isBillable;
     }
 
-    public function getIsBilled(): bool
+    public function isBilled(): bool
     {
         return $this->isBilled;
     }
