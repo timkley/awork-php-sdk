@@ -63,6 +63,11 @@ class Task extends Model
         return $this->description;
     }
 
+    public function setDescription(string $description): void
+    {
+        $this->description = $description;
+    }
+
     public function isPrio(): bool
     {
         return $this->isPrio;
