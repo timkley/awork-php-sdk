@@ -8,7 +8,6 @@ use Awork\Model\Project;
 use Awork\Model\Task;
 use Awork\Model\TaskStatus;
 use Awork\Model\TypeOfWork;
-use Awork\Model\User;
 use Carbon\Carbon;
 
 it('creates a model from data', function () {
