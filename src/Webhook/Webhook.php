@@ -16,6 +16,7 @@ class Webhook
     private string $entityLink;
     private string $traceId;
     private ?User $triggeredBy;
+    private array $data;
 
     public function __construct(array $data)
     {
@@ -27,6 +28,7 @@ class Webhook
         $this->entityLink = $data['entityLink'] ?? '';
         $this->traceId = $data['traceId'] ?? '';
         $this->triggeredBy = isset($data['triggeredBy']) ? new User($data['triggeredBy']) : null;
+        $this->rawData = $data;
     }
 
     public function getTimestamp(): Carbon
@@ -67,6 +69,11 @@ class Webhook
     public function getTriggeredBy(): ?User
     {
         return $this->triggeredBy;
+    }
+
+    public function getRawData(): array
+    {
+        return $this->rawData;
     }
 
     /** @phpstan-ignore-next-line  */

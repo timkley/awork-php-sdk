@@ -21,4 +21,5 @@ it('it constructs a webhook instance from a webhook payload', function () {
     expect($webhook->getEntityLink())->toBe('https://awork.io/projects/83343fb9-ca87-eb11-a607-00155d314496');
     expect($webhook->getTraceId())->toBe('214579f24bb266f0');
     expect($webhook->getTriggeredBy())->toBeInstanceOf(User::class);
+    expect($webhook->getRawData())->toBeArray();
 });
