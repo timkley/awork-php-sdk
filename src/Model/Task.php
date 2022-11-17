@@ -23,6 +23,8 @@ class Task extends Model
     private ?TypeOfWork $typeOfWork;
     private ?TagCollection $tags;
     private ?TaskListCollection $lists;
+    private ?Carbon $createdOn;
+    private ?Carbon $updatedOn;
 
     public function __construct(array $data)
     {
@@ -41,6 +43,8 @@ class Task extends Model
         $this->typeOfWork = isset($data['typeOfWork']) ? new TypeOfWork($data['typeOfWork']) : null;
         $this->tags = isset($data['tags']) ? TagCollection::fromArray($data['tags']) : null;
         $this->lists = isset($data['lists']) ? TaskListCollection::fromArray($data['lists']) : null;
+        $this->createdOn = isset($data['createdOn']) ? Carbon::parse($data['createdOn']) : null;
+        $this->updatedOn = isset($data['updatedOn']) ? Carbon::parse($data['updatedOn']) : null;
     }
 
     public function getId(): string
@@ -126,5 +130,15 @@ class Task extends Model
     public function getLists(): ?TaskListCollection
     {
         return $this->lists;
+    }
+
+    public function getCreatedOn(): ?Carbon
+    {
+        return $this->createdOn;
+    }
+
+    public function getUpdatedOn(): ?Carbon
+    {
+        return $this->updatedOn;
     }
 }

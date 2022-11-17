@@ -28,4 +28,6 @@ it('creates a model from data', function () {
     expect($task->getAssignee())->toBeInstanceOf(User::class);
     expect($task->getTypeOfWork())->toBeInstanceOf(TypeOfWork::class);
     expect($task->getTags())->toBeInstanceOf(TagCollection::class);
+    expect($task->getCreatedOn())->toBeInstanceOf(Carbon::class);
+    expect($task->getUpdatedOn())->toBeInstanceOf(Carbon::class);
 });
