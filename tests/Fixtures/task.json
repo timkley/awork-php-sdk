@@ -25,8 +25,7 @@
         "name": "Engineering",
         "id": "2bf8eac9-eb5a-4295-9b0c-24dc475d1de0"
     },
-    "assigneeId": "8da7e59d-b8ba-4e8c-9b72-2fb966ee3269",
-    "assignee": {
+    "assignees":[{
         "tags": [
             {
                 "id": "00000000-0000-0000-0000-000000000000",
@@ -51,7 +50,7 @@
         "hasImage": true,
         "key": "NA-#",
         "id": "8da7e59d-b8ba-4e8c-9b72-2fb966ee3269"
-    },
+    }],
     "projectId": "9cd316b0-4e9f-4692-9c09-7222a1c8b3b2",
     "project": {
         "key": "TFR1",

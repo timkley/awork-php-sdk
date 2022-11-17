@@ -3,6 +3,7 @@
 namespace Tests\Model;
 
 use Awork\Collections\TagCollection;
+use Awork\Collections\UserCollection;
 use Awork\Model\Project;
 use Awork\Model\Task;
 use Awork\Model\TaskStatus;
@@ -25,7 +26,7 @@ it('creates a model from data', function () {
     expect($task->getTrackedDuration())->toBe(2330);
     expect($task->getProject())->toBeInstanceOf(Project::class);
     expect($task->getTaskStatus())->toBeInstanceOf(TaskStatus::class);
-    expect($task->getAssignee())->toBeInstanceOf(User::class);
+    expect($task->getAssignees())->toBeInstanceOf(UserCollection::class);
     expect($task->getTypeOfWork())->toBeInstanceOf(TypeOfWork::class);
     expect($task->getTags())->toBeInstanceOf(TagCollection::class);
     expect($task->getCreatedOn())->toBeInstanceOf(Carbon::class);

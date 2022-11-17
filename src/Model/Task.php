@@ -4,6 +4,7 @@ namespace Awork\Model;
 
 use Awork\Collections\TagCollection;
 use Awork\Collections\TaskListCollection;
+use Awork\Collections\UserCollection;
 use Carbon\Carbon;
 
 class Task extends Model
@@ -18,7 +19,7 @@ class Task extends Model
     private int $plannedDuration;
     private int $trackedDuration;
     private ?Project $project;
-    private ?User $assignee;
+    private ?UserCollection $assignees;
     private ?TaskStatus $taskStatus;
     private ?TypeOfWork $typeOfWork;
     private ?TagCollection $tags;
@@ -38,7 +39,7 @@ class Task extends Model
         $this->plannedDuration = $data['plannedDuration'] ?? 0;
         $this->trackedDuration = $data['trackedDuration'] ?? 0;
         $this->project = isset($data['project']) ? new Project($data['project']) : null;
-        $this->assignee = isset($data['assignee']) ? new User($data['assignee']) : null;
+        $this->assignees = isset($data['assignees']) ? UserCollection::fromArray($data['assignees']) : null;
         $this->taskStatus = isset($data['taskStatus']) ? new TaskStatus($data['taskStatus']) : null;
         $this->typeOfWork = isset($data['typeOfWork']) ? new TypeOfWork($data['typeOfWork']) : null;
         $this->tags = isset($data['tags']) ? TagCollection::fromArray($data['tags']) : null;
@@ -107,9 +108,9 @@ class Task extends Model
         return $this->project;
     }
 
-    public function getAssignee(): ?User
+    public function getAssignees(): ?UserCollection
     {
-        return $this->assignee;
+        return $this->assignees;
     }
 
     public function getTaskStatus(): ?TaskStatus
