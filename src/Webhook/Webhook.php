@@ -16,7 +16,7 @@ class Webhook
     private string $entityLink;
     private string $traceId;
     private ?User $triggeredBy;
-    private array $data;
+    private array $rawData;
 
     public function __construct(array $data)
     {
