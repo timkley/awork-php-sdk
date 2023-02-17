@@ -79,6 +79,12 @@ class Webhook
     /** @phpstan-ignore-next-line  */
     protected function toEntity(array $data, string $entityType)
     {
+        $entityTypeAliases = [
+            'timetracking' => 'timeEntry',
+        ];
+
+        $entityType = $entityTypeAliases[$entityType] ?? $entityType;
+
         $class = '\Awork\\Model\\' . ucfirst($entityType);
 
         if (! class_exists($class)) {

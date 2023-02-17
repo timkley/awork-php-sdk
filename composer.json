@@ -44,6 +44,9 @@
     "scripts": {
         "phpstan": [
             "./vendor/bin/phpstan --memory-limit=2048M"
+        ],
+        "test": [
+            "./vendor/bin/pest"
         ]
     }
 }
