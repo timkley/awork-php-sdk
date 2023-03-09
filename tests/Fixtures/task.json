@@ -146,5 +146,8 @@
     "isPrio": false,
     "startOn": "2021-08-23T11:23:10.4231381Z",
     "dueOn": "2021-08-23T11:23:10.4231381Z",
-    "laneOrder": 1
+    "laneOrder": 1,
+    "totalTrackedDuration": 123,
+    "totalPlannedDuration": 21600,
+    "isSubtask": true
 }

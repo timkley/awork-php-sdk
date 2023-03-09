@@ -13,11 +13,14 @@ class Task extends Model
     private string $key;
     private string $name;
     private string $description;
+    private bool $isSubtask;
     private bool $isPrio;
     private ?Carbon $startOn;
     private ?Carbon $dueOn;
     private int $plannedDuration;
     private int $trackedDuration;
+    private int $totalPlannedDuration;
+    private int $totalTrackedDuration;
     private ?Project $project;
     private ?UserCollection $assignees;
     private ?TaskStatus $taskStatus;
@@ -33,11 +36,14 @@ class Task extends Model
         $this->key = $data['key'] ?? '';
         $this->name = $data['name'] ?? '';
         $this->description = $data['description'] ?? '';
+        $this->isSubtask = $data['isSubtask'] ?? false;
         $this->isPrio = $data['isPrio'] ?? false;
         $this->startOn = isset($data['startOn']) ? Carbon::parse($data['startOn']) : null;
         $this->dueOn = isset($data['dueOn']) ? Carbon::parse($data['dueOn']) : null;
         $this->plannedDuration = $data['plannedDuration'] ?? 0;
         $this->trackedDuration = $data['trackedDuration'] ?? 0;
+        $this->totalPlannedDuration = $data['totalPlannedDuration'] ?? 0;
+        $this->totalTrackedDuration = $data['totalTrackedDuration'] ?? 0;
         $this->project = isset($data['project']) ? new Project($data['project']) : null;
         $this->assignees = isset($data['assignees']) ? UserCollection::fromArray($data['assignees']) : null;
         $this->taskStatus = isset($data['taskStatus']) ? new TaskStatus($data['taskStatus']) : null;
@@ -78,6 +84,11 @@ class Task extends Model
         return $this->isPrio;
     }
 
+    public function isSubtask(): bool
+    {
+        return $this->isSubtask;
+    }
+
     public function getStartOn(): ?Carbon
     {
         return $this->startOn;
@@ -96,6 +107,16 @@ class Task extends Model
     public function setPlannedDuration(int $plannedDuration): void
     {
         $this->plannedDuration = $plannedDuration;
+    }
+
+    public function getTotalPlannedDuration(): int
+    {
+        return $this->totalPlannedDuration;
+    }
+
+    public function getTotalTrackedDuration(): int
+    {
+        return $this->totalTrackedDuration;
     }
 
     public function getTrackedDuration(): int

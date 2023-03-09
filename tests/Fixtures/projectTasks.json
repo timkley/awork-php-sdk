@@ -94,7 +94,9 @@
         "taskSchedulesCount": 0,
         "isCompletelyScheduled": false,
         "name": "Completed task",
-        "isPrio": false
+        "isPrio": false,
+        "totalTrackedDuration": 0,
+        "totalPlannedDuration": 21600
     },
     {
         "id": "5d3067d7-b593-ec11-a22a-38563d684e0e",

@@ -20,9 +20,12 @@ it('creates a model from data', function () {
     expect($task->getName())->toBe('Fly me to the Moon');
     expect($task->getDescription())->toBe('I want to be up there.');
     expect($task->isPrio())->toBe(false);
+    expect($task->isSubtask())->toBe(true);
     expect($task->getStartOn())->toBeInstanceOf(Carbon::class);
     expect($task->getPlannedDuration())->toBe(3600);
     expect($task->getTrackedDuration())->toBe(2330);
+    expect($task->getTotalPlannedDuration())->toBe(21600);
+    expect($task->getTotalTrackedDuration())->toBe(123);
     expect($task->getProject())->toBeInstanceOf(Project::class);
     expect($task->getTaskStatus())->toBeInstanceOf(TaskStatus::class);
     expect($task->getAssignees())->toBeInstanceOf(UserCollection::class);
