@@ -2,6 +2,7 @@
 
 namespace Awork\Model;
 
+use Awork\Collections\AssigneeCollection;
 use Awork\Collections\TagCollection;
 use Awork\Collections\TaskListCollection;
 use Awork\Collections\UserCollection;
@@ -45,7 +46,7 @@ class Task extends Model
         $this->totalPlannedDuration = $data['totalPlannedDuration'] ?? 0;
         $this->totalTrackedDuration = $data['totalTrackedDuration'] ?? 0;
         $this->project = isset($data['project']) ? new Project($data['project']) : null;
-        $this->assignees = isset($data['assignees']) ? UserCollection::fromArray($data['assignees']) : null;
+        $this->assignees = isset($data['assignees']) ? AssigneeCollection::fromArray($data['assignees']) : null;
         $this->taskStatus = isset($data['taskStatus']) ? new TaskStatus($data['taskStatus']) : null;
         $this->typeOfWork = isset($data['typeOfWork']) ? new TypeOfWork($data['typeOfWork']) : null;
         $this->tags = isset($data['tags']) ? TagCollection::fromArray($data['tags']) : null;

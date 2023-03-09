@@ -1,0 +1,15 @@
+{
+    "tags": [],
+    "teams": [
+        {
+            "id": "235d966e-a455-eb11-a607-00155d31310d"
+        }
+    ],
+    "plannedEffort": 123,
+    "isDistributedPlannedEffort": true,
+    "firstName": "John",
+    "lastName": "Doe",
+    "hasImage": true,
+    "key": "JD",
+    "id": "b7fe5e4a-a555-eb11-a607-00155d31310d"
+}
