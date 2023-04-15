@@ -2,9 +2,6 @@
 
 namespace Awork\Model;
 
-use Awork\Collections\ContactInfoCollection;
-use Awork\Collections\TeamCollection;
-
 class Assignee extends User
 {
     private int $plannedEffort;
