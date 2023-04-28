@@ -55,7 +55,7 @@ class Task extends Endpoint
     public function getTimeEntries(string $taskId): TimeEntryCollection
     {
         return new TimeEntryCollection(
-            $this->api->get(sprintf('%s/%s/timeentries', self::ENDPOINT, $taskId))
+            $this->api->get(sprintf('%s/%s/timeentries', self::ENDPOINT, $taskId))->json()
         );
     }
 }
