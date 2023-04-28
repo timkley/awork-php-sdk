@@ -2,6 +2,7 @@
 
 namespace Awork\Api;
 
+use Awork\Collections\TimeEntryCollection;
 use Awork\Model\Task as TaskModel;
 use Illuminate\Http\Client\Response;
 
@@ -48,6 +49,13 @@ class Task extends Endpoint
                 'taskId' => $taskId,
                 'isPrio' => $isPrio,
             ],
+        );
+    }
+
+    public function getTimeEntries(string $taskId): TimeEntryCollection
+    {
+        return new TimeEntryCollection(
+            $this->api->get(sprintf('%s/%s/timeentries', self::ENDPOINT, $taskId))
         );
     }
 }

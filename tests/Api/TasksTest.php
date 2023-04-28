@@ -2,6 +2,7 @@
 
 namespace Tests\Api;
 
+use Awork\Collections\TimeEntryCollection;
 use Awork\Model\Task;
 
 it('can get a single task', function () {
@@ -53,4 +54,12 @@ it('set a tasks priority', function () {
     awork()->tasks()->setTaskPriority('task-id', true);
 
     assertBodySent($requestBody);
+});
+
+it('gets the timeentries', function () {
+    $fixture = fakeJsonResponse('taskTimeEntries.json');
+
+    $timeEntries = awork()->tasks()->getTimeEntries('task-id');
+
+    expect($timeEntries)->toBeInstanceOf(TimeEntryCollection::class);
 });

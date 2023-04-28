@@ -1,0 +1,242 @@
+[
+    {
+        "id": "86650f81-51b4-467b-9a37-49c8352b82f7",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "createdOn": "2023-04-28T07:13:13.033Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2023-04-28T07:13:13.033Z",
+        "typeOfWork": {
+            "isArchived": false,
+            "icon": "attach_money",
+            "name": "invest",
+            "id": "a19a1c8c-13b7-48d7-e0c1-08dae848cb96"
+        },
+        "user": {
+            "tags": [],
+            "teams": [
+                {
+                    "id": "f3168754-a455-eb11-a607-00155d31310d"
+                }
+            ],
+            "firstName": "John",
+            "lastName": "Doe",
+            "hasImage": true,
+            "key": "TK",
+            "id": "83477d16-a455-eb11-a607-00155d31310d"
+        },
+        "task": {
+            "key": "P0-70",
+            "baseType": "projecttask",
+            "taskStatus": {
+                "order": 2,
+                "icon": "arrow_forward",
+                "type": "progress",
+                "name": "In Bearbeitung",
+                "id": "e8f31fee-2349-ed11-a27c-cc60c8b665d9"
+            },
+            "taskStatusId": "e8f31fee-2349-ed11-a27c-cc60c8b665d9",
+            "typeOfWorkId": "a19a1c8c-13b7-48d7-e0c1-08dae848cb96",
+            "assignees": [
+                {
+                    "firstName": "John",
+                    "lastName": "Doe",
+                    "hasImage": true,
+                    "key": "TK",
+                    "id": "83477d16-a455-eb11-a607-00155d31310d"
+                }
+            ],
+            "project": {
+                "tags": [],
+                "teams": [],
+                "isPrivate": false,
+                "key": "P0",
+                "projectStatus": {
+                    "isArchived": false,
+                    "type": "progress",
+                    "name": "Läuft",
+                    "id": "dff31fee-2349-ed11-a27c-cc60c8b665d9"
+                },
+                "company": {
+                    "hasImage": false,
+                    "name": "Acme Inc",
+                    "id": "c8c39444-a455-eb11-a607-00155d312942"
+                },
+                "projectType": {
+                    "isArchived": false,
+                    "icon": "extension",
+                    "name": "Operatives Projekt",
+                    "id": "312c48dc-2888-ed11-ac20-a04a5ec4041d"
+                },
+                "name": "Testproject",
+                "id": "e1f31fee-2349-ed11-a27c-cc60c8b665d9"
+            },
+            "projectId": "e1f31fee-2349-ed11-a27c-cc60c8b665d9",
+            "plannedDuration": 10800,
+            "tags": [],
+            "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+            "correlationId": "110b80be-0ba9-ed11-ba77-38563d687ba0",
+            "name": "Testtask",
+            "id": "110b80be-0ba9-ed11-ba77-38563d687ba0"
+        },
+        "project": {
+            "tags": [],
+            "teams": [],
+            "isPrivate": false,
+            "key": "P0",
+            "projectStatus": {
+                "isArchived": false,
+                "type": "progress",
+                "name": "Läuft",
+                "id": "dff31fee-2349-ed11-a27c-cc60c8b665d9"
+            },
+            "company": {
+                "hasImage": false,
+                "name": "Acme Inc",
+                "id": "c8c39444-a455-eb11-a607-00155d312942"
+            },
+            "projectType": {
+                "isArchived": false,
+                "icon": "extension",
+                "name": "Operatives Projekt",
+                "id": "312c48dc-2888-ed11-ac20-a04a5ec4041d"
+            },
+            "name": "Testproject",
+            "id": "e1f31fee-2349-ed11-a27c-cc60c8b665d9"
+        },
+        "resourceVersion": 638182627931717725,
+        "startDateUtc": "2023-04-28T00:00:00Z",
+        "startTimeUtc": "07:13:13.0254002",
+        "startDateLocal": "2023-04-28T00:00:00",
+        "startTimeLocal": "09:13:13.0254002",
+        "timezone": "Europe/Berlin",
+        "duration": 0,
+        "typeOfWorkId": "a19a1c8c-13b7-48d7-e0c1-08dae848cb96",
+        "userId": "83477d16-a455-eb11-a607-00155d31310d",
+        "isBillable": false,
+        "isBilled": false,
+        "taskId": "110b80be-0ba9-ed11-ba77-38563d687ba0",
+        "projectId": "e1f31fee-2349-ed11-a27c-cc60c8b665d9"
+    },
+    {
+        "id": "91826f7c-6aed-44b8-988a-bf7478573a9f",
+        "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "createdOn": "2023-04-28T06:59:58.707Z",
+        "updatedBy": "83477d16-a455-eb11-a607-00155d31310d",
+        "updatedOn": "2023-04-28T07:13:06.22Z",
+        "typeOfWork": {
+            "isArchived": false,
+            "icon": "attach_money",
+            "name": "invest",
+            "id": "a19a1c8c-13b7-48d7-e0c1-08dae848cb96"
+        },
+        "user": {
+            "tags": [],
+            "teams": [
+                {
+                    "id": "f3168754-a455-eb11-a607-00155d31310d"
+                }
+            ],
+            "firstName": "John",
+            "lastName": "Doe",
+            "hasImage": true,
+            "key": "TK",
+            "id": "83477d16-a455-eb11-a607-00155d31310d"
+        },
+        "task": {
+            "key": "P0-70",
+            "baseType": "projecttask",
+            "taskStatus": {
+                "order": 2,
+                "icon": "arrow_forward",
+                "type": "progress",
+                "name": "In Bearbeitung",
+                "id": "e8f31fee-2349-ed11-a27c-cc60c8b665d9"
+            },
+            "taskStatusId": "e8f31fee-2349-ed11-a27c-cc60c8b665d9",
+            "typeOfWorkId": "a19a1c8c-13b7-48d7-e0c1-08dae848cb96",
+            "assignees": [
+                {
+                    "firstName": "John",
+                    "lastName": "Doe",
+                    "hasImage": true,
+                    "key": "TK",
+                    "id": "83477d16-a455-eb11-a607-00155d31310d"
+                }
+            ],
+            "project": {
+                "tags": [],
+                "teams": [],
+                "isPrivate": false,
+                "key": "P0",
+                "projectStatus": {
+                    "isArchived": false,
+                    "type": "progress",
+                    "name": "Läuft",
+                    "id": "dff31fee-2349-ed11-a27c-cc60c8b665d9"
+                },
+                "company": {
+                    "hasImage": false,
+                    "name": "Acme Inc",
+                    "id": "c8c39444-a455-eb11-a607-00155d312942"
+                },
+                "projectType": {
+                    "isArchived": false,
+                    "icon": "extension",
+                    "name": "Operatives Projekt",
+                    "id": "312c48dc-2888-ed11-ac20-a04a5ec4041d"
+                },
+                "name": "Testproject",
+                "id": "e1f31fee-2349-ed11-a27c-cc60c8b665d9"
+            },
+            "projectId": "e1f31fee-2349-ed11-a27c-cc60c8b665d9",
+            "plannedDuration": 10800,
+            "tags": [],
+            "createdBy": "83477d16-a455-eb11-a607-00155d31310d",
+            "correlationId": "110b80be-0ba9-ed11-ba77-38563d687ba0",
+            "name": "Testtask",
+            "id": "110b80be-0ba9-ed11-ba77-38563d687ba0"
+        },
+        "project": {
+            "tags": [],
+            "teams": [],
+            "isPrivate": false,
+            "key": "P0",
+            "projectStatus": {
+                "isArchived": false,
+                "type": "progress",
+                "name": "Läuft",
+                "id": "dff31fee-2349-ed11-a27c-cc60c8b665d9"
+            },
+            "company": {
+                "hasImage": false,
+                "name": "Acme Inc",
+                "id": "c8c39444-a455-eb11-a607-00155d312942"
+            },
+            "projectType": {
+                "isArchived": false,
+                "icon": "extension",
+                "name": "Operatives Projekt",
+                "id": "312c48dc-2888-ed11-ac20-a04a5ec4041d"
+            },
+            "name": "Testproject",
+            "id": "e1f31fee-2349-ed11-a27c-cc60c8b665d9"
+        },
+        "endDateUtc": "2023-04-28T00:00:00Z",
+        "endDateLocal": "2023-04-28T00:00:00",
+        "resourceVersion": 638182627877322579,
+        "startDateUtc": "2023-04-28T00:00:00Z",
+        "startTimeUtc": "06:59:58.6815877",
+        "endTimeUtc": "07:13:06.2208139",
+        "startDateLocal": "2023-04-28T00:00:00",
+        "startTimeLocal": "08:59:58.6815877",
+        "endTimeLocal": "09:13:06.2208139",
+        "timezone": "Europe/Berlin",
+        "duration": 788,
+        "typeOfWorkId": "a19a1c8c-13b7-48d7-e0c1-08dae848cb96",
+        "userId": "83477d16-a455-eb11-a607-00155d31310d",
+        "isBillable": false,
+        "isBilled": false,
+        "taskId": "110b80be-0ba9-ed11-ba77-38563d687ba0",
+        "projectId": "e1f31fee-2349-ed11-a27c-cc60c8b665d9"
+    }
+]
