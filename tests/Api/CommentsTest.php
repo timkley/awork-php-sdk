@@ -22,8 +22,24 @@ it('can create a comment for a specific entity', function () {
 
     httpClient()->assertSent(function (Request $request) {
         return $request->body() === json_encode([
-                                                    'message' => 'this is my message',
-                                                ]) &&
+                'message' => 'this is my message',
+                'userId' => null
+            ]) &&
+            str_ends_with($request->url(), 'tasks/task-id/comments');
+    });
+    expect($comment)->toBeInstanceOf(Comment::class);
+});
+
+it('can create a comment for a specific user', function () {
+    fakeJsonResponse('comment.json');
+
+    $comment = awork()->comments()->create('tasks', 'task-id', 'this is my message', 'user-id');
+
+    httpClient()->assertSent(function (Request $request) {
+        return $request->body() === json_encode([
+                'message' => 'this is my message',
+                'userId' => 'user-id',
+            ]) &&
             str_ends_with($request->url(), 'tasks/task-id/comments');
     });
     expect($comment)->toBeInstanceOf(Comment::class);

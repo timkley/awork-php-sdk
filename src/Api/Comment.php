@@ -16,11 +16,12 @@ class Comment extends Endpoint
         );
     }
 
-    public function create(string $entityType, string $entityId, string $message): CommentModel
+    public function create(string $entityType, string $entityId, string $message, ?string $userId = null): CommentModel
     {
         return new CommentModel(
             $this->api->post(sprintf(self::ENDPOINT, $entityType, $entityId), [
                 'message' => $message,
+                'userId' => $userId,
             ])->json()
         );
     }
