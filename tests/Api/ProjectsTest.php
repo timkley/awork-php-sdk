@@ -36,6 +36,15 @@ it('can create a project', function () {
     expect($project)->toBeInstanceOf(Project::class);
 });
 
+it('can update a project', function () {
+    $fixture = fakeJsonResponse('project.json');
+
+    $task = awork()->projects()->update('task-id', $fixture);
+
+    assertBodySent($fixture);
+    expect($task)->toBeInstanceOf(Project::class);
+});
+
 it('can get project tasks', function () {
     fakeJsonResponse('tasks.json');
 

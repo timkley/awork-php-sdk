@@ -34,6 +34,13 @@ class Project extends Endpoint
         );
     }
 
+    public function update(string $projectId, array $data): ProjectModel
+    {
+        return new ProjectModel(
+            $this->api->put(sprintf('%s/%s', self::ENDPOINT, $projectId), $data)->json()
+        );
+    }
+
     public function getProjectTasks(string $projectId): TaskCollection
     {
         return TaskCollection::fromArray(
