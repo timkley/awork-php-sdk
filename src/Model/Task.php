@@ -5,7 +5,6 @@ namespace Awork\Model;
 use Awork\Collections\AssigneeCollection;
 use Awork\Collections\TagCollection;
 use Awork\Collections\TaskListCollection;
-use Awork\Collections\UserCollection;
 use Carbon\Carbon;
 
 class Task extends Model
