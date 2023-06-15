@@ -23,7 +23,7 @@ class Task extends Model
     private int $totalPlannedDuration;
     private int $totalTrackedDuration;
     private ?Project $project;
-    private ?UserCollection $assignees;
+    private ?AssigneeCollection $assignees;
     private ?TaskStatus $taskStatus;
     private ?TypeOfWork $typeOfWork;
     private ?TagCollection $tags;
@@ -130,7 +130,7 @@ class Task extends Model
         return $this->project;
     }
 
-    public function getAssignees(): ?UserCollection
+    public function getAssignees(): ?AssigneeCollection
     {
         return $this->assignees;
     }

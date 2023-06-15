@@ -1,34 +1,54 @@
 {
-  "id": "2e6248f1-fdf6-4dae-9ee7-5579d806b457",
-  "entityId": "00000000-0000-0000-0000-000000000000",
-  "entityType": null,
-  "createdOn": "2021-08-23T12:54:36.6540126Z",
-  "createdBy": "8ea7c6ca-0c98-4def-bcc9-964baac7fbbb",
-  "user": {
-    "firstName": "John",
-    "lastName": "Doe",
-    "hasImage": true,
-    "key": "JD",
-    "id": "5d005f4a-a555-eb11-a607-00155d31310d"
-  },
-  "project": null,
-  "entity": null,
-  "updatedOn": "2021-08-23T12:54:36.6540134Z",
-  "updatedBy": "9185d090-2bf2-4212-978f-4338dfc4b130",
-  "mentions": null,
-  "reactions": [
-    {
-      "userIds": [
-        "e540e445-4cec-4f7b-ac96-929bc4f93784"
-      ],
-      "emoji": "😀"
-    }
-  ],
-  "formattedMessage": "<b>NASA</b>",
-  "plainFormattedMessage": "NASA",
-  "resourceVersion": 0,
-  "workspaceId": "00000000-0000-0000-0000-000000000000",
-  "message": "NASA",
-  "userId": null,
-  "previews": null
+    "message": "Hey team, the customer loved the latest designs!",
+    "userId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "previews": [
+        "https://www.awork.io/en/blog/automatic-project-management/"
+    ],
+    "id": "2e6248f1-fdf6-4dae-9ee7-5579d806b457",
+    "entityId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "entityType": "tasks",
+    "createdOn": "2023-06-15T09:15:27.463Z",
+    "createdBy": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "user": {
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "firstName": "string",
+        "lastName": "string",
+        "hasImage": true
+    },
+    "project": {
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "name": "Website Design",
+        "projectTypeIcon": "paintbrush",
+        "projectCompanyProfileImageUrl": "/files/images/companies/722a0108-7ab9-e711-80c2-0017fa10039b"
+    },
+    "entity": {
+        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "name": "Website Design",
+        "projectTypeIcon": "paintbrush",
+        "projectCompanyProfileImageUrl": "/files/images/companies/722a0108-7ab9-e711-80c2-0017fa10039b"
+    },
+    "updatedOn": "2023-06-15T09:15:27.463Z",
+    "updatedBy": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "mentions": {
+        "users": [
+            {
+                "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+                "firstName": "string",
+                "lastName": "string",
+                "hasImage": true
+            }
+        ],
+        "everyUserHadPermissions": true
+    },
+    "reactions": [
+        {
+            "userIds": [
+                "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+            ],
+            "emoji": "👍"
+        }
+    ],
+    "formattedMessage": "Hey team, the customer loved the latest designs!",
+    "plainFormattedMessage": "Hey team, the customer hated the latest designs!",
+    "resourceVersion": 637825154598057900
 }
