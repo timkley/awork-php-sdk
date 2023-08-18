@@ -4,6 +4,7 @@ namespace Awork\Api;
 
 use Awork\Collections\ContactInfoCollection;
 use Awork\Collections\UserCollection;
+use Awork\Model\TimeEntry as TimeEntryModel;
 use Awork\Model\User as UserModel;
 use Awork\Model\UserCapacity;
 
@@ -36,6 +37,13 @@ class User extends Endpoint
     {
         return ContactInfoCollection::fromArray(
             $this->api->get(sprintf('%s/%s/contactinfo', self::ENDPOINT, $userId))->json()
+        );
+    }
+
+    public function lastTimeEntry(string $userId)
+    {
+        return new TimeEntryModel(
+            $this->api->get(sprintf('%s/%s/timeentries/last', self::ENDPOINT, $userId))->json()
         );
     }
 }

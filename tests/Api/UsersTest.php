@@ -5,6 +5,7 @@ namespace Tests\Api;
 use Awork\Collections\ContactInfoCollection;
 use Awork\Collections\UserCollection;
 use Awork\Model\ContactInfo;
+use Awork\Model\TimeEntry;
 use Awork\Model\User;
 use Awork\Model\UserCapacity;
 
@@ -41,4 +42,13 @@ it('can get the contactinfo of a user', function () {
 
     expect($contactInfo)->toBeInstanceOf(ContactInfoCollection::class);
     expect($contactInfo->first())->toBeInstanceOf(ContactInfo::class);
+});
+
+it('can get the last time entry', function () {
+    fakeJsonResponse('timeEntry.json');
+
+    $timeEntry = awork()->users()->lastTimeEntry('user-id');
+
+    expect($timeEntry)->toBeInstanceOf(TimeEntry::class);
+    expect($timeEntry->getId())->toBe('2a408383-ae39-ed11-ae83-38563d6848fe');
 });
