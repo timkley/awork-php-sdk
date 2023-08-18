@@ -40,7 +40,7 @@ class User extends Endpoint
         );
     }
 
-    public function lastTimeEntry(string $userId)
+    public function lastTimeEntry(string $userId): TimeEntryModel
     {
         return new TimeEntryModel(
             $this->api->get(sprintf('%s/%s/timeentries/last', self::ENDPOINT, $userId))->json()
