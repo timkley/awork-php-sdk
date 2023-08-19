@@ -7,6 +7,7 @@ use Awork\Collections\UserCollection;
 use Awork\Model\TimeEntry as TimeEntryModel;
 use Awork\Model\User as UserModel;
 use Awork\Model\UserCapacity;
+use Illuminate\Http\Client\Response;
 
 class User extends Endpoint
 {
@@ -45,5 +46,17 @@ class User extends Endpoint
         return new TimeEntryModel(
             $this->api->get(sprintf('%s/%s/timeentries/last', self::ENDPOINT, $userId))->json()
         );
+    }
+
+    public function startTimeTracking(string $userId, array $data)
+    {
+        return new TimeEntryModel(
+            $this->api->post(sprintf('%s/%s/timetracking/start', self::ENDPOINT, $userId), $data)->json()
+        );
+    }
+
+    public function stopTimeTracking(string $userId): Response
+    {
+        return $this->api->post(sprintf('%s/%s/timetracking/stop', self::ENDPOINT, $userId));
     }
 }

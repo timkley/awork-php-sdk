@@ -8,6 +8,7 @@ use Awork\Model\ContactInfo;
 use Awork\Model\TimeEntry;
 use Awork\Model\User;
 use Awork\Model\UserCapacity;
+use Illuminate\Http\Client\Response;
 
 it('can get all users', function () {
     fakeJsonResponse('users.json');
@@ -51,4 +52,20 @@ it('can get the last time entry', function () {
 
     expect($timeEntry)->toBeInstanceOf(TimeEntry::class);
     expect($timeEntry->getId())->toBe('2a408383-ae39-ed11-ae83-38563d6848fe');
+});
+
+it('can start the time tracking', function () {
+    fakeJsonResponse('timeEntry.json');
+
+    $timeEntry = awork()->users()->startTimeTracking('user-id', []);
+
+    expect($timeEntry)->toBeInstanceOf(TimeEntry::class);
+    expect($timeEntry->getId())->toBe('2a408383-ae39-ed11-ae83-38563d6848fe');
+});
+
+it('can stop the time tracking', function () {
+    fakeResponse();
+    $response = awork()->users()->stopTimeTracking('user-id');
+
+    expect($response)->toBeInstanceOf(Response::class);
 });
