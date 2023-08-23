@@ -48,7 +48,7 @@ class User extends Endpoint
         );
     }
 
-    public function startTimeTracking(string $userId, array $data)
+    public function startTimeTracking(string $userId, array $data): TimeEntryModel
     {
         return new TimeEntryModel(
             $this->api->post(sprintf('%s/%s/timetracking/start', self::ENDPOINT, $userId), $data)->json()
