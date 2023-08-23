@@ -55,7 +55,7 @@ class User extends Endpoint
         );
     }
 
-    public function stopTimeTracking(string $userId, array $data): Response
+    public function stopTimeTracking(string $userId, array $data = []): Response
     {
         return $this->api->post(sprintf('%s/%s/timetracking/stop', self::ENDPOINT, $userId), $data);
     }
