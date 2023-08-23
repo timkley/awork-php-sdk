@@ -8,6 +8,7 @@ use Exception;
 use Illuminate\Http\Client\Factory as HttpClient;
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Http\Client\Response;
+use Psr\Log\LoggerInterface;
 
 class Api
 {
@@ -22,7 +23,7 @@ class Api
     protected ?int $page = null;
     protected ?int $pageSize = null;
 
-    public function __construct(private string $apiToken)
+    public function __construct(private string $apiToken, private ?LoggerInterface $logger = null)
     {
         $this->httpClient = new HttpClient();
     }
@@ -73,6 +74,9 @@ class Api
      */
     protected function response(): Response
     {
+        $this->logger?->debug(sprintf('Request to %s', $this->latestResponse->effectiveUri()));
+        $this->logger?->debug(sprintf('Response: %s', $this->latestResponse->body()));
+
         if ($this->latestResponse->status() === 401) {
             throw new AuthenticationException($this->latestResponse->json('message.description'));
         }
