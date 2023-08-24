@@ -75,7 +75,7 @@ class Api
     protected function response(): Response
     {
         $this->logger?->debug(sprintf('Request to %s', $this->latestResponse->effectiveUri()), [
-            'response' => $this->latestResponse->body(),
+            'response' => $this->latestResponse->json(),
             'headers' => $this->latestResponse->headers(),
         ]);
 
