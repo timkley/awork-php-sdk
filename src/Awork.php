@@ -13,6 +13,7 @@ use Awork\Api\ProjectType;
 use Awork\Api\Task;
 use Awork\Api\TimeEntry;
 use Awork\Api\User;
+use Psr\Log\LoggerInterface;
 
 class Awork
 {
@@ -30,14 +31,14 @@ class Awork
     private Absence $absence;
     private TimeEntry $timeEntry;
 
-    public function __construct(string $apiToken)
+    public function __construct(string $apiToken, ?LoggerInterface $logger = null)
     {
-        $this->api = new Api($apiToken);
+        $this->api = new Api($apiToken, $logger);
     }
 
-    public static function create(string $apiToken): Awork
+    public static function create(string $apiToken, ?LoggerInterface $logger): Awork
     {
-        return new self($apiToken);
+        return new self($apiToken, $logger);
     }
 
     public function me(): Me
