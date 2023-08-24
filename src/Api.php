@@ -74,8 +74,10 @@ class Api
      */
     protected function response(): Response
     {
-        $this->logger?->debug(sprintf('Request to %s', $this->latestResponse->effectiveUri()));
-        $this->logger?->debug(sprintf('Response: %s', $this->latestResponse->body()));
+        $this->logger?->debug(sprintf('Request to %s', $this->latestResponse->effectiveUri()), [
+            'response' => $this->latestResponse->body(),
+            'headers' => $this->latestResponse->headers(),
+        ]);
 
         if ($this->latestResponse->status() === 401) {
             throw new AuthenticationException($this->latestResponse->json('message.description'));
