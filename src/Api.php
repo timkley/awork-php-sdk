@@ -15,7 +15,7 @@ class Api
     public HttpClient $httpClient;
     public Response $latestResponse;
 
-    public const BASE_URL = 'https://api.awork.io/api';
+    public const BASE_URL = 'https://api.awork.com/api';
     public const VERSION = 'v1';
 
     protected ?string $filter = null;

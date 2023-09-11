@@ -1,10 +1,10 @@
-# awork.io PHP SDK
+# awork.com PHP SDK
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/timkley/awork-php-sdk.svg?style=flat-square)](https://packagist.org/packages/timkley/awork-php-sdk)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/timkley/awork-php-sdk/run-tests.yml?label=tests)](https://github.com/timkley/awork-php-sdk/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/timkley/awork-php-sdk.svg?style=flat-square)](https://packagist.org/packages/timkley/awork-php-sdk)
 
-This is a wrapper around the [awork API](https://openapi.awork.io/). It is still a WIP and not all endpoints are implemented.
+This is a wrapper around the [awork API](https://openapi.awork.com/). It is still a WIP and not all endpoints are implemented.
 
 ## Installation
 
@@ -20,7 +20,7 @@ composer require timkley/awork-php-sdk
 
 ## Usage
 
-You need an [API token](https://developers.awork.io/authentication) to use the awork API.
+You need an [API token](https://developers.awork.com/authentication) to use the awork API.
 
 ```php
 <?php
