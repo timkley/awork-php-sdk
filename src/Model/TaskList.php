@@ -13,7 +13,7 @@ class TaskList extends Model
     {
         $this->id = $data['id'] ?? '';
         $this->name = $data['name'] ?? '';
-        $this->order = $data['order'] ?? 0;
+        $this->order = (int) $data['order'] ?? 0;
         $this->isArchived = $data['isArchived'] ?? false;
     }
 
