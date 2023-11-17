@@ -9,13 +9,22 @@ class Model implements Arrayable
 {
     public function toArray(): array
     {
-        $reflection = new ReflectionClass($this);
-        $properties = $reflection->getProperties();
+        return $this->getPropertiesRecursively($this);
+    }
+
+    private function getPropertiesRecursively(mixed $object): array
+    {
         $array = [];
-        foreach ($properties as $property) {
-            $property->setAccessible(true);
-            $value = $property->getValue($this);
-            $array[$property->getName()] = ($value instanceof Arrayable) ? $property->getValue($this)->toArray() : $value;
+        $reflection = new ReflectionClass($object);
+
+        while ($reflection) {
+            $properties = $reflection->getProperties();
+            foreach ($properties as $property) {
+                $property->setAccessible(true);
+                $value = $property->getValue($object);
+                $array[$property->getName()] = ($value instanceof Arrayable) ? $value->toArray() : $value;
+            }
+            $reflection = $reflection->getParentClass();
         }
 
         return $array;
