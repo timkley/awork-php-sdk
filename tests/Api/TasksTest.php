@@ -67,7 +67,7 @@ it('gets the timeentries', function () {
 it('can set assignees for a task', function () {
     $requestBody = [
         'test1',
-        'test2'
+        'test2',
     ];
     fakeResponse();
     awork()->tasks()->setAssignees('task-id', ['test1', 'test2']);
