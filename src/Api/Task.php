@@ -41,6 +41,13 @@ class Task extends Endpoint
         ]);
     }
 
+    public function getTimeEntries(string $taskId): TimeEntryCollection
+    {
+        return new TimeEntryCollection(
+            $this->api->get(sprintf('%s/%s/timeentries', self::ENDPOINT, $taskId))->json()
+        );
+    }
+
     public function setTaskPriority(string $taskId, bool $isPrio): Response
     {
         return $this->api->post(
@@ -52,10 +59,8 @@ class Task extends Endpoint
         );
     }
 
-    public function getTimeEntries(string $taskId): TimeEntryCollection
+    public function setAssignees(string $taskId, array $assigneeIds): Response
     {
-        return new TimeEntryCollection(
-            $this->api->get(sprintf('%s/%s/timeentries', self::ENDPOINT, $taskId))->json()
-        );
+        return $this->api->post(sprintf('%s/%s/setassignees', self::ENDPOINT, $taskId), [...$assigneeIds]);
     }
 }

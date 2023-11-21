@@ -63,3 +63,14 @@ it('gets the timeentries', function () {
 
     expect($timeEntries)->toBeInstanceOf(TimeEntryCollection::class);
 });
+
+it('can set assignees for a task', function () {
+    $requestBody = [
+        'test1',
+        'test2'
+    ];
+    fakeResponse();
+    awork()->tasks()->setAssignees('task-id', ['test1', 'test2']);
+
+    assertBodySent($requestBody);
+});
