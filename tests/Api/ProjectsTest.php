@@ -84,3 +84,12 @@ it('can get project task lists', function () {
     expect($taskLists->count())->toBe(2);
     expect($taskLists->first()->getName())->toBe('Second sample list');
 });
+
+it('can add a task bundle to a project', function () {
+    fakeResponse();
+
+    $response = awork()->projects()->addTaskBundle('project-id', 'task-bundle-id');
+
+    assertBodySent(['taskBundleId' => 'task-bundle-id']);
+    expect($response->status())->toBe(200);
+});

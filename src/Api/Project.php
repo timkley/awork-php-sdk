@@ -68,4 +68,11 @@ class Project extends Endpoint
             $this->api->get(sprintf('%s/%s/tasklists', self::ENDPOINT, $projectId))->json()
         );
     }
+
+    public function addTaskBundle(string $projectId, string $taskBundleId)
+    {
+        return $this->api->post(sprintf(self::ENDPOINT . '/%s/addtaskbundle', $projectId), [
+            'taskBundleId' => $taskBundleId,
+        ]);
+    }
 }
