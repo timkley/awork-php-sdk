@@ -93,3 +93,18 @@ it('can add a task bundle to a project', function () {
     assertBodySent(['taskBundleId' => 'task-bundle-id']);
     expect($response->status())->toBe(200);
 });
+
+it('can add a project member to a project', function () {
+    fakeResponse();
+
+    $data = [
+        'userId' => 'user-id',
+        'projectRoleId' => 'role-id',
+        'isResponsible' => true,
+    ];
+
+    $response = awork()->projects()->addProjectMember('project-id', $data);
+
+    assertBodySent($data);
+    expect($response->status())->toBe(200);
+});

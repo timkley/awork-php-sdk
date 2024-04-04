@@ -8,6 +8,7 @@ use Awork\Collections\TaskCollection;
 use Awork\Collections\TaskListCollection;
 use Awork\Collections\TaskStatusCollection;
 use Awork\Model\Project as ProjectModel;
+use Illuminate\Http\Client\Response;
 
 class Project extends Endpoint
 {
@@ -69,10 +70,15 @@ class Project extends Endpoint
         );
     }
 
-    public function addTaskBundle(string $projectId, string $taskBundleId)
+    public function addTaskBundle(string $projectId, string $taskBundleId): Response
     {
         return $this->api->post(sprintf(self::ENDPOINT . '/%s/addtaskbundle', $projectId), [
             'taskBundleId' => $taskBundleId,
         ]);
+    }
+
+    public function addProjectMember(string $projectId, array $data): Response
+    {
+        return $this->api->post(sprintf(self::ENDPOINT . '/%s/addprojectmember', $projectId), $data);
     }
 }
