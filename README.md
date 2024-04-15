@@ -10,7 +10,7 @@ This is a wrapper around the [awork API](https://openapi.awork.com/). It is stil
 
 ### Requirements
 
-> PHP 8.0
+> PHP 8.2 and above
 
 ### With composer
 
