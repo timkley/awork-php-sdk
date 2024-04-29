@@ -4,7 +4,9 @@ namespace Awork;
 
 use Awork\Exceptions\AuthenticationException;
 use Awork\Exceptions\NotFoundException;
+use Awork\Exceptions\TimeoutException;
 use Exception;
+use GuzzleHttp\Exception\ConnectException;
 use Illuminate\Http\Client\Factory as HttpClient;
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Http\Client\Response;
@@ -31,39 +33,53 @@ class Api
     /**
      * @throws AuthenticationException
      * @throws NotFoundException
+     * @throws TimeoutException
      */
     public function get(string $endpoint): Response
     {
-        $this->latestResponse = $this->request()->get($endpoint, $this->getQueryParamaters());
-
-        return $this->response();
+        return $this->makeRequest('get', $endpoint, $this->getQueryParamaters());
     }
 
     /**
      * @throws AuthenticationException
      * @throws NotFoundException
+     * @throws TimeoutException
      */
     public function post(string $endpoint, array $data = []): Response
     {
-        $this->latestResponse = $this->request()->post($endpoint, $data);
-
-        return $this->response();
+        return $this->makeRequest('post', $endpoint, $data);
     }
 
     /**
      * @throws AuthenticationException
      * @throws NotFoundException
+     * @throws TimeoutException
      */
     public function put(string $endpoint, array $data = []): Response
     {
-        $this->latestResponse = $this->request()->put($endpoint, $data);
+        return $this->makeRequest('put', $endpoint, $data);
+    }
+
+    /**
+     * @throws AuthenticationException
+     * @throws NotFoundException
+     * @throws TimeoutException
+     */
+    protected function makeRequest(string $method, string $endpoint, array $data = []): Response
+    {
+        try {
+            $this->latestResponse = $this->request()->{$method}($endpoint, $data);
+        } catch (ConnectException $e) {
+            throw new TimeoutException('Connection timed out.', 0, $e);
+        }
 
         return $this->response();
     }
 
     protected function request(): PendingRequest
     {
-        return $this->httpClient->baseUrl(self::BASE_URL . '/' . self::VERSION)
+        return $this->httpClient
+            ->baseUrl(self::BASE_URL . '/' . self::VERSION)
             ->withToken($this->apiToken);
     }
 
