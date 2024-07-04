@@ -4,6 +4,7 @@ namespace Tests\Model;
 
 use Awork\Collections\AssigneeCollection;
 use Awork\Collections\TagCollection;
+use Awork\Collections\TaskCollection;
 use Awork\Model\Project;
 use Awork\Model\Task;
 use Awork\Model\TaskStatus;
@@ -33,4 +34,10 @@ it('creates a model from data', function () {
     expect($task->getTags())->toBeInstanceOf(TagCollection::class);
     expect($task->getCreatedOn())->toBeInstanceOf(Carbon::class);
     expect($task->getUpdatedOn())->toBeInstanceOf(Carbon::class);
+
+    $subtasks = getJsonFixture('tasks.json');
+
+    $task->setSubTasks(new TaskCollection($subtasks));
+
+    expect($task->getSubtasks())->toBeInstanceOf(TaskCollection::class);
 });

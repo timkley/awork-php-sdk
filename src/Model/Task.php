@@ -4,6 +4,7 @@ namespace Awork\Model;
 
 use Awork\Collections\AssigneeCollection;
 use Awork\Collections\TagCollection;
+use Awork\Collections\TaskCollection;
 use Awork\Collections\TaskListCollection;
 use Carbon\Carbon;
 
@@ -23,6 +24,7 @@ class Task extends Model
     private int $totalTrackedDuration;
     private ?Project $project;
     private ?AssigneeCollection $assignees;
+    private ?TaskCollection $subtasks;
     private ?TaskStatus $taskStatus;
     private ?TypeOfWork $typeOfWork;
     private ?TagCollection $tags;
@@ -46,6 +48,7 @@ class Task extends Model
         $this->totalTrackedDuration = $data['totalTrackedDuration'] ?? 0;
         $this->project = isset($data['project']) ? new Project($data['project']) : null;
         $this->assignees = isset($data['assignees']) ? AssigneeCollection::fromArray($data['assignees']) : null;
+        $this->subtasks = isset($data['subtasks']) ? TaskCollection::fromArray($data['subtasks']) : null;
         $this->taskStatus = isset($data['taskStatus']) ? new TaskStatus($data['taskStatus']) : null;
         $this->typeOfWork = isset($data['typeOfWork']) ? new TypeOfWork($data['typeOfWork']) : null;
         $this->tags = isset($data['tags']) ? TagCollection::fromArray($data['tags']) : null;
@@ -132,6 +135,16 @@ class Task extends Model
     public function getAssignees(): ?AssigneeCollection
     {
         return $this->assignees;
+    }
+
+    public function getSubtasks(): ?TaskCollection
+    {
+        return $this->subtasks;
+    }
+
+    public function setSubTasks(TaskCollection $subtasks): void
+    {
+        $this->subtasks = $subtasks;
     }
 
     public function getTaskStatus(): ?TaskStatus
