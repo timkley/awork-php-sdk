@@ -37,7 +37,18 @@ it('creates a model from data', function () {
 
     $subtasks = getJsonFixture('tasks.json');
 
-    $task->setSubTasks(new TaskCollection($subtasks));
+    $task->setSubtasks(new TaskCollection($subtasks));
 
     expect($task->getSubtasks())->toBeInstanceOf(TaskCollection::class);
+});
+
+it('correctly creates a grouped collection with subtasks', function() {
+    $tasks = getJsonFixture('tasks.json');
+
+    $taskCollection = TaskCollection::fromArray($tasks);
+    expect($taskCollection->count())->toBe(2);
+
+    $groupedTasks = $taskCollection->grouped();
+    expect($groupedTasks->count())->toBe(1);
+    expect($groupedTasks->first()->getSubtasks()->count())->toBe(1);
 });

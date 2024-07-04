@@ -11,6 +11,7 @@ use Carbon\Carbon;
 class Task extends Model
 {
     private string $id;
+    private ?string $parentId;
     private string $key;
     private string $name;
     private string $description;
@@ -35,6 +36,7 @@ class Task extends Model
     public function __construct(array $data)
     {
         $this->id = $data['id'] ?? '';
+        $this->parentId = $data['parentId'] ?? '';
         $this->key = $data['key'] ?? '';
         $this->name = $data['name'] ?? '';
         $this->description = $data['description'] ?? '';
@@ -60,6 +62,11 @@ class Task extends Model
     public function getId(): string
     {
         return $this->id;
+    }
+
+    public function getParentId(): ?string
+    {
+        return $this->parentId;
     }
 
     public function getKey(): string
@@ -142,9 +149,18 @@ class Task extends Model
         return $this->subtasks;
     }
 
-    public function setSubTasks(TaskCollection $subtasks): void
+    public function setSubtasks(TaskCollection $subtasks): void
     {
         $this->subtasks = $subtasks;
+    }
+
+    public function addSubtask(Task $task)
+    {
+        if (!$this->subtasks) {
+            $this->subtasks = new TaskCollection();
+        }
+
+        $this->subtasks->push($task);
     }
 
     public function getTaskStatus(): ?TaskStatus
