@@ -42,7 +42,7 @@ it('creates a model from data', function () {
     expect($task->getSubtasks())->toBeInstanceOf(TaskCollection::class);
 });
 
-it('correctly creates a grouped collection with subtasks', function() {
+it('correctly creates a grouped collection with subtasks', function () {
     $tasks = getJsonFixture('tasks.json');
 
     $taskCollection = TaskCollection::fromArray($tasks);

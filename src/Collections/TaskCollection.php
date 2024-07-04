@@ -22,7 +22,7 @@ class TaskCollection extends Collection
         $subtasks->each(function (Task $subtask, int $key) {
             /** @var Task $parentTask */
             $parentTask = $this->first(fn (Task $task) => $task->getId() === $subtask->getParentId());
-            if (!$parentTask) {
+            if (! $parentTask) {
                 return;
             }
 
