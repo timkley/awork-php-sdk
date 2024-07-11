@@ -1,6 +1,7 @@
 {
     "name": "timkley/awork-php-sdk",
     "description": "A PHP HTTP Client for the awork API",
+    "version": "0.1.0",
     "keywords": [
         "php",
         "client",
