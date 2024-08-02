@@ -20,9 +20,9 @@ class TaskCollection extends Collection
         $subtasks = $this->filter(fn (Task $task) => $task->isSubtask());
 
         $subtasks->each(function (Task $subtask, int $key) {
-            /** @var Task $parentTask */
+            /** @var ?Task $parentTask */
             $parentTask = $this->first(fn (Task $task) => $task->getId() === $subtask->getParentId());
-            if (! $parentTask) {
+            if (is_null($parentTask)) {
                 return;
             }
 

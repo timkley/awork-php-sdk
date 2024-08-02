@@ -154,7 +154,7 @@ class Task extends Model
         $this->subtasks = $subtasks;
     }
 
-    public function addSubtask(Task $task)
+    public function addSubtask(Task $task): void
     {
         if (! $this->subtasks) {
             $this->subtasks = new TaskCollection();
