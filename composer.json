@@ -19,7 +19,7 @@
         "php": "^8.2|^8.3",
         "guzzlehttp/guzzle": "^7.0",
         "illuminate/http": "^v11.3.1",
-        "nesbot/carbon": "^2.66"
+        "nesbot/carbon": "^3.8"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.8",
