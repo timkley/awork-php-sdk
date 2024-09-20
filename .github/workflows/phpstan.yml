@@ -20,11 +20,8 @@ jobs:
         with:
           php-version: ${{ env.PHP_VERSION }}
 
-      - name: Install composer
-        uses: php-actions/composer@v6
-        with:
-          php_version: ${{ env.PHP_VERSION }}
-          args: --no-interaction --no-ansi --no-progress --no-suggest
+      - name: Install composer dependencies
+        run: composer install --no-interaction --no-ansi --no-progress --no-suggest
 
       - name: PHPStan
         run: composer phpstan
