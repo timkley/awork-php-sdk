@@ -104,6 +104,10 @@ class Api
         }
 
         if (! $this->latestResponse->successful()) {
+            $this->logger?->error('Request failed', [
+                'response' => $this->latestResponse->json(),
+                'headers' => $this->latestResponse->headers(),
+            ]);
             throw new Exception($this->latestResponse->json('description'));
         }
 
