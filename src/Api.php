@@ -108,6 +108,7 @@ class Api
                 'response' => $this->latestResponse->json(),
                 'headers' => $this->latestResponse->headers(),
             ]);
+
             throw new Exception($this->latestResponse->json('description'));
         }
 
