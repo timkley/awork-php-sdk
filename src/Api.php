@@ -106,6 +106,7 @@ class Api
         if (! $this->latestResponse->successful()) {
             $this->logger?->error('Request failed', [
                 'response' => $this->latestResponse->json(),
+                'raw' => $this->latestResponse->body(),
                 'headers' => $this->latestResponse->headers(),
             ]);
 
