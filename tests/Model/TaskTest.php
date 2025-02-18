@@ -34,6 +34,7 @@ it('creates a model from data', function () {
     expect($task->getTags())->toBeInstanceOf(TagCollection::class);
     expect($task->getCreatedOn())->toBeInstanceOf(Carbon::class);
     expect($task->getUpdatedOn())->toBeInstanceOf(Carbon::class);
+    expect($task->getParentTask())->toBeInstanceOf(Task::class);
 
     $subtasks = getJsonFixture('tasks.json');
 
