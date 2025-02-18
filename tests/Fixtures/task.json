@@ -149,5 +149,14 @@
     "laneOrder": 1,
     "totalTrackedDuration": 123,
     "totalPlannedDuration": 21600,
-    "isSubtask": true
+    "isSubtask": true,
+    "parentTask": {
+        "id": "123e4567-e89b-12d3-a456-426614174000",
+        "name": "name",
+        "createdBy": "123e4567-e89b-12d3-a456-426614174000",
+        "userId": "123e4567-e89b-12d3-a456-426614174000",
+        "assigneeIds": [
+            "assigneeIds"
+        ]
+    }
 }
