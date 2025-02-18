@@ -12,6 +12,7 @@ class Task extends Model
 {
     private string $id;
     private ?string $parentId;
+    private ?ParentTask $parentTask;
     private string $key;
     private string $name;
     private string $description;
@@ -37,6 +38,7 @@ class Task extends Model
     {
         $this->id = $data['id'] ?? '';
         $this->parentId = $data['parentId'] ?? '';
+        $this->parentTask = isset($data['parentTask']) ? new ParentTask($data['parentTask']) : null;
         $this->key = $data['key'] ?? '';
         $this->name = $data['name'] ?? '';
         $this->description = $data['description'] ?? '';
@@ -67,6 +69,11 @@ class Task extends Model
     public function getParentId(): ?string
     {
         return $this->parentId;
+    }
+
+    public function getParentTask(): ?ParentTask
+    {
+        return $this->parentTask;
     }
 
     public function getKey(): string
