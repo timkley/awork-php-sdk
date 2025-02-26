@@ -68,6 +68,11 @@ class Api
     protected function makeRequest(string $method, string $endpoint, array $data = []): Response
     {
         try {
+            $this->logger?->debug(sprintf('Request to %s', $endpoint), [
+                'method' => $method,
+                'data' => $data,
+            ]);
+
             $this->latestResponse = $this->request()->{$method}($endpoint, $data);
         } catch (ConnectionException $e) {
             throw new TimeoutException('Connection timed out.', 0, $e);
@@ -90,7 +95,7 @@ class Api
      */
     protected function response(): Response
     {
-        $this->logger?->debug(sprintf('Request to %s', $this->latestResponse->effectiveUri()), [
+        $this->logger?->debug(sprintf('Response from %s', $this->latestResponse->effectiveUri()), [
             'response' => $this->latestResponse->json(),
             'headers' => $this->latestResponse->headers(),
         ]);
