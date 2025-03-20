@@ -1,7 +1,7 @@
 {
     "name": "timkley/awork-php-sdk",
     "description": "A PHP HTTP Client for the awork API",
-    "version": "0.2.5",
+    "version": "0.3",
     "keywords": [
         "php",
         "client",
@@ -18,11 +18,11 @@
     "require": {
         "php": "^8.2|^8.3|^8.4",
         "guzzlehttp/guzzle": "^7.0",
-        "illuminate/http": "^v11.3.1",
+        "illuminate/http": "^v11.3.1|^v12.0",
         "nesbot/carbon": "^3.8"
     },
     "require-dev": {
-        "phpstan/phpstan": "^1.8",
+        "phpstan/phpstan": "^2.1.8",
         "pestphp/pest": "^v3.1.0"
     },
     "autoload": {

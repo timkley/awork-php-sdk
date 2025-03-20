@@ -11,7 +11,7 @@ use Carbon\Carbon;
 class Task extends Model
 {
     private string $id;
-    private ?string $parentId;
+    private string $parentId;
     private ?Task $parentTask;
     private string $key;
     private string $name;
