@@ -6,6 +6,7 @@ use Awork\Exceptions\AuthenticationException;
 use Awork\Exceptions\NotFoundException;
 use Awork\Exceptions\TimeoutException;
 use Exception;
+use GuzzleHttp\Exception\RequestException;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\Factory as HttpClient;
 use Illuminate\Http\Client\PendingRequest;
@@ -76,6 +77,8 @@ class Api
             $this->latestResponse = $this->request()->{$method}($endpoint, $data);
         } catch (ConnectionException $e) {
             throw new TimeoutException('Connection timed out.', 0, $e);
+        } catch (RequestException $e) {
+            throw new TimeoutException('Request failed.', 0, $e);
         }
 
         return $this->response();
