@@ -77,7 +77,7 @@ class Api
             $this->latestResponse = $this->request()->{$method}($endpoint, $data);
         } catch (ConnectionException $e) {
             throw new TimeoutException('Connection timed out.', 0, $e);
-        } catch (RequestException $e) {
+        } catch (RequestException|Exception $e) {
             throw new TimeoutException('Request failed.', 0, $e);
         }
 
