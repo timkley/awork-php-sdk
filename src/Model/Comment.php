@@ -3,12 +3,14 @@
 namespace Awork\Model;
 
 use Awork\Collections\UserCollection;
+use Carbon\Carbon;
 
 class Comment extends Model
 {
     private string $id;
     private string $entityType;
     private string $entityId;
+    private ?Carbon $createdOn;
     private ?User $user;
     private ?UserCollection $mentions;
     private string $formattedMessage;
@@ -19,6 +21,7 @@ class Comment extends Model
         $this->id = $data['id'] ?? '';
         $this->entityType = $data['entityType'] ?? '';
         $this->entityId = $data['entityId'] ?? '';
+        $this->createdOn = isset($data['createdOn']) ? Carbon::parse($data['createdOn']) : null;
         $this->user = isset($data['user']) ? new User($data['user']) : null;
         $this->mentions = isset($data['mentions']['users']) ? UserCollection::fromArray($data['mentions']['users']) : null;
         $this->formattedMessage = $data['formattedMessage'] ?? '';
@@ -38,6 +41,11 @@ class Comment extends Model
     public function getEntityId(): string
     {
         return $this->entityId;
+    }
+
+    public function getCreatedOn(): ?Carbon
+    {
+        return $this->createdOn;
     }
 
     public function getUser(): ?User
