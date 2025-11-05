@@ -17,6 +17,7 @@ class User extends Model
     private ?string $projectRoleId;
     private ?string $projectRoleName;
     private ?bool $isResponsible;
+    private bool $isExternal;
 
     public function __construct(array $data)
     {
@@ -32,6 +33,7 @@ class User extends Model
         $this->projectRoleId = $data['projectRoleId'] ?? null;
         $this->projectRoleName = $data['projectRoleName'] ?? null;
         $this->isResponsible = $data['isResponsible'] ?? null;
+        $this->isExternal = $data['isExternal'] ?? false;
     }
 
     public function getId(): string
@@ -87,5 +89,10 @@ class User extends Model
     public function isResponsible(): ?bool
     {
         return $this->isResponsible;
+    }
+
+    public function isExternal(): bool
+    {
+        return $this->isExternal;
     }
 }

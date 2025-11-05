@@ -34,5 +34,6 @@
   "title": "",
   "position": "CEO",
   "language": "de-DE",
-  "capacityPerWeek": 115200
+  "capacityPerWeek": 115200,
+  "isExternal": false
 }

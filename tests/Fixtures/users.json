@@ -43,7 +43,8 @@
         "title": "",
         "position": "",
         "language": "de-DE",
-        "capacityPerWeek": 100800
+        "capacityPerWeek": 100800,
+        "isExternal": false
     },
     {
         "teams": [
@@ -90,6 +91,7 @@
         "title": "",
         "position": "Frontend developer",
         "language": "de-DE",
-        "capacityPerWeek": 100800
+        "capacityPerWeek": 100800,
+        "isExternal": false
     }
 ]

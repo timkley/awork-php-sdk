@@ -11,5 +11,6 @@
     "lastName": "Doe",
     "hasImage": true,
     "key": "JD",
-    "id": "b7fe5e4a-a555-eb11-a607-00155d31310d"
+    "id": "b7fe5e4a-a555-eb11-a607-00155d31310d",
+    "isExternal": false
 }

@@ -20,6 +20,7 @@ it('creates a model from data', function () {
     expect($user->getTeams())->toBeInstanceOf(TeamCollection::class);
     expect($user->getTeams()->first())->toBeInstanceOf(Team::class);
     expect($user->getContactInfo())->toBeInstanceOf(ContactInfoCollection::class);
+    expect($user->isExternal())->toBeFalse();
 });
 
 it('can set model data explicitly', function () {
@@ -29,4 +30,22 @@ it('can set model data explicitly', function () {
     $user->setContactInfo(ContactInfoCollection::fromArray([getJsonFixture('contactInfo.json')]));
 
     expect(true)->toBe(true);
+});
+
+it('defaults isExternal to false when not provided', function () {
+    $fixture = getJsonFixture('user.json');
+    unset($fixture['isExternal']);
+
+    $user = new User($fixture);
+
+    expect($user->isExternal())->toBeFalse();
+});
+
+it('can set isExternal to true', function () {
+    $fixture = getJsonFixture('user.json');
+    $fixture['isExternal'] = true;
+
+    $user = new User($fixture);
+
+    expect($user->isExternal())->toBeTrue();
 });
